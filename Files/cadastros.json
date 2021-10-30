@@ -1,0 +1,57 @@
+{
+
+	"usuario de serviço": [
+		{			
+			"checkboxDesconheceNomeMae":"",
+			"checkboxDesconheceNomePai":"",
+			"checkboxNomeSocial":"",
+			"checkboxGenero":"",
+			"checkboxDeficiente":"",
+			"inputCPF":"",
+			"inputIdentidade":"",
+			"inputOrgaoExpedidor":"",
+			"inputSUS":"Teste unidade",
+			"inputNome":"Dani Targaryen",	
+			"inputEmail":"",
+			"inputNascimentoStr":"",
+			"inputDeficiencia":"Autismo",
+			"inputNomeMae":"Rhaella Targaryen",
+			"inputGeneroFiliacao1":"Feminino",
+			"inputNomePai":"Aerys Targaryen",
+			"inputGeneroFiliacao2":"Masculino",
+			"inputUBS":"TESTE UBS",
+			"inputNomeSocial":"Jon Snow",
+			"inputGenero":"Feminino"		
+		}
+	],
+
+	"Endereço":[
+		{
+			"inputCEP":58079050,
+			"inputNumero":"",
+			"inputComplemento":"Casa",
+			"inputReferencia":"Teste automatizado"
+		}
+
+	],
+
+	"Contato":[
+		{
+	      "inputTelefone":"",
+		  "observacao":"teste"
+		}
+
+	],
+
+	"Colaborador":[
+		{
+		  "inputCPF":"",
+		  "inputNome":"Dani Targaryen colaborador",
+		  "inputTelefone":"84999999999",
+		  "inputEmail":"",
+		  "inputLogin":""
+		  
+		}
+
+	]
+}

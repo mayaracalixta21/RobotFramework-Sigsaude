@@ -1,0 +1,12 @@
+{"level":30,"time":"2021-09-27T05:49:14.026Z","pid":14928,"hostname":"Mayara","msg":"Listening on 65313"}
+{"level":30,"time":"2021-09-27T05:49:17.957Z","pid":14928,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-27T05:49:17.973Z","pid":14928,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2021-09-27T05:49:19.049Z","pid":14928,"hostname":"Mayara","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-27T05:49:19.050Z","pid":14928,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2021-09-27T05:49:30.520Z","pid":14928,"hostname":"Mayara","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing MAYARA TESTE"}
+{"level":30,"time":"2021-09-27T05:49:30.543Z","pid":14928,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2021-09-27T05:49:30.543Z","pid":14928,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-27T05:49:30.543Z","pid":14928,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2021-09-27T05:49:30.568Z","pid":14928,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2021-09-27T05:49:30.568Z","pid":14928,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-27T05:49:30.568Z","pid":14928,"hostname":"Mayara","msg":"Changed active page"}

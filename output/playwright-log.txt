@@ -1,0 +1,11 @@
+{"level":30,"time":"2021-10-27T00:03:07.786Z","pid":567317,"hostname":"VHSJP1977N","msg":"Listening on 46835"}
+{"level":30,"time":"2021-10-27T00:03:08.181Z","pid":567317,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-10-27T00:03:08.190Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-10-27T00:03:08.365Z","pid":567317,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-27T00:03:08.365Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-10-27T00:03:34.211Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-10-27T00:03:34.212Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-27T00:03:34.212Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-10-27T00:03:34.255Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-10-27T00:03:34.255Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-27T00:03:34.255Z","pid":567317,"hostname":"VHSJP1977N","msg":"Changed active page"}

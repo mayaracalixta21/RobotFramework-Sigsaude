@@ -1,0 +1,8 @@
+{
+    "login":"/login",
+    "novo usuario de serviço":"/paciente/cadastro",
+    "listar usuarios de serviço":"/paciente",
+    "cadastro de colaborador":"/colaborador/form",
+    "agendamento":"/agendamento",
+    "listar colaborador":"/colaborador"
+}

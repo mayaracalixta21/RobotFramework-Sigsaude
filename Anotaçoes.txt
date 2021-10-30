@@ -1,0 +1,23 @@
+Configurações iniciais
+    echo "# RobotFramework-Sigsaude" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M master
+    git remote add origin https://github.com/mayaracalixta21/RobotFramework-Sigsaude.git
+    git push -u origin master
+
+Criando uma branch 
+    git checkout -b ＜new-branch＞ ＜existing-branch＞ # Criando uma branch de outra
+    git add .
+    git commit -m "first commit"
+    git checkout ＜branch＞  #Se move entre as branchs
+    git push origin ＜new-branch＞ # Manda as coisas pra master (Precisa estar na nova branch)
+    git merge ＜new-branch＞ # Realiza o merge entre as duas branchs (Precisa estar na master)
+    git add .
+    git commit -m "first commit"
+    git push origin master
+
+Deleta uma branch
+    git push origin --delete ＜new-branch＞ # Deleta remotamente (Precisa estar na master)
+    git branch -d ＜new-branch＞ # Deleta localmente (Precisa estar na master)

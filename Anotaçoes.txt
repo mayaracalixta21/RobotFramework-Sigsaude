@@ -29,3 +29,8 @@ Clonar projeto
 Comandos importantes
     git log
     git status
+
+Puxar alterações 
+    Se caso tiver na master git pull
+    Se caso tiver dentro de outra branch  git pull origin master 
+    

@@ -21,3 +21,11 @@ Criando uma branch
 Deleta uma branch
     git push origin --delete ＜new-branch＞ # Deleta remotamente (Precisa estar na master)
     git branch -d ＜new-branch＞ # Deleta localmente (Precisa estar na master)
+
+Clonar projeto 
+    git clone <nome-do-repositório>
+
+
+Comandos importantes
+    git log
+    git status

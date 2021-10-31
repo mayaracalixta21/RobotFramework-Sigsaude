@@ -10,6 +10,7 @@
     "Renda familiar total":"quantidadeSalarios",
 
     "Avançar":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[3]/div/button[2]",
+    "Avançar step":"nextBtn",
     
     "Dados de diagnóstico":"dd",
 
@@ -24,5 +25,23 @@
     "Outro exame":"exameOutro",
     "Resultado":"exameResultado",
     "Observação":"exameObservacao",
-    "Adicionar exame":"button[title='Adicionar exame']"
+    "Adicionar exame":"button[title='Adicionar exame']",
+    "Remover exame":"a[class='btn-sigsaude btnCorRemover']",
+
+    "Data":"dataMpPDd",
+    "Manhã1":"manha1Dd",
+    "Manhã2":"manha2Dd",
+    "Noite1":"noite1Dd",
+    "Noite2":"noite2Dd",
+    "Adicionar medição":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[5]/div/div[2]/div[6]/div/div[1]/button",
+    "Remover medição":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[5]/div/div[3]/div/div/div[2]/div/table/tbody/tr/td[6]/a",
+
+    "Data glicemia":"dataControleGlicemia",
+    "Medida glicemia":"medidaControleGlicemia",
+    "Adicionar glicemia":"buttonAdicionarMedidaGlicemia",
+    "Remover glicemia":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[6]/div/div[3]/div[1]/div/div/div/div[2]/div/table/tbody/tr/td[3]/a",
+
+    "Exame físico":"exameFisicoEndocrinologia",
+    "Observações":"observacoesEndocrinologia"
+
 }

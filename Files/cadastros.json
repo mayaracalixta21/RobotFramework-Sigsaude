@@ -53,5 +53,29 @@
 		  
 		}
 
+	],
+		"Medição":[
+			{
+				"dataMpPDd":"10102021",
+				"manha1Dd":"111222",
+				"manha2Dd":"333444",
+				"noite1Dd":"555666",
+				"noite2Dd":"777888"
+			  
+			}
+	],
+
+	"Glicemia":[
+		{
+			"dataControleGlicemia":"",
+    		"medidaControleGlicemia":""
+		}
+	],
+
+	"Outras informações":[
+		{
+			"exameFisicoEndocrinologia":"Teste automatizado",
+    		"Observações":"Teste automatizado"
+		}
 	]
 }

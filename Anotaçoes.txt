@@ -34,3 +34,5 @@ Puxar alterações
     Se caso tiver na master git pull
     Se caso tiver dentro de outra branch  git pull origin master 
     
+Resetar commits local
+    git reset HEAD~1

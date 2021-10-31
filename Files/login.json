@@ -3,5 +3,10 @@
     "Psicologia":{
         "login": "drpsicologia",
         "senha": 85278120029
+    },
+
+    "Endocrinologia":{
+        "login": "drendocrinologia",
+        "senha": 98841863323
     }
 }

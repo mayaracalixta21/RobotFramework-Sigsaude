@@ -4,5 +4,6 @@
     "listar usuarios de serviço":"/paciente",
     "cadastro de colaborador":"/colaborador/form",
     "agendamento":"/agendamento",
-    "listar colaborador":"/colaborador"
+    "listar colaborador":"/colaborador",
+    "atendimento":"/agenda/"
 }

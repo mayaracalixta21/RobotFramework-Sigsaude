@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": ".venv/bin/python",
+    "launch": {
+        "configurations": [
+            {
+                "name": "Robot framework",
+                "type": "python",
+                "request": "launch",
+                "program": "${workspaceFolder}/.venv/bin/robot",
+                "args": [
+                    "-d",
+                    "output",
+                    //"-i",
+                    //"teste",
+                    "-v",
+                    "headless:False",
+                    "-v",
+                    "navegador:chromium",
+                    "/home/m.calixta/Projeto sigsaúde/Tests/5 - Atendimento endocrinologia.robot", // "resources/Financeiro/ContasRec/gerarboleto.robot",
+                ],
+                "console": "integratedTerminal"
+            },
+        ],
+        "compounds": []
+    }
+}

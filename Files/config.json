@@ -1,4 +1,4 @@
 {
     "base_url":"https://testessigsaude.imd.ufrn.br/sigsaude",
-    "navegador":"Firefox"
+    "navegador":"chromium"
 }

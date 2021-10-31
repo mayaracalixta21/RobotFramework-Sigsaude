@@ -1,0 +1,28 @@
+{
+    "Data da listagem":"dataListagem",
+    "Pesquisar":"button[class='btn btn-success']",
+    "Atendimento":"a[class='atendimento btn-sigsaude btnCorAtendimento']",
+    "Sim":"button[class='swal-button swal-button--confirm']",
+    "Tela de aviso":".swal-modal",
+    
+    "Quantidade de moradores da residência":"quantidadeDeMoradores",
+    "Quantidade de pessoas que trabalham":"quantidadeTrabalhadores",
+    "Renda familiar total":"quantidadeSalarios",
+
+    "Avançar":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[3]/div/button[2]",
+    
+    "Dados de diagnóstico":"dd",
+
+    "Possui HAS?":"has",
+    "Descrição da HAS":"hasDescHas",
+    "Possui DLP?":"dlp",
+    "Descrição da DLP":"dlpDescDlp",
+    "Possui DM?":"dm",
+    "Descrição da DM":"dmDescDm",
+
+    "Exames":"exameSelect",
+    "Outro exame":"exameOutro",
+    "Resultado":"exameResultado",
+    "Observação":"exameObservacao",
+    "Adicionar exame":"button[title='Adicionar exame']"
+}

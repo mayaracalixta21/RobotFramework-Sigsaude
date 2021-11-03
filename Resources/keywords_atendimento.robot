@@ -8,15 +8,22 @@ Resource            ${EXECDIR}/Resources/variaveis.robot
 Library     FakerLibrary        locale=pt_BR
 
 ***Variables***   
-${identificador_hipotese_antes}=         //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/button/div/div
-${identificador_hipotese_depois}=        //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/div/div[1]/input
-${identificador_definido_antes}=         //*[@id="groupDiagnosticoDefinido"]/div/div[1]/button/div/div/div
-${identificador_definido_depois}=        //*[@id="groupDiagnosticoDefinido"]/div/div[1]/div/div[1]/input
-${adicionar_encaminhamento}=            //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[2]/div[1]/div/a[1]
-${serviço_de_destino_antes}=            //*[@id="divBuscaServico"]/div[1]/button/div/div/div
-${serviço_de_destino_depois}=            //*[@id="divBuscaServico"]/div[1]/div/div[1]/input
-${modalidade_de_atendimento_antes}=            //*[@id="divBuscaModalidade"]/div[1]/button/div/div/div
-${modalidade_de_atendimento_depois}=            //*[@id="divBuscaServico"]/div[1]/div/div[1]/input
+${identificador_hipotese_antes}=            //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/button/div/div
+${identificador_hipotese_depois}=           //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/div/div[1]/input
+${identificador_definido_antes}=            //*[@id="groupDiagnosticoDefinido"]/div/div[1]/button/div/div/div
+${identificador_definido_depois}=           //*[@id="groupDiagnosticoDefinido"]/div/div[1]/div/div[1]/input
+${adicionar_encaminhamento}=                //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[2]/div[1]/div/a[1]
+${serviço_de_destino_antes}=                //*[@id="divBuscaServico"]/div[1]/button/div/div/div
+${serviço_de_destino_depois}=               //*[@id="divBuscaServico"]/div[1]/div/div[1]/input
+${modalidade_de_atendimento_antes}=         //*[@id="divBuscaModalidade"]/div[1]/button/div/div/div
+${modalidade_de_atendimento_depois}=        //*[@id="divBuscaModalidade"]/div[1]/div/div[1]/input
+
+${adicionar_receituário}=                   //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[5]/div[1]/div/a[1]
+
+${adicionar_exame}=                         //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[8]/div[1]/div/a[1]
+${procedimento_antes}=                      //*[@id="divBuscaProcedimento"]/div[1]/button/div/div/div
+${procedimento_depois}=                     //*[@id="divBuscaProcedimento"]/div[1]/div/div[1]/input
+
                                 
 ***Keywords***
 
@@ -212,24 +219,81 @@ informar dados da conduta terapêutica
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
     Click                          id=${elementos_aten_json["Conduta terapêutica"]} 
     Type Text                      id=${elementos_aten_json["Decrição"]}            Teste automatizado
-    #Encaminhamento 
+    Encaminhamento
+    Receituário de medicamentos
+    Exames preescritos
+
+Encaminhamento 
+    ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
     Click                          xpath=${adicionar_encaminhamento}
-    Select Options By              id=${elementos_aten_json["Tipo de encaminhamento"]}                             INTERNO                        SIM
+    Select Options By              id=${elementos_aten_json["Tipo de encaminhamento"]}                    Text         INTERNO                        SIM
     Click            xpath=${serviço_de_destino_antes}
     Type Text        xpath=${serviço_de_destino_depois}      DAS
     Sleep            2s
     Click            id=bs-select-5-0
-    Select Options By              id=${elementos_aten_json["selectPrioridade"]}                             ALTA                        SIM
+    Select Options By              id=${elementos_aten_json["Prioridade"]}                Text             ALTA                        
     Click            xpath=${modalidade_de_atendimento_antes}
-    Type Text        xpath=${modalidade_de_atendimento_depois}              ANALISES CLINICAS
+    Type Text        xpath=${modalidade_de_atendimento_depois}                  ANALISES CLINICAS
     Sleep            2s
     Click            id=bs-select-6-0
-    Select Options By              id=${elementos_aten_json["Campo para adicionar"]} 
-    Click           id=${elementos_aten_json["Adicionar campo"]} 
-    Type Text       id=${elementos_aten_json["Editor histórico clínico"]}             Teste automatizado
+    Select Options By              id=${elementos_aten_json["Campo para adicionar"]}            Text          CPF
+    #Type Text       id=${elementos_aten_json["Editor histórico clínico"]}             Teste automatizado
+    Repeat Keyword	2	  Repetidor "Adicionar campo"  
+    Select Options By              id=${elementos_aten_json["Campo para adicionar dúvidas"]}        Text        CPF
+    Repeat Keyword	2	  Repetidor "Adicionar campo dúvidas"  
+    #Type Text       id=${elementos_aten_json["Editor dúvidas"]}             Teste automatizado
+    Click           id=${elementos_aten_json["Salvar encaminhamento"]}
+    Imprimir comprovante "Sim"
+    #Download de arquivos 
+#Fluxo de remover e editar implementação 
 
+Receituário de medicamentos
+    ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
+    Click                          xpath=${adicionar_receituário}
+    Select Options By              id=${elementos_aten_json["Tipo da receita"]}                    Text         NORMAL
+    Type Text                      id=${elementos_aten_json["Descrição resumida"]}                  Teste automatizado
+    Select Options By              id=${elementos_aten_json["Campos adicionar"]}        Text        CPF
+    Repeat Keyword	2	  Repetidor "Adicionar campo receituario" 
+    Click           id=${elementos_aten_json["Salvar receita"]}
+    Imprimir comprovante "Sim"
+       
+Exames preescritos
+    ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
+    Click                          xpath=${adicionar_exame}
+    Click            xpath=${procedimento_antes}
+    Type Text        xpath=${procedimento_depois}      ANÁLISE DE PROJETOS BÁSICOS DE ARQUITETURA
+    Sleep            3s
+    Click            id=bs-select-7
+    Type Text                      id=${elementos_aten_json["Informações adicionais sobre a requisição"]}                  Teste automatizado
+    Select Options By              id=${elementos_aten_json["Campo adicionar exame"]}            Text         CPF
+    Repeat Keyword  2	  Repetidor "Adicionar campo exame" 
+    Click              id=${elementos_aten_json["Salvar exame"]}
+    Imprimir comprovante "Sim"
+    Adcionar novo exame "Não"
+       
 
+Adcionar novo exame "${opção}"
+    ${opção} =	                        Convert To Upper Case                    ${opção}
+    Imprimir comprovante "${opção}"
 
+Repetidor "${campo}"     
+    ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
+    Click           id=${elementos_aten_json["${campo}"]} 
+
+Imprimir comprovante "${opção}"
+    ${opção} =	                        Convert To Upper Case                    ${opção}
+    ${elementos_aten_json}         Get JSON                                          elementos_aten.json
+    Wait For Elements State         css=${elementos_aten_json["Mensagem"]}           visible 
+    IF      '${opção}' == 'SIM'   
+        Click                           css=${elementos_aten_json["Sim"]} 
+    ELSE 
+        Click                           css=${elementos_aten_json["Não"]} 
+    END
+
+Download de arquivos 
+    ${url}          Set Variable             https://testessigsaude.imd.ufrn.br/sigsaude/condutaTerapeutica/imprimir/encaminhamento
+    ${path}=        Download                 ${url}  
+    ${actual_size}=    Get File Size    ${path.saveAs}
 
 
 

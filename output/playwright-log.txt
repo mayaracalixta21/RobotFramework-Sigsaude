@@ -1,11 +1,237 @@
-{"level":30,"time":"2021-11-03T00:25:00.000Z","pid":130677,"hostname":"VHSJP1977N","msg":"Listening on 41905"}
-{"level":30,"time":"2021-11-03T00:25:00.456Z","pid":130677,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-03T00:25:00.469Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-03T00:25:00.633Z","pid":130677,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-03T00:25:00.634Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-03T00:25:23.383Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-03T00:25:23.384Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-03T00:25:23.384Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-03T00:25:23.406Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-03T00:25:23.407Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-03T00:25:23.407Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T02:59:40.992Z","pid":160760,"hostname":"VHSJP1977N","msg":"Listening on 43081"}
+{"level":30,"time":"2021-11-03T02:59:41.373Z","pid":160760,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-03T02:59:41.384Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T02:59:41.549Z","pid":160760,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-03T02:59:41.550Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+================= Original suppressed error =================
+{ page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=button[class='swal-button swal-button--confirm']"
+  selector resolved to visible <button class="swal-button swal-button--confirm">Sim</button>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #21
+  waiting 500ms
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+=============================================================
+{"level":30,"time":"2021-11-03T03:00:24.420Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T03:00:24.421Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T03:00:24.421Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T03:00:24.432Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T03:00:24.432Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+================= Original suppressed error =================
+{ page.bringToFront: Target page, context or browser has been closed
+    at BrowserState.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26134:16)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26372:55
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at _switchPage (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26360:12)
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26432:42)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at Object.switchPage (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26406:12)
+    at PlaywrightServer.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:24157:62)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
+    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12) name: 'Error' }
+=============================================================
+{"level":30,"time":"2021-11-03T03:00:24.465Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T03:00:24.466Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T03:00:24.466Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+================= Original suppressed error =================
+{ page.bringToFront: Target page, context or browser has been closed
+    at BrowserState.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26134:16)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26372:55
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at _switchPage (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26360:12)
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26488:42)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25680:58) name: 'Error' }
+=============================================================

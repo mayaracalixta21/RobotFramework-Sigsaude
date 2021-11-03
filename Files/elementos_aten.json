@@ -3,6 +3,7 @@
     "Pesquisar":"button[class='btn btn-success']",
     "Atendimento":"a[class='atendimento btn-sigsaude btnCorAtendimento']",
     "Sim":"button[class='swal-button swal-button--confirm']",
+    "Não":"button[class='swal-button swal-button--cancel']",
     "Tela de aviso":".swal-modal",
     
     "Quantidade de moradores da residência":"quantidadeDeMoradores",
@@ -59,9 +60,27 @@
     "Adicionar encaminhamento":"/html/body/div[1]/div[2]/div/div[2]/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[2]/div[1]/div[2]/div[2]/div[1]/div/a[1]",
     "Tipo de encaminhamento":"selectTipoServico",
     "Prioridade":"selectPrioridade",
-    "Campo para adicionar:":"camposH",
+    "Campo para adicionar":"camposH",
     "Adicionar campo":"btnAddH",
-    "Editor 1":"editorH"
+    "Editor histórico clínico":"editorH",
+    "Campo para adicionar dúvidas":"camposD",
+    "Adicionar campo dúvidas":"btnAddD",
+    "Editor dúvidas":"editorD",
+    "Salvar encaminhamento":"buttonSalvarEn",
+
+    "Mensagem":".swal-modal",
+
+    "Tipo da receita":"tipoReceitaCt",
+    "Descrição resumida":"resumoReceitaCt",
+    "Campos adicionar":"campos",
+    "Adicionar campo receituario":"btnAdd",
+    "Salvar receita":"buttonSalvar",
+
+    "Informações adicionais sobre a requisição":"informacoesAdicionaisSobreRequisicao",
+    "Campo adicionar exame":"camposE",
+    "Adicionar campo exame":"btnAddE",
+    "Salvar exame":"buttonSalvarE"
+
 
 
 

@@ -75,7 +75,15 @@
 	"Outras informações":[
 		{
 			"exameFisicoEndocrinologia":"Teste automatizado",
-    		"Observações":"Teste automatizado"
+    		"observacoesEndocrinologia":"Teste automatizado"
 		}
+
+	],
+	"Diagnostico":[
+		{
+			"impressaoDiagnosticaCompatilhada":"Teste automatizado"
+		}
+
 	]
 }
+

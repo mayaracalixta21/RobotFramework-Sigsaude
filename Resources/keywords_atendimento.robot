@@ -8,7 +8,16 @@ Resource            ${EXECDIR}/Resources/variaveis.robot
 Library     FakerLibrary        locale=pt_BR
 
 ***Variables***   
-
+${identificador_hipotese_antes}=         //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/button/div/div
+${identificador_hipotese_depois}=        //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/div/div[1]/input
+${identificador_definido_antes}=         //*[@id="groupDiagnosticoDefinido"]/div/div[1]/button/div/div/div
+${identificador_definido_depois}=        //*[@id="groupDiagnosticoDefinido"]/div/div[1]/div/div[1]/input
+${adicionar_encaminhamento}=            //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[2]/div[1]/div/a[1]
+${serviço_de_destino_antes}=            //*[@id="divBuscaServico"]/div[1]/button/div/div/div
+${serviço_de_destino_depois}=            //*[@id="divBuscaServico"]/div[1]/div/div[1]/input
+${modalidade_de_atendimento_antes}=            //*[@id="divBuscaModalidade"]/div[1]/button/div/div/div
+${modalidade_de_atendimento_depois}=            //*[@id="divBuscaServico"]/div[1]/div/div[1]/input
+                                
 ***Keywords***
 
 informar o campo "${campo}" com o "${valor}"
@@ -23,9 +32,9 @@ iniciar atendimento
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
     Click                          css=${elementos_aten_json["Atendimento"]}  
     Wait For Elements State        css=${elementos_aten_json["Tela de aviso"]}                   visible            6s
-    FOR    ${contador}    IN RANGE    1   3
+    #FOR    ${contador}    IN RANGE    1   3
         Click                          css=${elementos_aten_json["Sim"]} 
-    END
+    #END
        
 informar dados de diagnóstico
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
@@ -53,7 +62,6 @@ informar dados de diagnóstico
 
 informar dados dos exames laboratoriais
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
-    
     FOR  ${contador}     IN RANGE    1   5
 
         IF      ${contador}==1
@@ -97,9 +105,11 @@ informar dados dos exames laboratoriais
 informar dados do step "${step}"
     ${dados_json}    Get JSON        cadastros.json
     ${dados}         Set Variable    ${dados_json["${step}"]}
+    
     FOR              ${item}         IN                         @{dados}
-        FOR              ${key}          IN                         @{item.keys()}
+        FOR              ${key}          IN                         @{item.keys()} 
             Type text        id=${key}         ${item["${key}"]}
+            
         END
     END  
 
@@ -155,7 +165,71 @@ informar dados do controle de glicemia
         END 
     END
     Click                          xpath=${elementos_aten_json["Avançar"]}  
+    informar outras informações
 
 informar outras informações
+    ${elementos_aten_json}         Get JSON                elementos_aten.json
     informar dados do step "Outras informações"
+    Click                          xpath=${elementos_aten_json["Avançar"]} 
+    informar dados do diagnóstico
+
+informar dados do diagnóstico
+    ${elementos_aten_json}         Get JSON                elementos_aten.json
+    informar dados do step "Diagnostico"
+     ${aux}           Set Variable               12
+    FOR  ${contador}     IN RANGE    1   3
+        Click            xpath=${identificador_hipotese_antes}
+        Type Text        xpath=${identificador_hipotese_depois}      FEBRE TIFÓIDE
+        Sleep            2s
+        Click            id=bs-select-${aux}-0
+        ${aux}           Set Variable               14
+        Click            xpath=${elementos_aten_json["Adicionar hipótese diagnóstica"]} 
+        IF      '${contador}' == '1'
+           remover item da tabela "Remover hipótese diagnóstica"
+        END 
+    END
+      ${aux2}           Set Variable               13
+     FOR  ${contador2}     IN RANGE    1   3
+        Click            xpath=${identificador_definido_antes}
+        Type Text        xpath=${identificador_definido_depois}      FEBRE TIFÓIDE
+        Sleep            2s
+        Click            id=bs-select-${aux2}-0
+        ${aux2}           Set Variable               16
+        Click            xpath=${elementos_aten_json["Adicionar diagnóstico definido"]} 
+        IF      '${contador2}' == '1'
+           remover item da tabela "Remover diagnóstico definido"
+        END
+    END
+    Click                          xpath=${elementos_aten_json["Avançar"]}  
+    Cadastrar dados de diagnóstico    
+    
+Cadastrar dados de diagnóstico
+    ${elementos_aten_json}         Get JSON                elementos_aten.json    
+    Click                          xpath=${elementos_aten_json["Cadastrar"]} 
+    mensagem de cadastro realizado com sucesso  
+
+informar dados da conduta terapêutica
+    ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
+    Click                          id=${elementos_aten_json["Conduta terapêutica"]} 
+    Type Text                      id=${elementos_aten_json["Decrição"]}            Teste automatizado
+    #Encaminhamento 
+    Click                          xpath=${adicionar_encaminhamento}
+    Select Options By              id=${elementos_aten_json["Tipo de encaminhamento"]}                             INTERNO                        SIM
+    Click            xpath=${serviço_de_destino_antes}
+    Type Text        xpath=${serviço_de_destino_depois}      DAS
+    Sleep            2s
+    Click            id=bs-select-5-0
+    Select Options By              id=${elementos_aten_json["selectPrioridade"]}                             ALTA                        SIM
+    Click            xpath=${modalidade_de_atendimento_antes}
+    Type Text        xpath=${modalidade_de_atendimento_depois}              ANALISES CLINICAS
+    Sleep            2s
+    Click            id=bs-select-6-0
+    Select Options By              id=${elementos_aten_json["Campo para adicionar"]} 
+    Click           id=${elementos_aten_json["Adicionar campo"]} 
+    Type Text       id=${elementos_aten_json["Editor histórico clínico"]}             Teste automatizado
+
+
+
+
+
 

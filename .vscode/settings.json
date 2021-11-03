@@ -13,7 +13,7 @@
                     //"-i",
                     //"teste",
                     "-v",
-                    "headless:False",
+                    "headless:true",
                     "-v",
                     "navegador:chromium",
                     "/home/m.calixta/Projeto sigsaúde/Tests/5 - Atendimento endocrinologia.robot", // "resources/Financeiro/ContasRec/gerarboleto.robot",

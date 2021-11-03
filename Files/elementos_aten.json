@@ -42,6 +42,28 @@
     "Remover glicemia":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[6]/div/div[3]/div[1]/div/div/div/div[2]/div/table/tbody/tr/td[3]/a",
 
     "Exame físico":"exameFisicoEndocrinologia",
-    "Observações":"observacoesEndocrinologia"
+    "Observações":"observacoesEndocrinologia",
+
+    "Hipótese diagnóstica antes":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[3]/div/div[4]/div/div/div[1]/button/div/div/div",
+    "Diagnóstico definido":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[5]/div/div[3]/div/div/div[1]/button/div/div/div",
+    "Adicionar hipótese diagnóstica":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[3]/div/div[3]/div/div/div[2]/button",
+    "Adicionar diagnóstico definido":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[5]/div/div[2]/div/div/div[2]/button",
+    "Remover hipótese diagnóstica":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[4]/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/button",
+    "Remover diagnóstico definido":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[6]/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/button",
+
+    "Cadastrar":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[3]/div/button[2]",
+
+
+    "Conduta terapêutica":"ct",
+    "Decrição":"descricaoCt",
+    "Adicionar encaminhamento":"/html/body/div[1]/div[2]/div/div[2]/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[2]/div[1]/div[2]/div[2]/div[1]/div/a[1]",
+    "Tipo de encaminhamento":"selectTipoServico",
+    "Prioridade":"selectPrioridade",
+    "Campo para adicionar:":"camposH",
+    "Adicionar campo":"btnAddH",
+    "Editor 1":"editorH"
+
+
+
 
 }

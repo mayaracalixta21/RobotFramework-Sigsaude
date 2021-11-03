@@ -12,8 +12,9 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
     E           informar o campo "Data da listagem" com o "01112021"
     Quando      pressionar o botão "Pesquisar"
     Então       iniciar atendimento 
-    E           informar dados de diagnóstico
-    Sleep       20s
+    #E           informar dados de diagnóstico
+    E           informar dados da conduta terapêutica
+    Sleep       10s
 
    
 

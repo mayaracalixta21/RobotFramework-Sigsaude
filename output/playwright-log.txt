@@ -1,15 +1,11 @@
-{"level":30,"time":"2021-10-31T23:45:11.019Z","pid":139040,"hostname":"VHSJP1977N","msg":"Listening on 34251"}
-{"level":30,"time":"2021-10-31T23:45:11.402Z","pid":139040,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-10-31T23:45:11.410Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-10-31T23:45:11.547Z","pid":139040,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-10-31T23:45:11.547Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-10-31T23:45:37.957Z","pid":139040,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=exameResultado containing "}
-{"level":30,"time":"2021-10-31T23:45:38.010Z","pid":139040,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=exameObservacao containing "}
-{"level":30,"time":"2021-10-31T23:45:38.037Z","pid":139040,"hostname":"VHSJP1977N","msg":"unparsed args: e => e.disabled, id=exameResultado, {\"timeout\": 100}"}
-{"level":30,"time":"2021-10-31T23:45:38.063Z","pid":139040,"hostname":"VHSJP1977N","msg":"unparsed args: e => e.disabled, id=exameObservacao, {\"timeout\": 100}"}
-{"level":30,"time":"2021-10-31T23:46:04.037Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-10-31T23:46:04.037Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-10-31T23:46:04.037Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-10-31T23:46:04.051Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-10-31T23:46:04.051Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-10-31T23:46:04.051Z","pid":139040,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T00:25:00.000Z","pid":130677,"hostname":"VHSJP1977N","msg":"Listening on 41905"}
+{"level":30,"time":"2021-11-03T00:25:00.456Z","pid":130677,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-03T00:25:00.469Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T00:25:00.633Z","pid":130677,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-03T00:25:00.634Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T00:25:23.383Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T00:25:23.384Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T00:25:23.384Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T00:25:23.406Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T00:25:23.407Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T00:25:23.407Z","pid":130677,"hostname":"VHSJP1977N","msg":"Changed active page"}

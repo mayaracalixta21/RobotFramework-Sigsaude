@@ -1,8 +1,8 @@
-{"level":30,"time":"2021-11-03T02:59:40.992Z","pid":160760,"hostname":"VHSJP1977N","msg":"Listening on 43081"}
-{"level":30,"time":"2021-11-03T02:59:41.373Z","pid":160760,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-03T02:59:41.384Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-03T02:59:41.549Z","pid":160760,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-03T02:59:41.550Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T03:10:13.552Z","pid":163362,"hostname":"VHSJP1977N","msg":"Listening on 59065"}
+{"level":30,"time":"2021-11-03T03:10:13.910Z","pid":163362,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-03T03:10:13.923Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T03:10:14.073Z","pid":163362,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-03T03:10:14.073Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active page"}
 ================= Original suppressed error =================
 { page.click: Timeout 10000ms exceeded.
 =========================== logs ===========================
@@ -176,17 +176,25 @@ retrying click action, attempt #20
   <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
 retrying click action, attempt #21
   waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (821.23,483)
+  <iframe width="300" id="editorE" height="380" name="edit…></iframe> from <div class="page">…</div> subtree intercepts pointer events
+retrying click action, attempt #22
+  waiting 500ms
 ============================================================
     at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
     at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
     at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
     at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
 =============================================================
-{"level":30,"time":"2021-11-03T03:00:24.420Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-03T03:00:24.421Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-03T03:00:24.421Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-03T03:00:24.432Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-03T03:00:24.432Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T03:10:56.116Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T03:10:56.117Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T03:10:56.117Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T03:10:56.123Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T03:10:56.123Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active page"}
 ================= Original suppressed error =================
 { page.bringToFront: Target page, context or browser has been closed
     at BrowserState.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
@@ -213,9 +221,9 @@ retrying click action, attempt #21
     at /home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
     at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12) name: 'Error' }
 =============================================================
-{"level":30,"time":"2021-11-03T03:00:24.465Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-03T03:00:24.466Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-03T03:00:24.466Z","pid":160760,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-03T03:10:56.162Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-03T03:10:56.162Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-03T03:10:56.162Z","pid":163362,"hostname":"VHSJP1977N","msg":"Changed active page"}
 ================= Original suppressed error =================
 { page.bringToFront: Target page, context or browser has been closed
     at BrowserState.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)

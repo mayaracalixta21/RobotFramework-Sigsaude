@@ -263,7 +263,7 @@ Exames preescritos
     Click            xpath=${procedimento_antes}
     Type Text        xpath=${procedimento_depois}      ANÁLISE DE PROJETOS BÁSICOS DE ARQUITETURA
     Sleep            3s
-    Click            id=bs-select-7
+   #Refatorar Click            id=bs-select-7-0
     Type Text                      id=${elementos_aten_json["Informações adicionais sobre a requisição"]}                  Teste automatizado
     Select Options By              id=${elementos_aten_json["Campo adicionar exame"]}            Text         CPF
     Repeat Keyword  2	  Repetidor "Adicionar campo exame" 

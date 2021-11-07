@@ -22,6 +22,7 @@ Verificar se campos estão vazios
             ${campo_verificar}      Get Text                      id=${elementos_aten_json["${lista_campos}[${contador2}]"]}     
             ${aux}                  campos vazios                 ${campo_verificar}
             adicionar lista                 ${aux}
+            Log to console      Campo vazio:${aux}
         END
         @{aux2}          recuperar lista  
         FOR         ${contador2}     IN RANGE    0   ${tam}

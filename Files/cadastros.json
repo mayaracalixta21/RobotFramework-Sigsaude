@@ -84,6 +84,48 @@
 			"impressaoDiagnosticaCompatilhada":"Teste automatizado"
 		}
 
+	],
+
+	"Medidas e sinais vitais":[
+		{
+			"inputPeso":"90",
+			"inputAltura":"150",
+			"inputTemperatura":"100",
+			"inputFrequenciaRespiratoria":"100",
+			"inputFrequenciaCardiaca":"100",
+			"inputPressaoSistolica":"100",
+			"inputPressaoDiastolica":"100",
+			"inputSaturacaoO2":"100",
+			"inputGlicemia":"100"
+		}
+
+	],
+	"Procedência do usuário do serviço":[
+		{
+			"textareaMotivoConsulta":"Teste automatizado"
+		}
+
+	],
+
+	"História clínica":[
+		{
+			"textareaDescricaoTratamento":"Teste automatizado"		}
+
+	],
+	"Alergias":[
+		{
+			"inputPossuiAlergiasDescricao":"Teste automatizado"
+		}
+
+	],
+	"Situação familiar e econômica":[
+		{
+			"quantidadeDeMoradores":"20",
+			"quantidadeTrabalhadores":"10",
+			"quantidadeSalarios":"5000"
+		}
+
 	]
 }
+
 

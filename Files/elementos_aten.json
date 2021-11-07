@@ -12,7 +12,9 @@
 
     "Avançar":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[3]/div/button[2]",
     "Avançar step":"nextBtn",
-    
+    "Avançar conduta":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[3]/div/button[2]",
+    "Avançar evolução":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[3]/div/button[2]",
+
     "Dados de diagnóstico":"dd",
 
     "Possui HAS?":"has",
@@ -53,7 +55,7 @@
     "Remover diagnóstico definido":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[6]/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/button",
 
     "Cadastrar":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[3]/div/button[2]",
-
+    "Cadastrar conduta":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[3]/div/button[2]",
 
     "Conduta terapêutica":"ct",
     "Decrição":"descricaoCt",
@@ -79,10 +81,95 @@
     "Informações adicionais sobre a requisição":"informacoesAdicionaisSobreRequisicao",
     "Campo adicionar exame":"camposE",
     "Adicionar campo exame":"btnAddE",
-    "Salvar exame":"buttonSalvarE"
+    "Salvar exame":"buttonSalvarE",
 
 
+    "Hora do Atendimento":"horaAtendimentoAtestadoCt",
+    "Dias de repouso":"diasRepousoAtestadoCt",
+    "Adicionar o CID ao atestado":"selectAddCidAtestado",
+    "Remover atestado":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[2]/div[1]/div[2]/div[11]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr/td[4]/a[2]",
+    "Evolução":"e",
+    "Data procedimento":"dataProcedimento",
+    "Hora de início":"horaInicioProcedimento",
+    "Hora de término":"horaTerminoProcedimento",
+    "Descrição evolução":"descricaoProcedimento",
+    "Material usado":"materialProcedimento",
+    "Adicionar procedimento":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[1]/div/div[2]/div[2]/div/div[6]/div/div[1]/button",
+    "Remover procedimento":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[1]/div/div[3]/div[1]/div/div/div/div[2]/div/table/tbody/tr/td[7]/a",
+    
+    "Descrição do documento":"descricaoDocumentoPertinenteEV",
+    "Documento":"documentoPertinenteEV",
+    "Adicionar documento":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div/div[1]/button",
+    "Remover documento":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[2]/div/div[3]/div/div/div/div/div[2]/div/table/tbody/tr/td[3]/a[2]",
+    "Cadastrar evolução":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[3]/div/button[2]",
+    
+    "Dados básicos":"dbs",
 
+    "Atualizar dados básicos":"atualizarDadosBtn",
+    "Peso":"inputPeso",
+    "Altura":"inputAltura",
+    "Temperatura":"inputTemperatura",
+    "Frequência respiratória":"inputFrequenciaRespiratoria",
+    "Frequência cardíaca":"inputFrequenciaCardiaca",
+    "PA sistólica":"inputPressaoSistolica",
+    "PA diastólica":"inputPressaoDiastolica",
+    "Saturação de Oxigênio":"inputSaturacaoO2",
+    "Glicemia Capilar":"inputGlicemia",
 
+    "Avançar DBS":"/html/body/div[1]/div[2]/div/div[2]/section/div[1]/div[6]/div/div/div/div/div/div/div/form/div[4]/div",
+
+    "Tipo de Iniciativa":"selectTipoProcedencia",
+    "Motivo da consulta":"textareaDescricaoTratamento",
+    "Descrição do tratamento prévio":"textareaDescricaoTratamento",
+    
+    "Utiliza medicamentos":"utilizaMedicamentos",
+    "Medicamento":"inputMedicamento0",
+    "Informações adicionais":"inputMedicamentoInformacoesAdicionais0",
+    "Adicionar medicamento":"buttonAddMedicamento0",
+    "Utiliza suplementos":"utilizaSuplementos",
+    "Suplemento":"inputSuplemento0",
+    "Descrição":"inputSuplementoDescricao0",
+    "Adicionar suplemento":"buttonAddSuplemento0",
+
+    "Possui alergias":"selectPossuiAlergias",
+    "Causa da alergia":"selectPossuiAlergiasCausa",
+    "Descrição da alergia":"inputPossuiAlergiasDescricao",
+    "Adicionar alergia":"buttonPossuiAlergias",
+
+    "Pratica atividade física":"praticaAtividadeFisica",
+    "Descrição da atividade física":"descricaoAtividadeFisica",
+
+    "Situação":"selectTabagismoSituacao",
+    "Tempo que é fumante":"inputTabagismoSituacaoTempoFumante",
+    "Tipo":"selectTabagismoSituacaoTipo",
+    "Quantidade diária":"inputTabagismoSituacaoQuatidadeDiaria",
+    "Outro":"inputTabagismoTipoOutroTipo",
+
+    "Possui doença previamente diagnosticada":"possuDoencaDiagnosticada",
+    "Adicionar história":"buttonAddDiagnostico0",
+
+    "Grau de parentesco":"selectGrauParentesco0",
+    "Outro parente":"inputOutroParente0",
+    "Descrição da doença":"inputNomeDoencaHistorico0",
+
+    "Observações adicionais":"textareaObservacoesAdicionais",
+
+    "Salvar DBS":"/html/body/div[1]/div[2]/div/div/section/div[1]/div[6]/div/div/div/div/div/div/div/form/div[4]/div/button[2]",
+
+    "Dados socioeconômicos":"ds",
+    "Atualizar dados socioeconômicos":"atualizarDadosBtn",
+
+    "Possui benefício social":"possuiBeneficioSocial",
+
+    "Alfabetizado":"/html/body/div[1]/div[2]/div/div/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/form/div[3]/div[2]/div[2]/div[1]/div/label[2]/span",
+    "Grau de escolaridade":"grauEscolaridade",
+    "Instituição de Ensino":"instituicao",
+    "Série/Ano":"serieAno",
+    "Curso":"curso",
+    "Outra profissão":"outraProfissao",
+    "Outra Ocupação Atual":"outraOcupacao",
+
+    "Informações adicionais DS":"informacoesAdicionais",
+    "Salvar DS":"/html/body/div[1]/div[2]/div/div/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/form/div[4]/div/button[2]"
 
 }

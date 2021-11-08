@@ -8,32 +8,34 @@ Resource            ${EXECDIR}/Resources/variaveis.robot
 Library     FakerLibrary        locale=pt_BR
 
 ***Variables***   
-${identificador_hipotese_antes}=            //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/button/div/div
-${identificador_hipotese_depois}=           //*[@id="groupHipoteseDiagnosticada"]/div/div[1]/div/div[1]/input
-${identificador_definido_antes}=            //*[@id="groupDiagnosticoDefinido"]/div/div[1]/button/div/div/div
-${identificador_definido_depois}=           //*[@id="groupDiagnosticoDefinido"]/div/div[1]/div/div[1]/input
-${adicionar_encaminhamento}=                //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[2]/div[1]/div/a[1]
+${identificador_hipotese_antes}=            //*[@id="groupHipoteseDiagnosticada"]/div[1]/button/div/div/div
+${identificador_hipotese_depois}=           //*[@id="groupHipoteseDiagnosticada"]/div[1]/div/div[1]/input
+
+${identificador_definido_antes}=            //*[@id="groupDiagnosticoDefinido"]/div[1]/button/div/div/div
+${identificador_definido_depois}=           //*[@id="groupDiagnosticoDefinido"]/div[1]/div/div[1]/input
+                                            
+${adicionar_encaminhamento}=                //*[@id="multistepFormCt"]/div[2]/div[1]/div[8]/div[2]/div[1]/div/a[1]
 ${serviço_de_destino_antes}=                //*[@id="divBuscaServico"]/div[1]/button/div/div/div
 ${serviço_de_destino_depois}=               //*[@id="divBuscaServico"]/div[1]/div/div[1]/input
 ${modalidade_de_atendimento_antes}=         //*[@id="divBuscaModalidade"]/div[1]/button/div/div/div
 ${modalidade_de_atendimento_depois}=        //*[@id="divBuscaModalidade"]/div[1]/div/div[1]/input
 
-${adicionar_receituário}=                   //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[5]/div[1]/div/a[1]
+${adicionar_receituário}=                   //*[@id="multistepFormCt"]/div[2]/div[1]/div[8]/div[3]/div[1]/div/a[1]
 
-${adicionar_exame}=                         //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[8]/div[1]/div/a[1]
+${adicionar_exame}=                         //*[@id="multistepFormCt"]/div[2]/div[1]/div[8]/div[4]/div[1]/div/a[1]
 ${procedimento_antes}=                      //*[@id="divBuscaProcedimento"]/div[1]/button/div/div/div
 ${procedimento_depois}=                     //*[@id="divBuscaProcedimento"]/div[1]/div/div[1]/input
 
 
-${adicionar_atestado}=                      //*[@id="multistepFormCt"]/div[2]/div[1]/div[2]/div[11]/div/div[2]/div/div[1]/div[5]/button
+${adicionar_atestado}=                      //*[@id="multistepFormCt"]/div[2]/div[1]/div[8]/div[5]/div/div[2]/div/div[1]/div[5]/button
 ${atestado_antes}=                          //*[@id="divBuscaCid10AtestadoCt"]/div[1]/button/div/div/div
 ${atestado_depois}=                         //*[@id="divBuscaCid10AtestadoCt"]/div[1]/div/div[1]/input
 
-${doença_antes}=                             //*[@id="buscaDoencaDiv"]/div/div[1]/button/div/div/div
-${doença_depois}=                            //*[@id="buscaDoencaDiv"]/div/div[1]/div/div[1]/input
+${doença_antes}=                             //*[@id="buscaDoencaDiv"]/div[1]/button/div/div/div
+${doença_depois}=                            //*[@id="buscaDoencaDiv"]/div[1]/div/div[1]/input
 
-${grupo_antes}=                            //*[@id="historicoFamiliar0"]/div[4]/div/div[1]/button/div/div/div
-${grupo_depois}=                           //*[@id="historicoFamiliar0"]/div[4]/div/div[1]/div/div[1]/input
+${grupo_antes}=                            //*[@id="historicoFamiliar0"]/div[3]/div[1]/button/div/div/div
+${grupo_depois}=                           //*[@id="historicoFamiliar0"]/div[3]/div[1]/div/div[1]/input
 
 ${bene_antes}=                              //*[@id="multistepFormDS"]/div[3]/div[1]/div[3]/div[2]/div[1]/button/div/div/div
 ${bene_todos}=                              //*[@id="multistepFormDS"]/div[3]/div[1]/div[3]/div[2]/div[1]/div/div[2]/div/button[1]
@@ -58,9 +60,9 @@ iniciar atendimento
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
     Click                          css=${elementos_aten_json["Atendimento"]}  
     Wait For Elements State        css=${elementos_aten_json["Tela de aviso"]}                   visible            6s
-    #FOR    ${contador}    IN RANGE    1   3
+    FOR    ${contador}    IN RANGE    1   3
         Click                          css=${elementos_aten_json["Sim"]} 
-    #END
+    END
 
 informar dados socioeconômicos
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
@@ -205,7 +207,7 @@ História patológica pregressa
     Sleep                           5s
     Click                           xpath=//*[@id="bs-select-10"]/ul/li[1]
     Click                           id=${elementos_aten_json["Adicionar história"]}
-    Click                          id=stepDBS9
+    Click                            id=stepDBS9
     Histórico médico familiar
 
 Histórico médico familiar
@@ -310,19 +312,20 @@ informar dados do step "${step}"
 
 remover item da tabela "${campo}"
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
-    IF      '${campo}' == 'Remover exame'
-        Click                          css=${elementos_aten_json["${campo}"]}
-    ELSE 
+    #IF      '${campo}' == 'Remover exame'
+     #   Click                          css=${elementos_aten_json["${campo}"]}
+    #ELSE 
         Click                          xpath=${elementos_aten_json["${campo}"]} 
-    END
+    #END
     Wait For Elements State        css=${elementos_aten_json["Tela de aviso"]}                   visible         6s   
     Click                          css=${elementos_aten_json["Sim"]} 
 
 Adicionar item na tabela "${item}"
     ${elementos_aten_json}         Get JSON                 elementos_aten.json
-     IF      '${item}' == 'Adicionar exame'
-        Click                          css=${elementos_aten_json["${item}"]}
-    ELSE IF    '${item}' == 'Adicionar glicemia'
+     #IF      '${item}' == 'Adicionar exame'
+      #  Click                          css=${elementos_aten_json["${item}"]}
+    #ELSE 
+    IF    '${item}' == 'Adicionar glicemia'
         Click                          id=${elementos_aten_json["${item}"]}
     ELSE                                                      
         Click                          xpath=${elementos_aten_json["${item}"]} 
@@ -429,14 +432,14 @@ Encaminhamento
     Type Text        xpath=${modalidade_de_atendimento_depois}                  ANALISES CLINICAS
     Sleep            2s
     Click            id=bs-select-6-0
-    Select Options By              id=${elementos_aten_json["Campo para adicionar"]}            Text          CPF
+    Select Options By              id=${elementos_aten_json["Campo para adicionar"]}            Text          NOME
     #Type Text       id=${elementos_aten_json["Editor histórico clínico"]}             Teste automatizado
     Repeat Keyword	2	  Repetidor "Adicionar campo"  
-    Select Options By              id=${elementos_aten_json["Campo para adicionar dúvidas"]}        Text        CPF
+    Select Options By              id=${elementos_aten_json["Campo para adicionar dúvidas"]}        Text        NOME
     Repeat Keyword	2	  Repetidor "Adicionar campo dúvidas"  
     #Type Text       id=${elementos_aten_json["Editor dúvidas"]}             Teste automatizado
     Click           id=${elementos_aten_json["Salvar encaminhamento"]}
-    Imprimir comprovante "Sim"
+    Imprimir comprovante "Não"
     #Download de arquivos 
 #Fluxo de remover e editar implementação 
 
@@ -445,10 +448,10 @@ Receituário de medicamentos
     Click                          xpath=${adicionar_receituário}
     Select Options By              id=${elementos_aten_json["Tipo da receita"]}                    Text         NORMAL
     Type Text                      id=${elementos_aten_json["Descrição resumida"]}                  Teste automatizado
-    Select Options By              id=${elementos_aten_json["Campos adicionar"]}        Text        CPF
+    Select Options By              id=${elementos_aten_json["Campos adicionar"]}        Text        NOME
     Repeat Keyword	2	  Repetidor "Adicionar campo receituario" 
     Click           id=${elementos_aten_json["Salvar receita"]}
-    Imprimir comprovante "Sim"
+    Imprimir comprovante "Não"
        
 Exames preescritos
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
@@ -459,10 +462,10 @@ Exames preescritos
     Sleep            5s
     Click            xpath=//*[@id="bs-select-7"]/ul/li[1]
     Type Text                      id=${elementos_aten_json["Informações adicionais sobre a requisição"]}                  Teste automatizado
-    Select Options By              id=${elementos_aten_json["Campo adicionar exame"]}            Text         CPF
+    Select Options By              id=${elementos_aten_json["Campo adicionar exame"]}            Text         NOME
     Repeat Keyword  2	  Repetidor "Adicionar campo exame" 
     Click              id=${elementos_aten_json["Salvar exame"]}
-    Imprimir comprovante "Sim"
+    Imprimir comprovante "Não"
     Adcionar novo exame "Não"
     
        
@@ -528,7 +531,7 @@ Relato de procedimento
         Type Text                       id=${elementos_aten_json["Hora de término"]}                       1100
         Type Text                       id=${elementos_aten_json["Descrição evolução"]}            Teste automatizado
         Type Text                       id=${elementos_aten_json["Material usado"]}               Teste automatizado
-        Click            xpath=${elementos_aten_json["Adicionar procedimento"]}
+        Click                           css=button[onclick='adicionarRelatoProcedimento()']
         IF  '${cont}'=='1'
             remover item da tabela "Remover procedimento"
         END
@@ -542,7 +545,7 @@ Documentação pertinente
     FOR    ${cont}       IN RANGE    1   3
         Type Text                       id=${elementos_aten_json["Descrição do documento"]}                    Teste automatizado
         Upload de arquivos 
-        Click            xpath=${elementos_aten_json["Adicionar documento"]}
+        Click            css=button[onclick='addDocumentoPertinenteEV()']
         IF  '${cont}'=='1'
             remover item da tabela "Remover documento"
         END

@@ -28,16 +28,16 @@
     "Outro exame":"exameOutro",
     "Resultado":"exameResultado",
     "Observação":"exameObservacao",
-    "Adicionar exame":"button[title='Adicionar exame']",
-    "Remover exame":"a[class='btn-sigsaude btnCorRemover']",
+    "Adicionar exame":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[4]/div/div[2]/div[6]/button",
+    "Remover exame":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[4]/div/div[3]/div/div[1]/div/div/div[2]/div/table/tbody/tr/td[4]/a",
 
     "Data":"dataMpPDd",
     "Manhã1":"manha1Dd",
     "Manhã2":"manha2Dd",
     "Noite1":"noite1Dd",
     "Noite2":"noite2Dd",
-    "Adicionar medição":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[5]/div/div[2]/div[6]/div/div[1]/button",
-    "Remover medição":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[5]/div/div[3]/div/div/div[2]/div/table/tbody/tr/td[6]/a",
+    "Adicionar medição":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[5]/div/div[2]/div[1]/div[6]/button",
+    "Remover medição":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[5]/div/div[2]/div[2]/div/div/div[2]/div/table/tbody/tr/td[6]/a",
 
     "Data glicemia":"dataControleGlicemia",
     "Medida glicemia":"medidaControleGlicemia",
@@ -49,8 +49,8 @@
 
     "Hipótese diagnóstica antes":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[3]/div/div[4]/div/div/div[1]/button/div/div/div",
     "Diagnóstico definido":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[5]/div/div[3]/div/div/div[1]/button/div/div/div",
-    "Adicionar hipótese diagnóstica":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[3]/div/div[3]/div/div/div[2]/button",
-    "Adicionar diagnóstico definido":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[5]/div/div[2]/div/div/div[2]/button",
+    "Adicionar hipótese diagnóstica":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[3]/div/div[3]/div[2]/a",
+    "Adicionar diagnóstico definido":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[5]/div/div[2]/div[2]/button",
     "Remover hipótese diagnóstica":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[4]/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/button",
     "Remover diagnóstico definido":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[3]/div/div/div/form/div[2]/div[8]/div/div[6]/div/div/div/div/div[2]/div/table/tbody/tr/td[2]/button",
 
@@ -87,14 +87,14 @@
     "Hora do Atendimento":"horaAtendimentoAtestadoCt",
     "Dias de repouso":"diasRepousoAtestadoCt",
     "Adicionar o CID ao atestado":"selectAddCidAtestado",
-    "Remover atestado":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[2]/div[1]/div[2]/div[11]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr/td[4]/a[2]",
+    "Remover atestado":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[4]/div/div/div[1]/form[6]/div[2]/div[1]/div[8]/div[5]/div/div[2]/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr/td[4]/a[2]",
     "Evolução":"e",
     "Data procedimento":"dataProcedimento",
     "Hora de início":"horaInicioProcedimento",
     "Hora de término":"horaTerminoProcedimento",
     "Descrição evolução":"descricaoProcedimento",
     "Material usado":"materialProcedimento",
-    "Adicionar procedimento":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[1]/div/div[2]/div[2]/div/div[6]/div/div[1]/button",
+    "Adicionar procedimento":"/html/body/div[1]/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[1]/div/div[2]/div[2]/div/div[6]/div/div[1]/button",
     "Remover procedimento":"/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[2]/div[1]/div/div[3]/div[1]/div/div/div/div[2]/div/table/tbody/tr/td[7]/a",
     
     "Descrição do documento":"descricaoDocumentoPertinenteEV",
@@ -154,7 +154,7 @@
 
     "Observações adicionais":"textareaObservacoesAdicionais",
 
-    "Salvar DBS":"/html/body/div[1]/div[2]/div/div/section/div[1]/div[6]/div/div/div/div/div/div/div/form/div[4]/div/button[2]",
+    "Salvar DBS":"/html/body/div[1]/div[2]/div/div/section/div[1]/div[5]/div/div/div/div/div/div/div/form/div[4]/div/button[2]",
 
     "Dados socioeconômicos":"ds",
     "Atualizar dados socioeconômicos":"atualizarDadosBtn",

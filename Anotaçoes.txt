@@ -36,3 +36,6 @@ Puxar alterações
     
 Resetar commits local
     git reset HEAD~1
+
+ git remote -v
+ git remote remove origin

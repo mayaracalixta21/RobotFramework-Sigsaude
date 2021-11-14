@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"level":30,"time":"2021-11-08T01:25:47.678Z","pid":77653,"hostname":"VHSJP1977N","msg":"Listening on 44099"}
 {"level":30,"time":"2021-11-08T01:25:48.063Z","pid":77653,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
 {"level":30,"time":"2021-11-08T01:25:48.074Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
@@ -332,6 +333,13 @@ waiting for selector "xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/di
 {"level":30,"time":"2021-11-08T01:28:08.889Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
 {"level":30,"time":"2021-11-08T01:28:09.006Z","pid":77653,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
 {"level":30,"time":"2021-11-08T01:28:09.006Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+=======
+{"level":30,"time":"2021-11-08T01:18:34.785Z","pid":73373,"hostname":"VHSJP1977N","msg":"Listening on 51595"}
+{"level":30,"time":"2021-11-08T01:18:35.180Z","pid":73373,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T01:18:35.191Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:18:35.341Z","pid":73373,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T01:18:35.341Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changed active page"}
+>>>>>>> 96baa42a80403059d3d10b56ffc8540ea8bce7ed
 ================= Original suppressed error =================
 { page.click: Timeout 10000ms exceeded.
 =========================== logs ===========================
@@ -342,9 +350,18 @@ waiting for selector "css=a[class='atendimento btn-sigsaude btnCorAtendimento']"
     at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
     at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
 =============================================================
+<<<<<<< HEAD
 {"level":30,"time":"2021-11-08T01:28:29.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
 {"level":30,"time":"2021-11-08T01:28:29.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
 {"level":30,"time":"2021-11-08T01:28:29.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
 {"level":30,"time":"2021-11-08T01:28:29.416Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
 {"level":30,"time":"2021-11-08T01:28:29.416Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
 {"level":30,"time":"2021-11-08T01:28:29.416Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+=======
+{"level":30,"time":"2021-11-08T01:18:57.373Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:18:57.373Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:18:57.373Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:18:57.393Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:18:57.393Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:18:57.393Z","pid":73373,"hostname":"VHSJP1977N","msg":"Changed active page"}
+>>>>>>> 96baa42a80403059d3d10b56ffc8540ea8bce7ed

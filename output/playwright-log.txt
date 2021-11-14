@@ -1,11 +1,350 @@
-{"level":30,"time":"2021-11-07T23:13:36.343Z","pid":34745,"hostname":"VHSJP1977N","msg":"Listening on 47017"}
-{"level":30,"time":"2021-11-07T23:13:36.700Z","pid":34745,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-07T23:13:36.709Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-07T23:13:36.868Z","pid":34745,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-07T23:13:36.868Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-07T23:14:17.105Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-07T23:14:17.106Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-07T23:14:17.106Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-07T23:14:17.150Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-07T23:14:17.150Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-07T23:14:17.150Z","pid":34745,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:25:47.678Z","pid":77653,"hostname":"VHSJP1977N","msg":"Listening on 44099"}
+{"level":30,"time":"2021-11-08T01:25:48.063Z","pid":77653,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T01:25:48.074Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:25:48.228Z","pid":77653,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T01:25:48.228Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:25:58.450Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:25:58.450Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:25:58.450Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:25:58.497Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:25:58.498Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:25:58.498Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:25:59.001Z","pid":77653,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T01:25:59.009Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:25:59.134Z","pid":77653,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T01:25:59.134Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+================= Original suppressed error =================
+{ page.fill: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "id=inputCEP"
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+=============================================================
+{"level":30,"time":"2021-11-08T01:26:29.935Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:29.960Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:29.985Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.011Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.035Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.059Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.083Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.110Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.137Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.163Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.187Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.214Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.240Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.269Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.296Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.320Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.343Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.367Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.388Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.412Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.434Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.459Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.482Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.508Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.532Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.553Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.576Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.598Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.620Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.641Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.664Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.686Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.710Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.735Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.761Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.784Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.808Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.834Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.855Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.882Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.902Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.924Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:30.947Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:35.885Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:35.911Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:35.939Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:35.964Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:35.993Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.020Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.049Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.071Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.093Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.116Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.141Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.165Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.187Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.211Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.233Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.256Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.294Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.319Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.348Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.370Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.394Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.417Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.439Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.463Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.486Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.509Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.532Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.553Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.576Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.598Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.621Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.647Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.672Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.701Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.730Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.753Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.778Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.801Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.830Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.854Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.875Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:36.898Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.606Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.632Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.653Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.674Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.697Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.718Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.738Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.760Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.783Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.803Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.827Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.863Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.887Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.910Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.932Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.953Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.974Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:41.997Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.020Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.042Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.065Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.087Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.107Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.130Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.156Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.179Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.203Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.227Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.253Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.277Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.300Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.320Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.342Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.365Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.387Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.407Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.431Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.453Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.475Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.496Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.517Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.537Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.560Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.580Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.601Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:42.622Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:45.872Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:45.894Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:45.918Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:45.938Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:45.959Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:45.986Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.015Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.038Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.061Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.083Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.103Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.126Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.148Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.169Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.193Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.217Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.238Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.260Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.282Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.309Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.336Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.370Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.399Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.460Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.520Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.561Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.598Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.632Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.664Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.696Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.727Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.761Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.795Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.820Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.855Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:46.922Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:50.781Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.802Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.824Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.846Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.868Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.888Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.907Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.927Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.947Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.972Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:50.991Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.014Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.036Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.055Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.084Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.104Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.127Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.147Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.184Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.205Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.225Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.248Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções"}
+{"level":30,"time":"2021-11-08T01:26:51.331Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tTipo Vínculo\tAções\nNenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.339Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.360Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.380Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.421Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.440Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.461Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.484Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.506Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.527Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.548Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.570Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.590Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.610Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.657Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.681Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.704Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.725Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.745Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.766Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.786Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.807Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.827Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.846Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.866Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.886Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.907Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.928Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.949Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.969Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:54.989Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.020Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.046Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.067Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.086Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.106Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.125Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.145Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.165Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.184Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.207Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.227Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.247Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.269Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.320Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.346Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr > td:nth-child(1) containing Nenhum registro encontrado"}
+{"level":30,"time":"2021-11-08T01:26:55.481Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:26:55.481Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:26:55.481Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:26:55.500Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:26:55.500Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:26:55.500Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:26:55.988Z","pid":77653,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T01:26:55.994Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:26:56.129Z","pid":77653,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T01:26:56.129Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:27:12.452Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr:nth-child(1) > td.sorting_1 containing DANI TARGARYEN COLABORADOR"}
+{"level":30,"time":"2021-11-08T01:27:16.893Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr:nth-child(1) > td.sorting_1 containing DANI TARGARYEN COLABORADOR"}
+{"level":30,"time":"2021-11-08T01:27:19.746Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr:nth-child(1) > td.sorting_1 containing DANI TARGARYEN COLABORADOR"}
+{"level":30,"time":"2021-11-08T01:27:22.237Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
+{"level":30,"time":"2021-11-08T01:27:22.278Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
+{"level":30,"time":"2021-11-08T01:27:22.313Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
+{"level":30,"time":"2021-11-08T01:27:22.341Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
+{"level":30,"time":"2021-11-08T01:27:22.397Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
+{"level":30,"time":"2021-11-08T01:27:22.445Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
+{"level":30,"time":"2021-11-08T01:27:22.544Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções\nNENHUM REGISTRO ENCONTRADO"}
+{"level":30,"time":"2021-11-08T01:27:25.436Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element css=#dataTable > tbody > tr:nth-child(1) > td.sorting_1 containing DANI TARGARYEN COLABORADOR"}
+{"level":30,"time":"2021-11-08T01:27:28.380Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:27:28.380Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:27:28.380Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:27:28.395Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:27:28.396Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:27:28.396Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:27:28.914Z","pid":77653,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T01:27:28.922Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:27:29.080Z","pid":77653,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T01:27:29.080Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:27:41.961Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=nomemes containing Novembro de 2021"}
+================= Original suppressed error =================
+{ page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//*[@id="cfg_atendimento"]/button"
+  selector resolved to hidden <button type="button" data-value="" data-toggle="dropdow…>↵                                Tipo Atendimento…</button>
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+=============================================================
+{"level":30,"time":"2021-11-08T01:27:57.404Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=nomemes containing Novembro de 2021"}
+{"level":30,"time":"2021-11-08T01:27:57.557Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element id=nomemes containing Outubro de 2021"}
+{"level":30,"time":"2021-11-08T01:27:57.949Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element xpath=//*[@id=\"calendar\"]/div/div/table/tbody/tr/td/div/div/div[1]/div[2]/table/thead/tr/td[3]/a containing 28"}
+{"level":30,"time":"2021-11-08T01:27:57.977Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element xpath=//*[@id=\"calendar\"]/div/div/table/tbody/tr/td/div/div/div[2]/div[2]/table/thead/tr/td[3]/a containing 5"}
+{"level":30,"time":"2021-11-08T01:27:57.996Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element xpath=//*[@id=\"calendar\"]/div/div/table/tbody/tr/td/div/div/div[3]/div[2]/table/thead/tr/td[3]/a containing 12"}
+{"level":30,"time":"2021-11-08T01:27:58.015Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element xpath=//*[@id=\"calendar\"]/div/div/table/tbody/tr/td/div/div/div[4]/div[2]/table/thead/tr/td[3]/a containing 19"}
+{"level":30,"time":"2021-11-08T01:27:58.049Z","pid":77653,"hostname":"VHSJP1977N","msg":"Retrieved text for element xpath=//*[@id=\"calendar\"]/div/div/table/tbody/tr/td/div/div/div[5]/div[2]/table/thead/tr/td[3]/a containing 26"}
+================= Original suppressed error =================
+{ page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[5]/div[2]/table/tbody/tr[1]/td[3]/a/div/div"
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+=============================================================
+{"level":30,"time":"2021-11-08T01:28:08.298Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:28:08.298Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:28:08.298Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:28:08.315Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:28:08.315Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:28:08.315Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:28:08.883Z","pid":77653,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T01:28:08.889Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:28:09.006Z","pid":77653,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T01:28:09.006Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+================= Original suppressed error =================
+{ page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=a[class='atendimento btn-sigsaude btnCorAtendimento']"
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+=============================================================
+{"level":30,"time":"2021-11-08T01:28:29.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:28:29.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:28:29.400Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T01:28:29.416Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T01:28:29.416Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T01:28:29.416Z","pid":77653,"hostname":"VHSJP1977N","msg":"Changed active page"}

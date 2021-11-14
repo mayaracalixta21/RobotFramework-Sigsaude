@@ -32,16 +32,16 @@ informar os dados do "${tela}"
                     Type Text               id=${key}          ${cpf}
                     Set Global Variable     ${cpf}
                
-                ELSE IF     '${key}' == 'inputNascimentoStr'
-                    ${dia_u}             FakerLibrary.Day Of Month
-                    ${mes_u}                  FakerLibrary.Month
-                    ${ano_u}                  FakerLibrary.Year
-
-                    IF  ${ano_u} >= 2002
-                        ${ano_u}    Set Variable        1990
-                    END
-                        Type Text         id=${key}           ${dia_u}${mes_u}${ano_u}
-             
+               # ELSE IF     '${key}' == 'inputNascimentoStr'
+               #     ${dia_u}             FakerLibrary.Day Of Month
+               #     ${mes_u}                  FakerLibrary.Month
+               #     ${ano_u}                  FakerLibrary.Year
+#
+               #     IF  ${ano_u} >= 2002
+               #         ${ano_u}    Set Variable        1990
+               #     END
+               #         Type Text         id=${key}           ${dia_u}11${ano_u}
+             #
                 #ELSE IF    '${key}' == 'inputNome' or '${key}' == 'inputNomePai' or '${key}' == 'inputNomeMae' or '${key}' == 'inputLogin'
                 #    ${Nomes}            FakerLibrary.Words
                 #    Type Text         id=${key}          ${Nomes}        

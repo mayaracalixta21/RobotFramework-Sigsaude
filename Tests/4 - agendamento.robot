@@ -9,7 +9,7 @@ Suite Setup     iniciar navegador sessão "Psicologia"
 [001] - Realizar agendamento (Completo)
     Dado        que o usuario está na tela "agendamento"    
     E           filtrar "disponiveis"     
-    E           informar o dia:"26", mês:"10" e o ano:"2021" para realizar o agendamento
+    E           informar o dia:"14", mês:"11" e o ano:"2021" para realizar o agendamento
     E           informar o tipo de consulta "Retorno"
     E           informar o usuario de serviço "Mayara teste um"
     E           adicionar observação ao comprovante de agendamento e e-mail 

@@ -6,5 +6,6 @@
     "agendamento":"/agendamento",
     "listar colaborador":"/colaborador",
     "atendimento":"/agenda/",
-    "cadastro de profissão":"/profissao/form"
+    "cadastro de profissão":"/profissao/form",
+    "cadastro de especialidade":"/especialidade/form"
 }

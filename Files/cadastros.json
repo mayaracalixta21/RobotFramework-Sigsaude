@@ -133,7 +133,15 @@
 			"inputSigla":""
 		}
 
+	],
+	"Especialidade":[
+		{
+			"inputDenominacao":"",
+			"inputDescricao":""
+		}
+
 	]
 }
+
 
 

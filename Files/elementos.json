@@ -56,7 +56,11 @@
     "Nível Formação":"selectNivel",
     "Conselho Profissional":"selectConselho",
     "Ocupa_antes":"/html/body/div/div[2]/div/div/section/div/div/div/form/div/div[4]/div[1]/div[4]/div[2]/div/button/div/div/div",
-    "Ocupa_depois":"/html/body/div/div[2]/div/div/section/div/div/div/form/div/div[4]/div[1]/div[4]/div[2]/div/div/div[1]/input"
+    "Ocupa_depois":"/html/body/div/div[2]/div/div/section/div/div/div/form/div/div[4]/div[1]/div[4]/div[2]/div/div/div[1]/input",
+
+    "Profissão":"selectProfissao",
+    "Avançar":"nextBtn",
+    "Finalizar":"nextBtn"
 
 
  

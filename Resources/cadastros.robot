@@ -12,7 +12,9 @@ informar os dados cadastrais "${dados}"
   ${dados}         Set Variable    ${dados_json["${dados}"]}
   FOR              ${item}         IN                         @{dados}
       FOR              ${key}          IN                         @{item.keys()}
-          Type Text        id=${key}       ${item["${key}"]}
+         # Type Text        id=${key}       ${item["${key}"]}
+         ${aux}     FakerLibrary.Word 
+         Type Text        id=${key}         ${aux} 
      END
   END
 

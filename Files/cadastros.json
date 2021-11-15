@@ -125,6 +125,14 @@
 			"quantidadeSalarios":"5000"
 		}
 
+	],
+
+	"Profissão":[
+		{
+			"inputNome":"MedTeste",
+			"inputSigla":"adx"
+		}
+
 	]
 }
 

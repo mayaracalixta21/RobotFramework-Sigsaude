@@ -5,7 +5,6 @@ Resource        ${EXECDIR}/Resources/keywords_atendimento.robot
 
 Suite Setup     iniciar navegador sessão "Endocrinologia" 
 
-*** Settings ***
 Test Timeout    2 minutes
 
 ***Test Cases***
@@ -13,7 +12,7 @@ Test Timeout    2 minutes
 [001] - Realizar atendimento (Completo)
     [Timeout]    10 minute
     Dado        que o usuario está na tela "atendimento" 
-    E           informar o campo "Data da listagem" com o "11112021"
+    E           informar o campo "Data da listagem" com o "15112021"
     Quando      pressionar o botão "Pesquisar"
     Então       iniciar atendimento 
     E           informar dados socioeconômicos

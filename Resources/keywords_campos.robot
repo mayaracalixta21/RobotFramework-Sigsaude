@@ -27,7 +27,7 @@ selecione "${valor}" no campo "${campo}"
    
 clicar em "${botão}" 
     ${elementos_json}         Get JSON                                   elementos.json
-    Click                     css=[name='${elementos_json["${botão}"]}']
+    Click                     css=${elementos_json["${botão}"]}
 
 clicar no "${botão}" 
     ${elementos_json}         Get JSON                                   elementos.json

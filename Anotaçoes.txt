@@ -39,3 +39,4 @@ Resetar commits local
 
  git remote -v
  git remote remove origin
+ 

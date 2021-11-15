@@ -16,11 +16,13 @@
                     "headless:true",
                     "-v",
                     "navegador:chromium",
-                    "/home/m.calixta/Projeto sigsaúde/Tests", // "resources/Financeiro/ContasRec/gerarboleto.robot",
+                    "/home/m.calixta/Projeto sigsaúde/Tests/6 - Profissão.robot",
                 ],
                 "console": "integratedTerminal"
             },
         ],
         "compounds": []
-    }
+    },
+    "editor.fontSize": 14
+
 }

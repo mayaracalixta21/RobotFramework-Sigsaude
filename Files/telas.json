@@ -7,5 +7,6 @@
     "listar colaborador":"/colaborador",
     "atendimento":"/agenda/",
     "cadastro de profissão":"/profissao/form",
-    "cadastro de especialidade":"/especialidade/form"
+    "cadastro de especialidade":"/especialidade/form",
+    "cadastro modalidade":"/modalidadeAtendimento/form"
 }

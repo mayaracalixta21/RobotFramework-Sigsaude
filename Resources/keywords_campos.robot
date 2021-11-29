@@ -96,3 +96,9 @@ o campo "${campo}" deve ser igual a "${valor}"
     ELSE IF     '${campo}' == 'Nome na tabela colaborador'
         Wait For Elements State             xpath=//*[@id="dataTable"]/tbody/tr[1]/td[4]/div/a[1]             visible                    
     END
+
+selecionar opções em "${opção}"
+    ${elementos_json}               Get JSON                elementos.json
+    Click          id=${elementos_json["${opção}"]}  
+    Click          css=${elementos_json["Opções procedimento"]} 
+    

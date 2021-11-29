@@ -140,6 +140,13 @@
 			"inputDescricao":""
 		}
 
+	],
+	"Modalidade":[
+		{
+			"inputDenominacao":"",
+			"inputDescricao":""
+		}
+
 	]
 }
 

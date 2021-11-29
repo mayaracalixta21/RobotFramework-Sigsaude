@@ -16,7 +16,7 @@
                     "headless:true",
                     "-v",
                     "navegador:chromium",
-                    "/home/m.calixta/Projeto sigsaúde/Tests/7 - Especialidade.robot",
+                    "/home/m.calixta/Projeto sigsaúde/Tests/8 - Modalidade.robot",
                 ],
                 "console": "integratedTerminal"
             },

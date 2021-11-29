@@ -60,8 +60,13 @@
 
     "Profissão":"selectProfissao",
     "Avançar":"nextBtn",
-    "Finalizar":"nextBtn"
+    "Finalizar":"nextBtn",
+    "Cadastrar":"nextBtn",
 
+    "Especialidade":"selectEspecialidade",
+    "Procedimento":"selectProcedimentoBorder",
 
+    "Denominação":"inputDenominacao",
+    "Opções procedimento":"#bs-select-1-0 > span.text"
  
 }

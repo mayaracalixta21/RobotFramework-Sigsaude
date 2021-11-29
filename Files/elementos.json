@@ -32,6 +32,7 @@
     "Nome na tabela colaborador":"#dataTable > tbody > tr:nth-child(1) > td.sorting_1",
     "Nenhum registro encontrado":"dataTable",
     "Vínculo":"selectTipoVinculo",
+    "Vínculo Institucional":"selectVinculo",
     "Perfil":"selectPerfil",
     "Observação":"observacao",
     "Mês do agendamento":"nomemes",
@@ -62,11 +63,19 @@
     "Avançar":"nextBtn",
     "Finalizar":"nextBtn",
     "Cadastrar":"nextBtn",
-
+ 
     "Especialidade":"selectEspecialidade",
     "Procedimento":"selectProcedimentoBorder",
 
     "Denominação":"inputDenominacao",
-    "Opções procedimento":"#bs-select-1-0 > span.text"
+    "Opções procedimento":"#bs-select-1-0 > span.text",
+
+    "Nome profissional":"inputNome",
+    "CPF profissional":"inputCPF",
+    "Email":"inputEmail",
+    "Login":"inputLogin",
+
+    "UF ou Região":"ufConselho",
+    "Registro Profissional":"inputIdentidadeProfissional"
  
 }

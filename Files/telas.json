@@ -8,5 +8,6 @@
     "atendimento":"/agenda/",
     "cadastro de profissão":"/profissao/form",
     "cadastro de especialidade":"/especialidade/form",
-    "cadastro modalidade":"/modalidadeAtendimento/form"
+    "cadastro modalidade":"/modalidadeAtendimento/form",
+    "cadastro profissional":"/profissionalSaude/form"
 }

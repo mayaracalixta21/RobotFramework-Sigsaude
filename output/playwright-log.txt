@@ -1,11 +1,11 @@
-{"level":30,"time":"2021-11-29T03:48:24.018Z","pid":14427,"hostname":"VHSJP1977N","msg":"Listening on 60797"}
-{"level":30,"time":"2021-11-29T03:48:24.336Z","pid":14427,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-29T03:48:24.344Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-29T03:48:24.475Z","pid":14427,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-29T03:48:24.475Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-29T03:48:54.486Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-29T03:48:54.487Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-29T03:48:54.487Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-29T03:48:54.504Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-29T03:48:54.504Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-29T03:48:54.504Z","pid":14427,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-29T04:12:28.051Z","pid":20019,"hostname":"VHSJP1977N","msg":"Listening on 42223"}
+{"level":30,"time":"2021-11-29T04:12:28.359Z","pid":20019,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-29T04:12:28.368Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-29T04:12:28.492Z","pid":20019,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-29T04:12:28.492Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-29T04:12:56.879Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-29T04:12:56.879Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-29T04:12:56.879Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-11-29T04:12:56.914Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-11-29T04:12:56.915Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-29T04:12:56.915Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active page"}

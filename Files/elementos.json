@@ -65,6 +65,11 @@
     "Cadastrar":"nextBtn",
  
     "Especialidade":"selectEspecialidade",
+    "Especialidades":"div[id=selectEspecialidadeBorder]",
+    "Inserir especialidade":"#selectEspecialidadeBorder > div > div > div.bs-searchbox > input",
+    
+    "Modalidades":"div[id='selectModalidadesBorder']",
+    "Inserir modalidade":"#selectModalidadesBorder > div > div > div.bs-searchbox > input",
     "Procedimento":"selectProcedimentoBorder",
 
     "Denominação":"inputDenominacao",

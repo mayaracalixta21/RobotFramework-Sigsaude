@@ -102,3 +102,18 @@ selecionar opções em "${opção}"
     Click          id=${elementos_json["${opção}"]}  
     Click          css=${elementos_json["Opções procedimento"]} 
     
+selecionar "${opção}" em "${campo}"
+    ${elementos_json}               Get JSON                elementos.json
+    IF  '${campo}' == 'Especialidades'
+        Click          css=${elementos_json["${campo}"]}
+        Type Text      css=${elementos_json["Inserir especialidade"]}           ${opção}
+        Click          id=bs-select-1-0
+        Click          xpath=//*[@id="multistepForm"]/div[1]/h3
+    ELSE 
+        Click          css=${elementos_json["${campo}"]}
+        Type Text      css=${elementos_json["Inserir modalidade"]}           ${opção}
+        Click          id=bs-select-3-1
+        Click          xpath=//*[@id="multistepForm"]/div[1]/h3
+    END
+
+  

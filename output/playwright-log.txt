@@ -1,11 +1,21 @@
-{"level":30,"time":"2021-11-29T04:12:28.051Z","pid":20019,"hostname":"VHSJP1977N","msg":"Listening on 42223"}
-{"level":30,"time":"2021-11-29T04:12:28.359Z","pid":20019,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-29T04:12:28.368Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-29T04:12:28.492Z","pid":20019,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-29T04:12:28.492Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-29T04:12:56.879Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-29T04:12:56.879Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-29T04:12:56.879Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-11-29T04:12:56.914Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-11-29T04:12:56.915Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-29T04:12:56.915Z","pid":20019,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-12-04T23:49:05.682Z","pid":66704,"hostname":"VHSJP1977N","msg":"Listening on 51149"}
+{"level":30,"time":"2021-12-04T23:49:05.982Z","pid":66704,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-12-04T23:49:05.990Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-12-04T23:49:06.119Z","pid":66704,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-12-04T23:49:06.119Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active page"}
+================= Original suppressed error =================
+{ page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=/html/body/div[2]/div" to be visible
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+=============================================================
+{"level":30,"time":"2021-12-04T23:49:34.777Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-12-04T23:49:34.777Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-12-04T23:49:34.777Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-12-04T23:49:34.804Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-12-04T23:49:34.804Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-12-04T23:49:34.804Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active page"}

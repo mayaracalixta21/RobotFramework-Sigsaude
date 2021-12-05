@@ -9,5 +9,6 @@
     "cadastro de profissão":"/profissao/form",
     "cadastro de especialidade":"/especialidade/form",
     "cadastro modalidade":"/modalidadeAtendimento/form",
-    "cadastro profissional":"/profissionalSaude/form"
+    "cadastro profissional":"/profissionalSaude/form",
+    "cadastro turma":"/turma/form"
 }

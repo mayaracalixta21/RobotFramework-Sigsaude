@@ -1,21 +1,25 @@
-{"level":30,"time":"2021-12-04T23:49:05.682Z","pid":66704,"hostname":"VHSJP1977N","msg":"Listening on 51149"}
-{"level":30,"time":"2021-12-04T23:49:05.982Z","pid":66704,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-04T23:49:05.990Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-12-04T23:49:06.119Z","pid":66704,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
-{"level":30,"time":"2021-12-04T23:49:06.119Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-12-05T00:52:41.962Z","pid":85814,"hostname":"VHSJP1977N","msg":"Listening on 59879"}
+{"level":30,"time":"2021-12-05T00:52:42.272Z","pid":85814,"hostname":"VHSJP1977N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-12-05T00:52:42.280Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-12-05T00:52:42.409Z","pid":85814,"hostname":"VHSJP1977N","msg":"Video path: undefined"}
+{"level":30,"time":"2021-12-05T00:52:42.409Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changed active page"}
 ================= Original suppressed error =================
-{ page.waitForSelector: Timeout 10000ms exceeded.
+{ page.fill: Error: Element is not an <input>, <textarea> or [contenteditable] element
 =========================== logs ===========================
-waiting for selector "xpath=/html/body/div[2]/div" to be visible
+waiting for selector "css=#formConvenioApp > div.card > div.card-body > div > div:nth-child(1) > div > div > div.form-group.col-md-11"
+  selector resolved to visible <div class="form-group col-md-11">…</div>
+elementHandle.fill("ENDOCRINOLOGIA_ALUNO UFRN")
+  waiting for element to be visible, enabled and editable
+  Element is not an <input>, <textarea> or [contenteditable] element
 ============================================================
     at Object.<anonymous> (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
     at step (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
     at Object.next (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
-    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'TimeoutError' }
+    at fulfilled (/home/m.calixta/Projeto sigsaúde/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) name: 'Error' }
 =============================================================
-{"level":30,"time":"2021-12-04T23:49:34.777Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-12-04T23:49:34.777Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-04T23:49:34.777Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active page"}
-{"level":30,"time":"2021-12-04T23:49:34.804Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active context"}
-{"level":30,"time":"2021-12-04T23:49:34.804Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-04T23:49:34.804Z","pid":66704,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-12-05T00:52:50.950Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-12-05T00:52:50.951Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-12-05T00:52:50.952Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changed active page"}
+{"level":30,"time":"2021-12-05T00:52:50.968Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changed active context"}
+{"level":30,"time":"2021-12-05T00:52:50.968Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changing current active page"}
+{"level":30,"time":"2021-12-05T00:52:50.968Z","pid":85814,"hostname":"VHSJP1977N","msg":"Changed active page"}

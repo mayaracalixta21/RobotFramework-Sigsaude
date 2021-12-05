@@ -116,4 +116,16 @@ selecionar "${opção}" em "${campo}"
         Click          xpath=//*[@id="multistepForm"]/div[1]/h3
     END
 
-  
+inserir no "${data}" o dia:"${dia}",mês:"${mes}" e ano:"${ano}"
+    ${elementos_json}               Get JSON                elementos.json
+    Type Text      id=${elementos_json["${data}"]}           ${dia}${mes}${ano}
+    
+inserir no "${horario}" a hora:"${hora}",minutos:"${minutos}"
+    ${elementos_json}               Get JSON                elementos.json
+    Type Text      id=${elementos_json["${horario}"]}           ${hora}${minutos}
+
+inserir no campo "${campo}" com o "${opções}"
+    ${elementos_json}               Get JSON                elementos.json
+    Click          css=${elementos_json["${campo}"]}
+    Fill Text      css=${elementos_json["${campo}"]}           ${opções}
+

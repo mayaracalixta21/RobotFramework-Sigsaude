@@ -10,5 +10,6 @@
     "cadastro de especialidade":"/especialidade/form",
     "cadastro modalidade":"/modalidadeAtendimento/form",
     "cadastro profissional":"/profissionalSaude/form",
-    "cadastro turma":"/turma/form"
+    "cadastro turma":"/turma/form",
+    "cadastro oferta":"/ofertaAtendimento/form"
 }

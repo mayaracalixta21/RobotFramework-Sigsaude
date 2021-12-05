@@ -83,6 +83,13 @@
     "UF ou Região":"ufConselho",
     "Registro Profissional":"inputIdentidadeProfissional",
 
-    "Turma":"busca"
+    "Turma":"busca",
+
+    "Data Inicio":"inputDataInicio",
+    "Data Final":"inputDataFim",
+    "Inicio do expediente":"inputHorarioInicio",
+    "Fim do expediente":"inputHorarioFim",
+    "Modalidade de Atendimento":"#formConvenioApp > div.card > div.card-body > div > div:nth-child(1) > div > div > div.form-group.col-md-11"
+    
  
 }

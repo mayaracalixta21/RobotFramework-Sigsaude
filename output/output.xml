@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20211204 20:49:04.336" rpa="false" schemaversion="2">
-<suite id="s1" name="9 - Profissional" source="/home/m.calixta/Projeto sigsaúde/Tests/9 - Profissional.robot">
+<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20211204 21:52:40.628" rpa="false" schemaversion="2">
+<suite id="s1" name="11 - Oferta" source="/home/m.calixta/Projeto sigsaúde/Tests/11 - Oferta.robot">
 <kw name="iniciar navegador sessão &quot;Endocrinologia&quot;" library="base" type="SETUP" sourcename="iniciar navegador sessão &quot;${login_usuario}&quot;">
 <kw name="iniciar Navegador" library="base">
 <kw name="Get JSON" library="base">
@@ -10,23 +10,23 @@
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:05.729" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:05.730" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:42.021" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:42.022" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20211204 20:49:05.728" endtime="20211204 20:49:05.730"/>
+<status status="PASS" starttime="20211204 21:52:42.020" endtime="20211204 21:52:42.022"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:05.743" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:05.731" endtime="20211204 20:49:05.743"/>
+<msg timestamp="20211204 21:52:42.035" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:42.022" endtime="20211204 21:52:42.035"/>
 </kw>
-<msg timestamp="20211204 20:49:05.744" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:05.727" endtime="20211204 20:49:05.744"/>
+<msg timestamp="20211204 21:52:42.035" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:42.019" endtime="20211204 21:52:42.036"/>
 </kw>
 <kw name="New Browser" library="Browser">
 <arg>${config_json["navegador"]}</arg>
@@ -35,11 +35,11 @@
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20211204 20:49:05.748" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
-<msg timestamp="20211204 20:49:05.970" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
-<status status="PASS" starttime="20211204 20:49:05.745" endtime="20211204 20:49:05.970"/>
+<msg timestamp="20211204 21:52:42.040" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
+<msg timestamp="20211204 21:52:42.260" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
+<status status="PASS" starttime="20211204 21:52:42.036" endtime="20211204 21:52:42.261"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:05.726" endtime="20211204 20:49:05.971"/>
+<status status="PASS" starttime="20211204 21:52:42.018" endtime="20211204 21:52:42.261"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${config_json}</var>
@@ -48,23 +48,23 @@ See `Browser, Context and Page` for more information about Browser and related c
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:05.974" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:05.974" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:42.264" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:42.264" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20211204 20:49:05.973" endtime="20211204 20:49:05.974"/>
+<status status="PASS" starttime="20211204 21:52:42.263" endtime="20211204 21:52:42.265"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:05.976" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:05.975" endtime="20211204 20:49:05.976"/>
+<msg timestamp="20211204 21:52:42.266" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:42.265" endtime="20211204 21:52:42.266"/>
 </kw>
-<msg timestamp="20211204 20:49:05.977" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:05.972" endtime="20211204 20:49:05.977"/>
+<msg timestamp="20211204 21:52:42.267" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:42.262" endtime="20211204 21:52:42.267"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${config_json["base_url"]}</arg>
@@ -73,9 +73,9 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211204 20:49:10.881" level="INFO">Successfully initialized new page object and opened url: https://homologacaosigsaude.imd.ufrn.br/sigsaude</msg>
-<msg timestamp="20211204 20:49:10.881" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211204 20:49:05.978" endtime="20211204 20:49:10.882"/>
+<msg timestamp="20211204 21:52:46.254" level="INFO">Successfully initialized new page object and opened url: https://homologacaosigsaude.imd.ufrn.br/sigsaude</msg>
+<msg timestamp="20211204 21:52:46.254" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211204 21:52:42.268" endtime="20211204 21:52:46.255"/>
 </kw>
 <kw name="Direcionamento da tela &quot;login&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
 <kw name="Get JSON" library="base">
@@ -85,25 +85,25 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:10.890" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/telas.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/telas.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:10.890" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:46.262" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/telas.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:46.263" level="INFO">${file} = {
     "login":"/login",
     "novo usuario de serviço":"/paciente/cadastro",
     "listar usuarios de serviço":"/paciente",
     "cadastro de colaborador":"/colaborador/form",
     "agendamento":"/agendam...</msg>
-<status status="PASS" starttime="20211204 20:49:10.888" endtime="20211204 20:49:10.890"/>
+<status status="PASS" starttime="20211204 21:52:46.261" endtime="20211204 21:52:46.263"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:10.893" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20211204 20:49:10.891" endtime="20211204 20:49:10.893"/>
+<msg timestamp="20211204 21:52:46.265" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20211204 21:52:46.264" endtime="20211204 21:52:46.265"/>
 </kw>
-<msg timestamp="20211204 20:49:10.894" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20211204 20:49:10.886" endtime="20211204 20:49:10.894"/>
+<msg timestamp="20211204 21:52:46.267" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20211204 21:52:46.258" endtime="20211204 21:52:46.267"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${config_json}</var>
@@ -112,33 +112,33 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:10.897" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:10.898" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:46.271" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:46.271" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20211204 20:49:10.896" endtime="20211204 20:49:10.898"/>
+<status status="PASS" starttime="20211204 21:52:46.270" endtime="20211204 21:52:46.271"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:10.900" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:10.899" endtime="20211204 20:49:10.900"/>
+<msg timestamp="20211204 21:52:46.273" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:46.272" endtime="20211204 21:52:46.274"/>
 </kw>
-<msg timestamp="20211204 20:49:10.901" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:10.894" endtime="20211204 20:49:10.901"/>
+<msg timestamp="20211204 21:52:46.274" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:46.268" endtime="20211204 21:52:46.274"/>
 </kw>
 <kw name="Go To" library="Browser">
 <arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20211204 20:49:11.834" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/login</msg>
-<status status="PASS" starttime="20211204 20:49:10.902" endtime="20211204 20:49:11.835"/>
+<msg timestamp="20211204 21:52:47.071" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/login</msg>
+<status status="PASS" starttime="20211204 21:52:46.275" endtime="20211204 21:52:47.072"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:10.884" endtime="20211204 20:49:11.837"/>
+<status status="PASS" starttime="20211204 21:52:46.256" endtime="20211204 21:52:47.072"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${login_json}</var>
@@ -147,8 +147,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:11.845" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/login.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/login.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:11.846" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:47.075" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/login.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/login.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:47.075" level="INFO">${file} = {
 
     "Psicologia":{
         "login": "drpsicologia",
@@ -160,18 +160,18 @@ Returns a stable identifier for the created page.</doc>
         "senha": 98841863323
     }
 }</msg>
-<status status="PASS" starttime="20211204 20:49:11.842" endtime="20211204 20:49:11.846"/>
+<status status="PASS" starttime="20211204 21:52:47.074" endtime="20211204 21:52:47.075"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:11.851" level="INFO">${super_var} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
-<status status="PASS" starttime="20211204 20:49:11.848" endtime="20211204 20:49:11.851"/>
+<msg timestamp="20211204 21:52:47.077" level="INFO">${super_var} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
+<status status="PASS" starttime="20211204 21:52:47.076" endtime="20211204 21:52:47.077"/>
 </kw>
-<msg timestamp="20211204 20:49:11.853" level="INFO">${login_json} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
-<status status="PASS" starttime="20211204 20:49:11.838" endtime="20211204 20:49:11.853"/>
+<msg timestamp="20211204 21:52:47.078" level="INFO">${login_json} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
+<status status="PASS" starttime="20211204 21:52:47.073" endtime="20211204 21:52:47.078"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=login-username</arg>
@@ -179,8 +179,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:11.862" level="INFO">Fills the text 'drendocrinologia' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:11.855" endtime="20211204 20:49:11.903"/>
+<msg timestamp="20211204 21:52:47.083" level="INFO">Fills the text 'drendocrinologia' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:47.079" endtime="20211204 21:52:47.117"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=login-password</arg>
@@ -188,25 +188,25 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:11.907" level="INFO">Fills the text '98841863323' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:11.904" endtime="20211204 20:49:11.925"/>
+<msg timestamp="20211204 21:52:47.121" level="INFO">Fills the text '98841863323' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:47.118" endtime="20211204 21:52:47.138"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=[value='Entrar']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:11.925" endtime="20211204 20:49:12.608"/>
+<status status="PASS" starttime="20211204 21:52:47.139" endtime="20211204 21:52:47.701"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:05.725" endtime="20211204 20:49:12.609"/>
+<status status="PASS" starttime="20211204 21:52:42.017" endtime="20211204 21:52:47.703"/>
 </kw>
-<test id="s1-t1" name="[001] -Cadastro de profissional (Completo)">
+<test id="s1-t1" name="[001] -Cadastro de oferta (Completo)">
 <kw name="Dado" library="bdd">
-<arg>que o usuario está na tela "cadastro profissional"</arg>
+<arg>que o usuario está na tela "cadastro oferta"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="que o usuario está na tela &quot;cadastro profissional&quot;" library="nav" sourcename="que o usuario está na tela &quot;${tela}&quot;">
+<kw name="que o usuario está na tela &quot;cadastro oferta&quot;" library="nav" sourcename="que o usuario está na tela &quot;${tela}&quot;">
 <kw name="Direcionamento da tela &quot;${tela}&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
 <kw name="Get JSON" library="base">
 <var>${telas_json}</var>
@@ -215,25 +215,25 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:12.640" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/telas.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/telas.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:12.641" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:47.735" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/telas.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:47.736" level="INFO">${file} = {
     "login":"/login",
     "novo usuario de serviço":"/paciente/cadastro",
     "listar usuarios de serviço":"/paciente",
     "cadastro de colaborador":"/colaborador/form",
     "agendamento":"/agendam...</msg>
-<status status="PASS" starttime="20211204 20:49:12.639" endtime="20211204 20:49:12.641"/>
+<status status="PASS" starttime="20211204 21:52:47.734" endtime="20211204 21:52:47.736"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:12.643" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20211204 20:49:12.642" endtime="20211204 20:49:12.643"/>
+<msg timestamp="20211204 21:52:47.737" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20211204 21:52:47.736" endtime="20211204 21:52:47.737"/>
 </kw>
-<msg timestamp="20211204 20:49:12.644" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20211204 20:49:12.638" endtime="20211204 20:49:12.644"/>
+<msg timestamp="20211204 21:52:47.738" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20211204 21:52:47.733" endtime="20211204 21:52:47.738"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${config_json}</var>
@@ -242,46 +242,46 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:12.646" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:12.647" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:47.741" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/config.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:47.741" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20211204 20:49:12.646" endtime="20211204 20:49:12.647"/>
+<status status="PASS" starttime="20211204 21:52:47.740" endtime="20211204 21:52:47.741"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:12.649" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:12.647" endtime="20211204 20:49:12.649"/>
+<msg timestamp="20211204 21:52:47.744" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:47.742" endtime="20211204 21:52:47.744"/>
 </kw>
-<msg timestamp="20211204 20:49:12.649" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20211204 20:49:12.644" endtime="20211204 20:49:12.650"/>
+<msg timestamp="20211204 21:52:47.744" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20211204 21:52:47.739" endtime="20211204 21:52:47.744"/>
 </kw>
 <kw name="Go To" library="Browser">
 <arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20211204 20:49:15.106" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/profissionalSaude/form</msg>
-<status status="PASS" starttime="20211204 20:49:12.650" endtime="20211204 20:49:15.107"/>
+<msg timestamp="20211204 21:52:49.703" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/ofertaAtendimento/form</msg>
+<status status="PASS" starttime="20211204 21:52:47.745" endtime="20211204 21:52:49.703"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:12.636" endtime="20211204 20:49:15.107"/>
+<status status="PASS" starttime="20211204 21:52:47.731" endtime="20211204 21:52:49.704"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:12.635" endtime="20211204 20:49:15.108"/>
+<status status="PASS" starttime="20211204 21:52:47.730" endtime="20211204 21:52:49.704"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:12.633" endtime="20211204 20:49:15.108"/>
+<status status="PASS" starttime="20211204 21:52:47.728" endtime="20211204 21:52:49.704"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:12.631" endtime="20211204 20:49:15.109"/>
+<status status="PASS" starttime="20211204 21:52:47.726" endtime="20211204 21:52:49.705"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>preenchido o "Nome profissional" com o "Teste automatizado"</arg>
+<arg>preenchido o "Denominação" com o "Oferta endo"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="preenchido o &quot;Nome profissional&quot; com o &quot;Teste automatizado&quot;" library="keywords_campos" sourcename="preenchido o &quot;${campo}&quot; com o &quot;${valor}&quot;">
+<kw name="preenchido o &quot;Denominação&quot; com o &quot;Oferta endo&quot;" library="keywords_campos" sourcename="preenchido o &quot;${campo}&quot; com o &quot;${valor}&quot;">
 <kw name="Get JSON" library="base">
 <var>${elementos_json}</var>
 <arg>elementos.json</arg>
@@ -289,8 +289,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.122" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.123" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:49.715" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:49.716" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -298,18 +298,18 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.119" endtime="20211204 20:49:15.123"/>
+<status status="PASS" starttime="20211204 21:52:49.714" endtime="20211204 21:52:49.716"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.126" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.124" endtime="20211204 20:49:15.126"/>
+<msg timestamp="20211204 21:52:49.719" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.717" endtime="20211204 21:52:49.720"/>
 </kw>
-<msg timestamp="20211204 20:49:15.127" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.116" endtime="20211204 20:49:15.127"/>
+<msg timestamp="20211204 21:52:49.722" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.711" endtime="20211204 21:52:49.722"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=${elementos_json["${campo}"]}</arg>
@@ -317,21 +317,21 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:15.135" level="INFO">Types the text 'Teste automatizado' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:15.129" endtime="20211204 20:49:15.228"/>
+<msg timestamp="20211204 21:52:49.728" level="INFO">Types the text 'Oferta endo' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:49.723" endtime="20211204 21:52:49.799"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.114" endtime="20211204 20:49:15.229"/>
+<status status="PASS" starttime="20211204 21:52:49.710" endtime="20211204 21:52:49.800"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.112" endtime="20211204 20:49:15.229"/>
+<status status="PASS" starttime="20211204 21:52:49.707" endtime="20211204 21:52:49.800"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.110" endtime="20211204 20:49:15.229"/>
+<status status="PASS" starttime="20211204 21:52:49.706" endtime="20211204 21:52:49.800"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>preenchido o "CPF profissional" com o "31256322180"</arg>
+<arg>inserir no "Data Inicio" o dia:"06",mês:"12" e ano:"2021"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="preenchido o &quot;CPF profissional&quot; com o &quot;31256322180&quot;" library="keywords_campos" sourcename="preenchido o &quot;${campo}&quot; com o &quot;${valor}&quot;">
+<kw name="inserir no &quot;Data Inicio&quot; o dia:&quot;06&quot;,mês:&quot;12&quot; e ano:&quot;2021&quot;" library="keywords_campos" sourcename="inserir no &quot;${data}&quot; o dia:&quot;${dia}&quot;,mês:&quot;${mes}&quot; e ano:&quot;${ano}&quot;">
 <kw name="Get JSON" library="base">
 <var>${elementos_json}</var>
 <arg>elementos.json</arg>
@@ -339,8 +339,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.240" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.240" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:49.809" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:49.810" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -348,40 +348,40 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.238" endtime="20211204 20:49:15.240"/>
+<status status="PASS" starttime="20211204 21:52:49.808" endtime="20211204 21:52:49.810"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.242" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.241" endtime="20211204 20:49:15.242"/>
+<msg timestamp="20211204 21:52:49.813" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.811" endtime="20211204 21:52:49.813"/>
 </kw>
-<msg timestamp="20211204 20:49:15.243" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.237" endtime="20211204 20:49:15.244"/>
+<msg timestamp="20211204 21:52:49.814" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.806" endtime="20211204 21:52:49.814"/>
 </kw>
 <kw name="Type Text" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>${valor}</arg>
+<arg>id=${elementos_json["${data}"]}</arg>
+<arg>${dia}${mes}${ano}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:15.250" level="INFO">Types the text '31256322180' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:15.245" endtime="20211204 20:49:15.335"/>
+<msg timestamp="20211204 21:52:49.821" level="INFO">Types the text '06122021' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:49.815" endtime="20211204 21:52:49.872"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.235" endtime="20211204 20:49:15.336"/>
+<status status="PASS" starttime="20211204 21:52:49.805" endtime="20211204 21:52:49.873"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.233" endtime="20211204 20:49:15.336"/>
+<status status="PASS" starttime="20211204 21:52:49.803" endtime="20211204 21:52:49.873"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.230" endtime="20211204 20:49:15.336"/>
+<status status="PASS" starttime="20211204 21:52:49.801" endtime="20211204 21:52:49.874"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>preenchido o "Login" com o "teste_auto_um"</arg>
+<arg>inserir no "Data Final" o dia:"10",mês:"02" e ano:"2022"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="preenchido o &quot;Login&quot; com o &quot;teste_auto_um&quot;" library="keywords_campos" sourcename="preenchido o &quot;${campo}&quot; com o &quot;${valor}&quot;">
+<kw name="inserir no &quot;Data Final&quot; o dia:&quot;10&quot;,mês:&quot;02&quot; e ano:&quot;2022&quot;" library="keywords_campos" sourcename="inserir no &quot;${data}&quot; o dia:&quot;${dia}&quot;,mês:&quot;${mes}&quot; e ano:&quot;${ano}&quot;">
 <kw name="Get JSON" library="base">
 <var>${elementos_json}</var>
 <arg>elementos.json</arg>
@@ -389,8 +389,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.343" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.344" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:49.883" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:49.883" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -398,40 +398,40 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.342" endtime="20211204 20:49:15.344"/>
+<status status="PASS" starttime="20211204 21:52:49.881" endtime="20211204 21:52:49.883"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.346" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.345" endtime="20211204 20:49:15.346"/>
+<msg timestamp="20211204 21:52:49.886" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.884" endtime="20211204 21:52:49.886"/>
 </kw>
-<msg timestamp="20211204 20:49:15.348" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.341" endtime="20211204 20:49:15.348"/>
+<msg timestamp="20211204 21:52:49.887" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.879" endtime="20211204 21:52:49.888"/>
 </kw>
 <kw name="Type Text" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>${valor}</arg>
+<arg>id=${elementos_json["${data}"]}</arg>
+<arg>${dia}${mes}${ano}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:15.362" level="INFO">Types the text 'teste_auto_um' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:15.349" endtime="20211204 20:49:15.433"/>
+<msg timestamp="20211204 21:52:49.894" level="INFO">Types the text '10022022' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:49.889" endtime="20211204 21:52:49.943"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.340" endtime="20211204 20:49:15.434"/>
+<status status="PASS" starttime="20211204 21:52:49.877" endtime="20211204 21:52:49.943"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.339" endtime="20211204 20:49:15.434"/>
+<status status="PASS" starttime="20211204 21:52:49.876" endtime="20211204 21:52:49.944"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.337" endtime="20211204 20:49:15.434"/>
+<status status="PASS" starttime="20211204 21:52:49.874" endtime="20211204 21:52:49.944"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>preenchido o "Email" com o "tisha2946@uorak.com"</arg>
+<arg>inserir no "Inicio do expediente" a hora:"10",minutos:"00"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="preenchido o &quot;Email&quot; com o &quot;tisha2946@uorak.com&quot;" library="keywords_campos" sourcename="preenchido o &quot;${campo}&quot; com o &quot;${valor}&quot;">
+<kw name="inserir no &quot;Inicio do expediente&quot; a hora:&quot;10&quot;,minutos:&quot;00&quot;" library="keywords_campos" sourcename="inserir no &quot;${horario}&quot; a hora:&quot;${hora}&quot;,minutos:&quot;${minutos}&quot;">
 <kw name="Get JSON" library="base">
 <var>${elementos_json}</var>
 <arg>elementos.json</arg>
@@ -439,8 +439,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.442" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.443" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:49.954" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:49.955" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -448,40 +448,40 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.441" endtime="20211204 20:49:15.443"/>
+<status status="PASS" starttime="20211204 21:52:49.953" endtime="20211204 21:52:49.955"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.445" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.444" endtime="20211204 20:49:15.445"/>
+<msg timestamp="20211204 21:52:49.957" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.956" endtime="20211204 21:52:49.957"/>
 </kw>
-<msg timestamp="20211204 20:49:15.446" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.439" endtime="20211204 20:49:15.447"/>
+<msg timestamp="20211204 21:52:49.958" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:49.950" endtime="20211204 21:52:49.958"/>
 </kw>
 <kw name="Type Text" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>${valor}</arg>
+<arg>id=${elementos_json["${horario}"]}</arg>
+<arg>${hora}${minutos}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:15.453" level="INFO">Types the text 'tisha2946@uorak.com' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:15.448" endtime="20211204 20:49:15.535"/>
+<msg timestamp="20211204 21:52:49.965" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:49.959" endtime="20211204 21:52:49.999"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.438" endtime="20211204 20:49:15.536"/>
+<status status="PASS" starttime="20211204 21:52:49.948" endtime="20211204 21:52:49.999"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.437" endtime="20211204 20:49:15.536"/>
+<status status="PASS" starttime="20211204 21:52:49.947" endtime="20211204 21:52:50.000"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.435" endtime="20211204 20:49:15.536"/>
+<status status="PASS" starttime="20211204 21:52:49.945" endtime="20211204 21:52:50.000"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>selecione "ADM GERAL" no campo "Perfil"</arg>
+<arg>inserir no "Fim do expediente" a hora:"23",minutos:"00"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="selecione &quot;ADM GERAL&quot; no campo &quot;Perfil&quot;" library="keywords_campos" sourcename="selecione &quot;${valor}&quot; no campo &quot;${campo}&quot;">
+<kw name="inserir no &quot;Fim do expediente&quot; a hora:&quot;23&quot;,minutos:&quot;00&quot;" library="keywords_campos" sourcename="inserir no &quot;${horario}&quot; a hora:&quot;${hora}&quot;,minutos:&quot;${minutos}&quot;">
 <kw name="Get JSON" library="base">
 <var>${elementos_json}</var>
 <arg>elementos.json</arg>
@@ -489,8 +489,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.545" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.545" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:50.009" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:50.009" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -498,33 +498,33 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.544" endtime="20211204 20:49:15.545"/>
+<status status="PASS" starttime="20211204 21:52:50.008" endtime="20211204 21:52:50.009"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.548" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.546" endtime="20211204 20:49:15.548"/>
+<msg timestamp="20211204 21:52:50.012" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:50.010" endtime="20211204 21:52:50.012"/>
 </kw>
-<msg timestamp="20211204 20:49:15.549" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.542" endtime="20211204 20:49:15.550"/>
+<msg timestamp="20211204 21:52:50.013" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:50.006" endtime="20211204 21:52:50.014"/>
 </kw>
-<kw name="Select Options By" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>Text</arg>
-<arg>${valor}</arg>
+<kw name="Type Text" library="Browser">
+<arg>id=${elementos_json["${horario}"]}</arg>
+<arg>${hora}${minutos}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.551" endtime="20211204 20:49:15.574"/>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211204 21:52:50.020" level="INFO">Types the text '2300' in the given field.</msg>
+<status status="PASS" starttime="20211204 21:52:50.015" endtime="20211204 21:52:50.053"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.540" endtime="20211204 20:49:15.574"/>
+<status status="PASS" starttime="20211204 21:52:50.004" endtime="20211204 21:52:50.054"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.539" endtime="20211204 20:49:15.574"/>
+<status status="PASS" starttime="20211204 21:52:50.003" endtime="20211204 21:52:50.054"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.537" endtime="20211204 20:49:15.575"/>
+<status status="PASS" starttime="20211204 21:52:50.001" endtime="20211204 21:52:50.054"/>
 </kw>
 <kw name="Quando" library="bdd">
 <arg>clicar no "Avançar"</arg>
@@ -539,8 +539,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.582" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.583" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:50.064" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:50.064" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -548,38 +548,38 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.580" endtime="20211204 20:49:15.583"/>
+<status status="PASS" starttime="20211204 21:52:50.062" endtime="20211204 21:52:50.065"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.586" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.584" endtime="20211204 20:49:15.586"/>
+<msg timestamp="20211204 21:52:50.067" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:50.066" endtime="20211204 21:52:50.067"/>
 </kw>
-<msg timestamp="20211204 20:49:15.587" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.579" endtime="20211204 20:49:15.587"/>
+<msg timestamp="20211204 21:52:50.068" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:50.060" endtime="20211204 21:52:50.068"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>id=${elementos_json["${botão}"]}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.588" endtime="20211204 20:49:15.652"/>
+<status status="PASS" starttime="20211204 21:52:50.070" endtime="20211204 21:52:50.478"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.578" endtime="20211204 20:49:15.653"/>
+<status status="PASS" starttime="20211204 21:52:50.058" endtime="20211204 21:52:50.478"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.577" endtime="20211204 20:49:15.653"/>
+<status status="PASS" starttime="20211204 21:52:50.057" endtime="20211204 21:52:50.478"/>
 </kw>
-<status status="PASS" starttime="20211204 20:49:15.576" endtime="20211204 20:49:15.653"/>
+<status status="PASS" starttime="20211204 21:52:50.055" endtime="20211204 21:52:50.479"/>
 </kw>
 <kw name="Então" library="bdd">
-<arg>selecione "END - ENDOCRINOLOGIA" no campo "Profissão"</arg>
+<arg>inserir no campo "Modalidade de Atendimento" com o "ENDOCRINOLOGIA_ALUNO UFRN"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="selecione &quot;END - ENDOCRINOLOGIA&quot; no campo &quot;Profissão&quot;" library="keywords_campos" sourcename="selecione &quot;${valor}&quot; no campo &quot;${campo}&quot;">
+<kw name="inserir no campo &quot;Modalidade de Atendimento&quot; com o &quot;ENDOCRINOLOGIA_ALUNO UFRN&quot;" library="keywords_campos" sourcename="inserir no campo &quot;${campo}&quot; com o &quot;${opções}&quot;">
 <kw name="Get JSON" library="base">
 <var>${elementos_json}</var>
 <arg>elementos.json</arg>
@@ -587,8 +587,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.661" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.662" level="INFO">${file} = {
+<msg timestamp="20211204 21:52:50.486" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211204 21:52:50.486" level="INFO">${file} = {
 
     "Tipo Sanguíneo":"inputTipoSanguineo",
     "Cor/Raça":"selectCorRaca",
@@ -596,590 +596,66 @@ Returns a stable identifier for the created page.</doc>
     "Estado civil":"selectEstadoCivil",
     "País de nascimento":"inputPaisNascimento",
     "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.660" endtime="20211204 20:49:15.662"/>
+<status status="PASS" starttime="20211204 21:52:50.485" endtime="20211204 21:52:50.486"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.665" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.663" endtime="20211204 20:49:15.665"/>
+<msg timestamp="20211204 21:52:50.488" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:50.487" endtime="20211204 21:52:50.488"/>
 </kw>
-<msg timestamp="20211204 20:49:15.666" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.658" endtime="20211204 20:49:15.667"/>
+<msg timestamp="20211204 21:52:50.489" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
+<status status="PASS" starttime="20211204 21:52:50.484" endtime="20211204 21:52:50.489"/>
 </kw>
-<kw name="Select Options By" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>Text</arg>
-<arg>${valor}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.668" endtime="20211204 20:49:15.697"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.657" endtime="20211204 20:49:15.698"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.655" endtime="20211204 20:49:15.698"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.654" endtime="20211204 20:49:15.699"/>
-</kw>
-<kw name="E" library="bdd">
-<arg>selecione "EXTERNO" no campo "Vínculo Institucional"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="selecione &quot;EXTERNO&quot; no campo &quot;Vínculo Institucional&quot;" library="keywords_campos" sourcename="selecione &quot;${valor}&quot; no campo &quot;${campo}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.707" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.708" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.706" endtime="20211204 20:49:15.708"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.710" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.708" endtime="20211204 20:49:15.710"/>
-</kw>
-<msg timestamp="20211204 20:49:15.711" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.705" endtime="20211204 20:49:15.711"/>
-</kw>
-<kw name="Select Options By" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>Text</arg>
-<arg>${valor}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.712" endtime="20211204 20:49:15.729"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.703" endtime="20211204 20:49:15.730"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.702" endtime="20211204 20:49:15.731"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.700" endtime="20211204 20:49:15.731"/>
-</kw>
-<kw name="E" library="bdd">
-<arg>selecione "RN" no campo "UF ou Região"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="selecione &quot;RN&quot; no campo &quot;UF ou Região&quot;" library="keywords_campos" sourcename="selecione &quot;${valor}&quot; no campo &quot;${campo}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.741" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.741" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.740" endtime="20211204 20:49:15.741"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.743" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.742" endtime="20211204 20:49:15.743"/>
-</kw>
-<msg timestamp="20211204 20:49:15.743" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.739" endtime="20211204 20:49:15.743"/>
-</kw>
-<kw name="Select Options By" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>Text</arg>
-<arg>${valor}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.744" endtime="20211204 20:49:15.763"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.737" endtime="20211204 20:49:15.763"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.736" endtime="20211204 20:49:15.764"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.733" endtime="20211204 20:49:15.764"/>
-</kw>
-<kw name="E" library="bdd">
-<arg>preenchido o "Registro Profissional" com o "10111213"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="preenchido o &quot;Registro Profissional&quot; com o &quot;10111213&quot;" library="keywords_campos" sourcename="preenchido o &quot;${campo}&quot; com o &quot;${valor}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.774" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.774" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.773" endtime="20211204 20:49:15.774"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.777" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.775" endtime="20211204 20:49:15.777"/>
-</kw>
-<msg timestamp="20211204 20:49:15.778" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.772" endtime="20211204 20:49:15.778"/>
-</kw>
-<kw name="Type Text" library="Browser">
-<arg>id=${elementos_json["${campo}"]}</arg>
-<arg>${valor}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:15.784" level="INFO">Types the text '10111213' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:15.779" endtime="20211204 20:49:15.870"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.770" endtime="20211204 20:49:15.870"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.769" endtime="20211204 20:49:15.871"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.766" endtime="20211204 20:49:15.871"/>
-</kw>
-<kw name="Quando" library="bdd">
-<arg>clicar no "Avançar"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="clicar no &quot;Avançar&quot;" library="keywords_campos" sourcename="clicar no &quot;${botão}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.878" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.878" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.876" endtime="20211204 20:49:15.878"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.881" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.879" endtime="20211204 20:49:15.881"/>
-</kw>
-<msg timestamp="20211204 20:49:15.882" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.875" endtime="20211204 20:49:15.883"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=${elementos_json["${botão}"]}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.884" endtime="20211204 20:49:15.938"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.874" endtime="20211204 20:49:15.938"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.873" endtime="20211204 20:49:15.938"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.872" endtime="20211204 20:49:15.939"/>
-</kw>
-<kw name="E" library="bdd">
-<arg>selecionar "ENDOCRINOLOGIA E METABOLOGIA" em "Especialidades"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="selecionar &quot;ENDOCRINOLOGIA E METABOLOGIA&quot; em &quot;Especialidades&quot;" library="keywords_campos" sourcename="selecionar &quot;${opção}&quot; em &quot;${campo}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:15.946" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:15.947" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:15.945" endtime="20211204 20:49:15.947"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:15.950" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.948" endtime="20211204 20:49:15.950"/>
-</kw>
-<msg timestamp="20211204 20:49:15.951" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:15.943" endtime="20211204 20:49:15.952"/>
-</kw>
-<if>
-<branch type="IF" condition="'${campo}' == 'Especialidades'">
 <kw name="Click" library="Browser">
 <arg>css=${elementos_json["${campo}"]}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:15.954" endtime="20211204 20:49:16.031"/>
+<status status="PASS" starttime="20211204 21:52:50.489" endtime="20211204 21:52:50.773"/>
 </kw>
-<kw name="Type Text" library="Browser">
-<arg>css=${elementos_json["Inserir especialidade"]}</arg>
-<arg>${opção}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:16.039" level="INFO">Types the text 'ENDOCRINOLOGIA E METABOLOGIA' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:16.033" endtime="20211204 20:49:16.207"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=bs-select-1-0</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:16.208" endtime="20211204 20:49:16.270"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=//*[@id="multistepForm"]/div[1]/h3</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:16.271" endtime="20211204 20:49:16.360"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.952" endtime="20211204 20:49:16.360"/>
-</branch>
-<branch type="ELSE">
-<kw name="Click" library="Browser">
+<kw name="Fill Text" library="Browser">
 <arg>css=${elementos_json["${campo}"]}</arg>
+<arg>${opções}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.361" endtime="20211204 20:49:16.361"/>
-</kw>
-<kw name="Type Text" library="Browser">
-<arg>css=${elementos_json["Inserir modalidade"]}</arg>
-<arg>${opção}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.362" endtime="20211204 20:49:16.362"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=bs-select-3-1</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.363" endtime="20211204 20:49:16.363"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=//*[@id="multistepForm"]/div[1]/h3</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.364" endtime="20211204 20:49:16.364"/>
-</kw>
-<status status="NOT RUN" starttime="20211204 20:49:16.360" endtime="20211204 20:49:16.364"/>
-</branch>
-<status status="PASS" starttime="20211204 20:49:15.952" endtime="20211204 20:49:16.364"/>
-</if>
-<status status="PASS" starttime="20211204 20:49:15.942" endtime="20211204 20:49:16.365"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.941" endtime="20211204 20:49:16.365"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:15.939" endtime="20211204 20:49:16.366"/>
-</kw>
-<kw name="E" library="bdd">
-<arg>selecionar "ENDOCRINOLOGIA_ALUNO UFRN (ENDOCRINOLOGIA E METABOLOGIA)" em "Modalidades"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="selecionar &quot;ENDOCRINOLOGIA_ALUNO UFRN (ENDOCRINOLOGIA E METABOLOGIA)&quot; em &quot;Modalidades&quot;" library="keywords_campos" sourcename="selecionar &quot;${opção}&quot; em &quot;${campo}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:16.374" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:16.374" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:16.373" endtime="20211204 20:49:16.374"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:16.376" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:16.375" endtime="20211204 20:49:16.376"/>
-</kw>
-<msg timestamp="20211204 20:49:16.377" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:16.371" endtime="20211204 20:49:16.377"/>
-</kw>
-<if>
-<branch type="IF" condition="'${campo}' == 'Especialidades'">
-<kw name="Click" library="Browser">
-<arg>css=${elementos_json["${campo}"]}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.379" endtime="20211204 20:49:16.379"/>
-</kw>
-<kw name="Type Text" library="Browser">
-<arg>css=${elementos_json["Inserir especialidade"]}</arg>
-<arg>${opção}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.380" endtime="20211204 20:49:16.380"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=bs-select-1-0</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.381" endtime="20211204 20:49:16.382"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=//*[@id="multistepForm"]/div[1]/h3</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:16.383" endtime="20211204 20:49:16.384"/>
-</kw>
-<status status="NOT RUN" starttime="20211204 20:49:16.378" endtime="20211204 20:49:16.384"/>
-</branch>
-<branch type="ELSE">
-<kw name="Click" library="Browser">
-<arg>css=${elementos_json["${campo}"]}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:16.385" endtime="20211204 20:49:23.096"/>
-</kw>
-<kw name="Type Text" library="Browser">
-<arg>css=${elementos_json["Inserir modalidade"]}</arg>
-<arg>${opção}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211204 20:49:23.101" level="INFO">Types the text 'ENDOCRINOLOGIA_ALUNO UFRN (ENDOCRINOLOGIA E METABOLOGIA)' in the given field.</msg>
-<status status="PASS" starttime="20211204 20:49:23.097" endtime="20211204 20:49:23.505"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=bs-select-3-1</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:23.505" endtime="20211204 20:49:23.551"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=//*[@id="multistepForm"]/div[1]/h3</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:23.552" endtime="20211204 20:49:23.597"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:16.384" endtime="20211204 20:49:23.597"/>
-</branch>
-<status status="PASS" starttime="20211204 20:49:16.377" endtime="20211204 20:49:23.597"/>
-</if>
-<status status="PASS" starttime="20211204 20:49:16.370" endtime="20211204 20:49:23.598"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:16.369" endtime="20211204 20:49:23.598"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:16.367" endtime="20211204 20:49:23.598"/>
-</kw>
-<kw name="Quando" library="bdd">
-<arg>clicar no "Avançar"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="clicar no &quot;Avançar&quot;" library="keywords_campos" sourcename="clicar no &quot;${botão}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:23.606" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:23.607" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:23.605" endtime="20211204 20:49:23.607"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:23.609" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:23.608" endtime="20211204 20:49:23.609"/>
-</kw>
-<msg timestamp="20211204 20:49:23.610" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:23.603" endtime="20211204 20:49:23.610"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=${elementos_json["${botão}"]}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:23.611" endtime="20211204 20:49:23.869"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:23.602" endtime="20211204 20:49:23.870"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:23.601" endtime="20211204 20:49:23.870"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:23.599" endtime="20211204 20:49:23.870"/>
-</kw>
-<kw name="E" library="bdd">
-<arg>clicar no "Cadastrar"</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="clicar no &quot;Cadastrar&quot;" library="keywords_campos" sourcename="clicar no &quot;${botão}&quot;">
-<kw name="Get JSON" library="base">
-<var>${elementos_json}</var>
-<arg>elementos.json</arg>
-<kw name="Get File" library="OperatingSystem">
-<var>${file}</var>
-<arg>${EXECDIR}/Files/${file_name}</arg>
-<doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211204 20:49:23.879" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/Projeto sigsaúde/Files/elementos.json"&gt;/home/m.calixta/Projeto sigsaúde/Files/elementos.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211204 20:49:23.880" level="INFO">${file} = {
-
-    "Tipo Sanguíneo":"inputTipoSanguineo",
-    "Cor/Raça":"selectCorRaca",
-    "Sexo":"selectSexo",
-    "Estado civil":"selectEstadoCivil",
-    "País de nascimento":"inputPaisNascimento",
-    "UF d...</msg>
-<status status="PASS" starttime="20211204 20:49:23.878" endtime="20211204 20:49:23.880"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${super_var}</var>
-<arg>json.loads($file)</arg>
-<arg>json</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211204 20:49:23.882" level="INFO">${super_var} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:23.881" endtime="20211204 20:49:23.882"/>
-</kw>
-<msg timestamp="20211204 20:49:23.883" level="INFO">${elementos_json} = {'Tipo Sanguíneo': 'inputTipoSanguineo', 'Cor/Raça': 'selectCorRaca', 'Sexo': 'selectSexo', 'Estado civil': 'selectEstadoCivil', 'País de nascimento': 'inputPaisNascimento', 'UF de nascimento': 'input...</msg>
-<status status="PASS" starttime="20211204 20:49:23.876" endtime="20211204 20:49:23.884"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>id=${elementos_json["${botão}"]}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211204 20:49:23.885" endtime="20211204 20:49:24.615"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:23.875" endtime="20211204 20:49:24.617"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:23.873" endtime="20211204 20:49:24.618"/>
-</kw>
-<status status="PASS" starttime="20211204 20:49:23.871" endtime="20211204 20:49:24.619"/>
-</kw>
-<kw name="Então" library="bdd">
-<arg>mensagem de cadastro realizado com sucesso</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="mensagem de cadastro realizado com sucesso" library="keywords_campos">
-<kw name="Wait For Elements State" library="Browser">
-<arg>xpath=/html/body/div[2]/div</arg>
-<arg>visible</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211204 20:49:34.755" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="001_-Cadastro_de_profissional_%28Completo%29_FAILURE_SCREENSHOT_12.png"&gt;&lt;img src="001_-Cadastro_de_profissional_%28Completo%29_FAILURE_SCREENSHOT_12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20211204 20:49:34.757" level="FAIL">TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211204 21:52:50.777" level="INFO">Fills the text 'ENDOCRINOLOGIA_ALUNO UFRN' in the given field.</msg>
+<msg timestamp="20211204 21:52:50.928" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="001_-Cadastro_de_oferta_%28Completo%29_FAILURE_SCREENSHOT_7.png"&gt;&lt;img src="001_-Cadastro_de_oferta_%28Completo%29_FAILURE_SCREENSHOT_7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211204 21:52:50.930" level="FAIL">Error: page.fill: Error: Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
 =========================== logs ===========================
-waiting for selector "xpath=/html/body/div[2]/div" to be visible
+waiting for selector "css=#formConvenioApp &gt; div.card &gt; div.card-body &gt; div &gt; div:nth-child(1) &gt; div &gt; div &gt; div.form-group.col-md-11"
+  selector resolved to visible &lt;div class="form-group col-md-11"&gt;…&lt;/div&gt;
+elementHandle.fill("ENDOCRINOLOGIA_ALUNO UFRN")
+  waiting for element to be visible, enabled and editable
+  Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
 ============================================================</msg>
-<status status="FAIL" starttime="20211204 20:49:24.635" endtime="20211204 20:49:34.757"/>
+<status status="FAIL" starttime="20211204 21:52:50.774" endtime="20211204 21:52:50.930"/>
 </kw>
-<kw name="Click" library="Browser">
-<arg>xpath=/html/body/div[2]/div/div[3]/div/button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:34.758" endtime="20211204 20:49:34.758"/>
+<status status="FAIL" starttime="20211204 21:52:50.483" endtime="20211204 21:52:50.931"/>
 </kw>
-<status status="FAIL" starttime="20211204 20:49:24.630" endtime="20211204 20:49:34.759"/>
+<status status="FAIL" starttime="20211204 21:52:50.482" endtime="20211204 21:52:50.931"/>
 </kw>
-<status status="FAIL" starttime="20211204 20:49:24.626" endtime="20211204 20:49:34.759"/>
-</kw>
-<status status="FAIL" starttime="20211204 20:49:24.621" endtime="20211204 20:49:34.759"/>
+<status status="FAIL" starttime="20211204 21:52:50.480" endtime="20211204 21:52:50.931"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>20s</arg>
+<arg>30s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211204 20:49:34.760" endtime="20211204 20:49:34.760"/>
+<status status="NOT RUN" starttime="20211204 21:52:50.932" endtime="20211204 21:52:50.932"/>
 </kw>
-<status status="FAIL" starttime="20211204 20:49:12.611" endtime="20211204 20:49:34.762">TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+<status status="FAIL" starttime="20211204 21:52:47.704" endtime="20211204 21:52:50.933">Error: page.fill: Error: Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
 =========================== logs ===========================
-waiting for selector "xpath=/html/body/div[2]/div" to be visible
+waiting for selector "css=#formConvenioApp &gt; div.card &gt; div.card-body &gt; div &gt; div:nth-child(1) &gt; div &gt; div &gt; div.form-group.col-md-11"
+  selector resolved to visible &lt;div class="form-group col-md-11"&gt;…&lt;/div&gt;
+elementHandle.fill("ENDOCRINOLOGIA_ALUNO UFRN")
+  waiting for element to be visible, enabled and editable
+  Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
 ============================================================</status>
 </test>
 <doc>Teste Agendamento</doc>
-<status status="FAIL" starttime="20211204 20:49:04.350" endtime="20211204 20:49:34.770"/>
+<status status="FAIL" starttime="20211204 21:52:40.641" endtime="20211204 21:52:50.942"/>
 </suite>
 <statistics>
 <total>
@@ -1188,7 +664,7 @@ waiting for selector "xpath=/html/body/div[2]/div" to be visible
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="9 - Profissional">9 - Profissional</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="11 - Oferta">11 - Oferta</stat>
 </suite>
 </statistics>
 <errors>

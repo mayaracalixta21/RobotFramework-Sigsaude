@@ -16,7 +16,7 @@
                     "headless:true",
                     "-v",
                     "navegador:chromium",
-                    "/home/m.calixta/Projeto sigsaúde/Tests/11 - Oferta.robot",
+                    "Tests/3 - cadastro_colaborador.robot",
                 ],
                 "console": "integratedTerminal"
             },

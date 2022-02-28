@@ -11,7 +11,7 @@ Documentation       Cadastro especialidade
 ...  procedimento2=bs-select-1-0
 
 &{Valor_campos_modalidade}
-...  denominacao=Atendimento SOS
+...  denominacao=ACOMPANHAMENTO PSICOSSOCIAL DO ESTUDANTE UFRN
 ...  profissao=${Valor_campos_profissao.nome_da_profissao}
 ...  espelicalidade=${Valor_campos_especialidade.denominacao}
 

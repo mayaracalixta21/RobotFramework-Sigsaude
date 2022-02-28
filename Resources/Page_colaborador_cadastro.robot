@@ -11,7 +11,6 @@ Documentation       Cadastro colaborador
 ...  login=inputLogin
 ...  vinculo=selectTipoVinculo
 
-
 &{Valor_campos_colaborador}
 ...  nome=Bruna Guedes
 ...  CPF=191.297.360-05

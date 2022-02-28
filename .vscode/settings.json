@@ -16,7 +16,7 @@
                     "headless:true",
                     "-v",
                     "navegador:chromium",
-                    "Tests/3 - cadastro_colaborador.robot",
+                    "Tests/6 - Profissão.robot",
                 ],
                 "console": "integratedTerminal"
             },

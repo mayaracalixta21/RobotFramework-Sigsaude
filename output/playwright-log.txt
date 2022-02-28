@@ -1,28 +1,11 @@
-{"level":30,"time":"2022-02-28T17:10:18.182Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Listening on 42611"}
-{"level":30,"time":"2022-02-28T17:10:18.597Z","pid":1196969,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-02-28T17:10:18.605Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T17:10:18.733Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
-{"level":30,"time":"2022-02-28T17:10:18.733Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changed active page"}
-{"level":30,"time":"2022-02-28T17:10:30.957Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element xpath=//*[@id=\"dataTable\"]/tbody/tr/td[1]/span containing BRUNA GUEDES"}
-{"level":30,"time":"2022-02-28T17:10:32.926Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element xpath=//*[@id=\"dataTable\"]/tbody/tr/td[1]/span containing BRUNA GUEDES"}
-{"level":30,"time":"2022-02-28T17:10:34.548Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element xpath=//*[@id=\"dataTable\"]/tbody/tr/td[1]/span containing BRUNA GUEDES"}
-{"level":30,"time":"2022-02-28T17:10:36.518Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.538Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.560Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.583Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.604Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.624Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.644Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.664Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.690Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.710Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.730Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.783Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções"}
-{"level":30,"time":"2022-02-28T17:10:36.808Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element id=dataTable containing Nome\tE-mail\tLogin\tAções\nNENHUM REGISTRO ENCONTRADO"}
-{"level":30,"time":"2022-02-28T17:10:38.520Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Retrieved text for element xpath=//*[@id=\"dataTable\"]/tbody/tr/td[1]/span containing BRUNA GUEDES"}
-{"level":30,"time":"2022-02-28T17:10:40.758Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T17:10:40.759Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-28T17:10:40.759Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changed active page"}
-{"level":30,"time":"2022-02-28T17:10:40.775Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T17:10:40.776Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-28T17:10:40.776Z","pid":1196969,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T17:55:40.873Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Listening on 59343"}
+{"level":30,"time":"2022-02-28T17:55:41.265Z","pid":1211207,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-02-28T17:55:41.273Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T17:55:41.405Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
+{"level":30,"time":"2022-02-28T17:55:41.405Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T17:56:12.367Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T17:56:12.368Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-28T17:56:12.368Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T17:56:12.395Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T17:56:12.395Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-28T17:56:12.395Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active page"}

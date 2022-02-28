@@ -4,7 +4,7 @@ Configurações iniciais
     git add README.md
     git commit -m "first commit"
     git branch -M master
-    git remote add origin https://github.com/mayaracalixta21/RobotFramework-Sigsaude.git
+    git remote add origin10 https://github.com/mayaracalixta21/RobotFramework-Sigsaude.git
     git push -u origin master
 
 Criando uma branch 
@@ -16,7 +16,7 @@ Criando uma branch
     git merge ＜new-branch＞ # Realiza o merge entre as duas branchs (Precisa estar na master)
     git add .
     git commit -m "first commit"
-    git push origin master
+    git push origin10 master
 
 Deleta uma branch
     git push origin --delete ＜new-branch＞ # Deleta remotamente (Precisa estar na master)

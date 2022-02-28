@@ -13,8 +13,8 @@ Documentation       Cadastro profissão
 ...  ocupacao2=bs-select-1-0
 
 &{Valor_campos_profissao}
-...  nome_da_profissao=Teste prof
-...  sigla=AHX
+...  nome_da_profissao=Testes prof50
+...  sigla=THS
 ...  nivel_formacao=SUPERIOR
 ...  conselho_profissional=CFBM - CONSELHO FEDERAL DE BIOMEDICINA
 
@@ -29,7 +29,8 @@ preencher o ${CAMPO} com ${VALOR}
     Type Text               id=${CAMPO}        ${VALOR}
 
 selecionar o ${VALOR} no ${CAMPO}
-    Select Options By       id=${CAMPO}        Text        ${VALOR}
+    ${VALOR2}               Convert To Upper Case                ${VALOR}
+    Select Options By       id=${CAMPO}        Text        ${VALOR2}
 
 clicar no ${Button}
     Click                     id=${Button}
@@ -41,3 +42,4 @@ mensagem de cadastro realizado com sucesso é exibida
 informar o ${CAMPO}
     Click           xpath=${CAMPO}
     Click           id=${Campos_profissao.ocupacao2}
+ 

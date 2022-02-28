@@ -1,11 +1,41 @@
-{"level":30,"time":"2022-02-28T17:55:40.873Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Listening on 59343"}
-{"level":30,"time":"2022-02-28T17:55:41.265Z","pid":1211207,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-02-28T17:55:41.273Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T17:55:41.405Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
-{"level":30,"time":"2022-02-28T17:55:41.405Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active page"}
-{"level":30,"time":"2022-02-28T17:56:12.367Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T17:56:12.368Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-28T17:56:12.368Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active page"}
-{"level":30,"time":"2022-02-28T17:56:12.395Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T17:56:12.395Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-28T17:56:12.395Z","pid":1211207,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T19:41:46.768Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Listening on 57749"}
+{"level":30,"time":"2022-02-28T19:41:47.134Z","pid":1240814,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-02-28T19:41:47.142Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T19:41:47.279Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
+{"level":30,"time":"2022-02-28T19:41:47.279Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active page"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=.swal-modal" to be visible
+============================================================
+    at Object.<anonymous> (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+page.screenshot: Timeout 10000ms exceeded.
+    at /home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
+    at step (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
+    at Object.next (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
+    at /home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
+    at takeScreenshot (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
+    at PlaywrightServer.<anonymous> (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
+    at step (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
+    at Object.next (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
+    at /home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
+    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
+    at PlaywrightServer.takeScreenshot (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
+    at handleUnary (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2022-02-28T19:42:24.478Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T19:42:24.478Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-28T19:42:24.478Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T19:42:24.514Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T19:42:24.514Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-28T19:42:24.514Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active page"}

@@ -8,11 +8,10 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
 ***Test Cases***
 [001] -Cadastro de modalidade (Completo)
     Dado        que o usuario está na tela "cadastro modalidade"
-    E           preenchido o "Denominação" com o "Teste automatizado"
-    E           selecione "ENDOCRINOLOGIA" no campo "Profissão"
-    E           selecione "ENDOCRINOLOGIA E METABOLOGIA" no campo "Especialidade"
-    E           selecionar opções em "Procedimento"
-    Quando      clicar no "Avançar" 
-    E           clicar no "Cadastrar" 
-    Então       mensagem de cadastro realizado com sucesso
-    Sleep   20s
+    Então       preencher o ${Campos_modalidade.denominacao} com ${Valor_campos_modalidade.denominacao}
+    E           selecionar o ${Valor_campos_modalidade.profissao} no ${Campos_modalidade.profissao}
+    E           selecionar o ${Valor_campos_modalidade.especialidade} no ${Campos_modalidade.especialidade}
+    E           inserir o ${Campos_modalidade.procedimento1}
+    Quando      clicar no ${Buttons.avançar}
+    E           clicar no ${Buttons.cadastrar}
+    Então       mensagem de cadastro realizado com sucesso é exibida

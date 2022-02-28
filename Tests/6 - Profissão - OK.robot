@@ -4,6 +4,7 @@ Documentation      Cadastro profissão
 Resource        ${EXECDIR}/Resources/login.robot
 Resource        ${EXECDIR}/Resources/nav.robot
 Resource        ${EXECDIR}/Resources/Page_profissão_cadastro.robot
+Resource        ${EXECDIR}/Resources/Page_especialidade_cadastro.robot
 
 Suite Setup     iniciar navegador sessão "Endocrinologia" 
 
@@ -18,4 +19,3 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
     Quando      clicar no ${Buttons.avançar}
     E           clicar no ${Buttons.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
-   

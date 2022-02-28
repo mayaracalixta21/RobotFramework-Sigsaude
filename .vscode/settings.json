@@ -16,7 +16,7 @@
                     "headless:true",
                     "-v",
                     "navegador:chromium",
-                    "Tests/6 - Profissão.robot",
+                    "Tests/Caminho feliz.robot",
                 ],
                 "console": "integratedTerminal"
             },

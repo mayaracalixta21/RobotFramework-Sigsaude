@@ -1,4 +1,4 @@
 {
-    "base_url":"https://homologaçãosigsaude.imd.ufrn.br/sigsaude",
-    "navegador":"chromium"
+    "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
+    "navegador":"firefox"
 }

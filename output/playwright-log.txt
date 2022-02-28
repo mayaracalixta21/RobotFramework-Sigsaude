@@ -1,41 +1,11 @@
-{"level":30,"time":"2022-02-28T19:41:46.768Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Listening on 57749"}
-{"level":30,"time":"2022-02-28T19:41:47.134Z","pid":1240814,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-02-28T19:41:47.142Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T19:41:47.279Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
-{"level":30,"time":"2022-02-28T19:41:47.279Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active page"}
-================= Original suppressed error =================
-page.waitForSelector: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "css=.swal-modal" to be visible
-============================================================
-    at Object.<anonymous> (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
-    at step (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
-    at Object.next (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
-    at fulfilled (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) {
-  name: 'TimeoutError'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Timeout 10000ms exceeded.
-    at /home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'TimeoutError'
-}
-=============================================================
-{"level":30,"time":"2022-02-28T19:42:24.478Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T19:42:24.478Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-28T19:42:24.478Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active page"}
-{"level":30,"time":"2022-02-28T19:42:24.514Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-02-28T19:42:24.514Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-28T19:42:24.514Z","pid":1240814,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T22:32:18.637Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Listening on 49789"}
+{"level":30,"time":"2022-02-28T22:32:20.118Z","pid":1278350,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-02-28T22:32:20.125Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T22:32:20.581Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
+{"level":30,"time":"2022-02-28T22:32:20.581Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T22:33:06.302Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T22:33:06.303Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-28T22:33:06.303Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-02-28T22:33:06.318Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-02-28T22:33:06.318Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-28T22:33:06.318Z","pid":1278350,"hostname":"VHSJP1995N","msg":"Changed active page"}

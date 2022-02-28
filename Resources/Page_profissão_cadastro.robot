@@ -13,8 +13,8 @@ Documentation       Cadastro profissão
 ...  ocupacao2=bs-select-1-0
 
 &{Valor_campos_profissao}
-...  nome_da_profissao=Testes prof50
-...  sigla=THS
+...  nome_da_profissao=NUTRICIONISTA
+...  sigla=NUT
 ...  nivel_formacao=SUPERIOR
 ...  conselho_profissional=CFBM - CONSELHO FEDERAL DE BIOMEDICINA
 

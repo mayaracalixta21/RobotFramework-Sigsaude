@@ -64,13 +64,15 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
 #    Então       mensagem de cadastro realizado com sucesso é exibida
 
 
-[009] -Cadastro de profissional (Completo)
-    Dado        que o usuario está na tela "cadastro oferta"
-    Então       preencher o ${Campos_oferta.denominacao} com ${Valor_campos_oferta.denominacao}
-    E           preencher o ${Campos_oferta.data_inicio} com ${Valor_campos_oferta.data_inicio}
-    E           preencher o ${Campos_oferta.data_fim} com ${Valor_campos_oferta.data_fim}
-    E           preencher o ${Campos_oferta.inicio_do_expediente} com ${Valor_campos_oferta.inicio_do_expediente}
-    E           preencher o ${Campos_oferta.fim_do_expediente} com ${Valor_campos_oferta.fim_do_expediente}
-    Quando      clicar no ${Buttons.avançar}
-    Então       inserir modalidade ${Campos_oferta.modalidade1}
-    Sleep            20s
+#[009] -Cadastro de oferta de atendimento (Completo)
+#    Dado        que o usuario está na tela "cadastro oferta"
+#    Então       preencher o ${Campos_oferta.denominacao} com ${Valor_campos_oferta.denominacao}
+#    E           preencher o ${Campos_oferta.data_inicio} com ${Valor_campos_oferta.data_inicio}
+#    E           preencher o ${Campos_oferta.data_fim} com ${Valor_campos_oferta.data_fim}
+#    E           preencher o ${Campos_oferta.inicio_do_expediente} com ${Valor_campos_oferta.inicio_do_expediente}
+#    E           preencher o ${Campos_oferta.fim_do_expediente} com ${Valor_campos_oferta.fim_do_expediente}
+#    Quando      clicar no ${Buttons_oferta.avançar}
+#    Então       inserir modalidade ${Campos_oferta.modalidade1}
+#    E           adicionar escala ${Valor_campos_oferta.descricao_escala}
+#    Quando      clicar no ${Buttons_oferta.salvar}
+#    Então       mensagem de cadastro realizado com sucesso é exibida

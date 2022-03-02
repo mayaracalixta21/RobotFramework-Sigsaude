@@ -8,6 +8,7 @@ Resource        ${EXECDIR}/Resources/Page_especialidade_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_modalidade_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_profissional_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_oferta_cadastro.robot
+Resource        ${EXECDIR}/Resources/Page_agendamento.robot
 
 
 Suite Setup     iniciar navegador sessão "Endocrinologia"
@@ -76,3 +77,12 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
 #    E           adicionar escala ${Valor_campos_oferta.descricao_escala}
 #    Quando      clicar no ${Buttons_oferta.salvar}
 #    Então       mensagem de cadastro realizado com sucesso é exibida
+
+
+[010] - Realizar agendamento (Completo)
+    Dado          que o usuario está na tela "agendamento"
+    E             filtrar ${Filtro_agendamentos.disponiveis}
+    E             informar modalidade para o filtro ${Valor_campos_agendamento.filtro_modalidade}
+    E             realizar agendamento
+    E             informe o usuario de serviço ${Valor_campos_agendamento.usuario_de_servico2}
+    #E              Teste

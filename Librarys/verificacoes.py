@@ -16,3 +16,12 @@ def limpar_lista():
 def recuperar_lista():
     return lista
     limpar_lista()
+
+
+def retirar_zero_esquerda(campo):
+    x = campo.lstrip('0')
+    return x
+
+aux = '04'
+a = retirar_zero_esquerda(aux)
+print(a)

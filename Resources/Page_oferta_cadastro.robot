@@ -56,11 +56,12 @@ Adicionar escala ${VALOR}
     #Click           id=${Campos_oferta.data_inicio_escala}
     # Fill Text       id=${Campos_oferta.data_inicio_escala}       11/11/1111
     #Fill Text       id=${Campos_oferta.data_fim_escala}          ${Valor_campos_oferta.data_fim_escala}
+
     FOR     ${cont}    IN RANGE    3   8
         Click           xpath=//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div[3]/table/tbody/tr/td[${cont}]
     END
-    Click           id=${Buttons_oferta.concluir_escala}
 
+ 
 
 
 

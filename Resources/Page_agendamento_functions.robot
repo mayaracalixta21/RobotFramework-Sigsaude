@@ -1,7 +1,6 @@
 ***Settings***
 Documentation       Manipulando datas
 
-Resource        ${EXECDIR}/Resources/Keywords.robot
 Library     DateTime
 
 **Keywords***

@@ -3,13 +3,12 @@ Documentation       Keywords base
 
 Resource        ${EXECDIR}/Resources/Keywords.robot
 
-Library           Collections 
+Library           Collections
 
 
 ***Variables***   
 ${table} =           //*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/
 ${fim} =             /a/div/div
-${filtro} =         //*[@id="calendario"]/section/div/div/div/div/div[1]/div/
 ${aux} 
 ${idconsultas}
 
@@ -122,3 +121,4 @@ informar os status do agendamento "${status}"
             ${idstatus}      Set Variable            5
             Click          xpath=//*[@id="listStatus"]/a[${idstatus}]  
         END
+

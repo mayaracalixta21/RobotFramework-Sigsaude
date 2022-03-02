@@ -9,7 +9,6 @@ Resource        ${EXECDIR}/Resources/keywords_campos.robot
 Resource        ${EXECDIR}/Resources/login.robot
 Resource        ${EXECDIR}/Resources/nav.robot
 Resource        ${EXECDIR}/Resources/keywords_mensagens.robot
-Resource        ${EXECDIR}/Resources/date.robot
 Resource        ${EXECDIR}/Resources/keywords_agendamento.robot
 
 **Keywords***

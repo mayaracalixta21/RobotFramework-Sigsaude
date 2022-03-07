@@ -8,35 +8,24 @@ Library     DateTime
 
 
 Procura dia
-    [Arguments]        ${dia}           ${aux} 
+    [Arguments]        ${dia}           ${aux}
 
         FOR    ${contador3}    IN RANGE    1     7
             ${aux_2}      Get Text       xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a
-            
-            #${dia} =       retirar zero esquerda       ${dia}
-            #${aux_2} =     retirar zero esquerda       ${aux_2}
-            
-            #${dia} =       Convert To Number       ${dia}
-            #${aux_2} =     Convert To Number       ${aux_2}
-            
-            #IF       ${aux_2} < 10
-            #    ${aux_2}=       Set Variable        0${aux_2}
-            #END
-            ${dia_2} =       retirar zero esquerda       ${dia}
-            ${aux_3} =      retirar zero esquerda       ${aux_2}
-            ${dia_2} =       Convert To Number       ${dia_2}
-            ${aux_3} =       Convert To Number       ${aux_3}
 
-            IF    '${dia_2}'=='${aux_3}'
+            IF       ${aux_2} < 10
+                ${aux_2}=       Set Variable        0${aux_2}
+            END
+
+            IF    '${dia}' == '${aux_2}'
                 Exit For Loop
             END
 
         END
-          #  Log To console   Final variavel controle: ${aux_3}
 
     [Return]   ${contador3}
 
-Mês Convertion 
+Mês Convertion
     [Arguments]        ${mes}
         IF      '${mes}' == '1'
             ${mes}     Set Variable    Janeiro

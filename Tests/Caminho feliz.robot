@@ -14,6 +14,7 @@ Resource        ${EXECDIR}/Resources/Page_agendamento.robot
 Suite Setup     iniciar navegador sessão "Endocrinologia"
 
 ***Test Cases***
+
 #[001] -Cadastro de profissão (Completo)
 #    Dado        que o usuario está na tela "cadastro de profissão"
 #    Então       preencher o ${Campos_profissao.nome_da_profissao} com ${Valor_campos_profissao.nome_da_profissao}
@@ -79,15 +80,27 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
 #    Então       mensagem de cadastro realizado com sucesso é exibida
 
 
-[010] - Realizar agendamento (Completo)
-    Dado          que o usuario está na tela "agendamento"
-    E             informar modalidade para o filtro ${Valor_campos_agendamento.filtro_modalidade}
-    E             filtrar ${Filtro_agendamentos.disponiveis}
-    E             realizar agendamento
-    E             informe o usuario de serviço ${Valor_campos_agendamento.usuario_de_servico2}
-    E             adicionar observação ao comprovante de agendamento e e-mail
-    E             informar a observação do ${Valor_campos_agendamento.observacao}
-    E             clicar em ${Buttons_agendamento.salvar}
-    Quando        imprimir comprovante de agendamento ${Buttons_agendamento.sim}
-    Então         avisar por email ${Buttons_agendamento.sim}
-    Sleep   20s
+#[010] - Realizar agendamento (Completo)
+#    Dado          que o usuario está na tela "agendamento"
+#    E             informar modalidade para o filtro ${Valor_campos_agendamento.filtro_modalidade}
+#    E             filtrar ${Filtro_agendamentos.disponiveis}
+#    E             realizar agendamento
+#    E             informar qual o tipo de consulta ${Valor_campos_agendamento.consulta_primeira_vez}
+#    E             informe o usuario de serviço ${Valor_campos_agendamento.usuario_de_servico2}
+#    E             adicionar observação ao comprovante de agendamento e e-mail
+#    E             informar a observação do ${Valor_campos_agendamento.observacao}
+#    E             clicar em ${Buttons_agendamento.salvar}
+#    Quando        imprimir comprovante de agendamento ${Buttons_agendamento.sim}
+#    Então         avisar por email ${Buttons_agendamento.sim}
+
+
+[011] - Cancelar agendamento (Completo)
+    Dado        que o usuario está na tela "agendamento"
+    E           filtrar ${Filtro_agendamentos.agendados}
+    E           realizar o cancelamento
+    E           informar os status do agendamento ${Valor_campos_agendamento.status_cancelado}
+    E           informar a justificativa do cancelamento ${Valor_campos_agendamento.justificativa}
+    E           clicar em ${Buttons_agendamento.salvar}
+    Então       avisar por email ${Buttons_agendamento.sim}
+    Sleep       10s
+

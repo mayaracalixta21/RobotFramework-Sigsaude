@@ -77,17 +77,17 @@ informar o usuario de serviço "${usuario}"
 
 
 informar o tipo de consulta "${consulta}"
-    Click               xpath=//*[@id="cfg_atendimento"]/button
-    ${consulta} =	    Convert To Upper Case                       ${consulta}
-        IF          '${consulta}'=='PRIMEIRA VEZ'
+    Click               xpath=&{Campos_agendamento.consulta}
+     ${Valor_campos_agendamento.consulta_primeira_vez} =	    Convert To Upper Case                       ${Valor_campos_agendamento.consulta_primeira_vez}
+        IF          ' ${Valor_campos_agendamento.consulta_primeira_vez}'=='PRIMEIRA VEZ'
             ${idconsultas}      Set Variable            1
-           Click           xpath=//*[@id="listTipoAtendimento"]/a[${idconsultas}]      
-        ELSE IF     '${consulta}'=='RETORNO'
+           Click           xpath=${Campos_agendamento_identificador_consulta}[${idconsultas}]
+        ELSE IF     '${Valor_campos_agendamento.consulta_retorno}'=='RETORNO'
             ${idconsultas}      Set Variable            2
-            Click          xpath=//*[@id="listTipoAtendimento"]/a[${idconsultas}]       
+            Click          xpath=${Campos_agendamento_identificador_consulta}[${idconsultas}]
         ELSE
             ${idconsultas}      Set Variable            3
-            Click          xpath=//*[@id="listTipoAtendimento"]/a[${idconsultas}]       
+            Click          xpath=${Campos_agendamento_identificador_consulta}[${idconsultas}]       
         END
 
 informar os status do agendamento "${status}"

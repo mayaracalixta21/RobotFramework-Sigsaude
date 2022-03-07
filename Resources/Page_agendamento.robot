@@ -6,6 +6,10 @@ Resource            ${EXECDIR}/Resources/Page_agendamento_functions.robot
 Library             ${EXECDIR}/Librarys/verificacoes.py
 
 *** Variables ***
+${table} =           //*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/
+${fim} =             /a/div/div
+${aux} 
+${idconsultas}
 
 
 &{Agendamento}
@@ -24,14 +28,19 @@ Library             ${EXECDIR}/Librarys/verificacoes.py
 ...  filtro_modalidade_inseir=//*[@id="filtro-modal"]/div/div/div[2]/form/div[2]/div/div/div[1]/input
 ...  usuario_de_servico1= //*[@id="autocompletUsuario"]/div/button/div/div/div
 ...  usuario_de_servico2= //*[@id="autocompletUsuario"]/div/div/div[1]/input
+...  observacao= //*[@id="event-modal"]/div/div/div[2]/form/div[4]/div[8]/textarea
 
 &{Valor_campos_agendamento}
 ...  filtro_modalidade=Nutrição
-...  dia=18
+...  dia=09
 ...  mes=05
 ...  ano=2022
 ...  usuario_de_servico2=Mayara
+...  observacao=Teste automatizado
 
+#10 - 08
+
+#18 = 9
 &{Buttons_agendamento}
 ...  deselecionar_todas=//*[@id="filtro-modal"]/div/div/div[2]/form/div[2]/div/div/div[2]/div/button[2]
 ...  selecionar_modalidade=bs-select-5-10
@@ -39,17 +48,21 @@ Library             ${EXECDIR}/Librarys/verificacoes.py
 ...  filtro_busca=//*[@id="calendario"]/section/div/div/div/div/div[1]/div/span[9]
 ...  filtro_modalidade=//*[@id="filtro-modal"]/div/div/div[2]/form/div[2]/div/button/div/div/div
 ...  selecionar_usuario=bs-select-4
+...  adicionar_observacao=//*[@id="adicionar_observacao"]/div/label/span[1]
+...  salvar=//*[@id="botoesModal"]/button[1]
+...  envio_email=/html/body/div[5]/div
+...  sim=/html/body/div[5]/div/div[4]/div[2]/button
 
 ***Keywords***
 
 filtrar ${VALOR}
    IF   "${VALOR}" == "${Filtro_agendamentos.disponiveis}"
-        FOR    ${contador}    IN RANGE    1  5
-            Click         xpath=${Filtro_agendamentos.identificador}span[${contador}]/i[2]
+        FOR    ${contador}    IN RANGE    1  6
+            Click         xpath=${Filtro_agendamentos.identificador}span[${contador}]
         END
     ELSE IF  "${VALOR}" == "${Filtro_agendamentos.agendados}"
         FOR    ${contador}    IN RANGE    2  6
-            Click         xpath==${Filtro_agendamentos.identificador}span[${contador}]/i[2]
+            Click         xpath==${Filtro_agendamentos.identificador}span[${contador}]
         END
     END
 
@@ -109,9 +122,31 @@ realizar agendamento
             Click             xpath=${table}div[${cont}]/div[2]/table/tbody/tr[1]/td[6]${fim}
         END
 
+
+
 informe o usuario de serviço ${VALOR}
     Click                            xpath=${Campos_agendamento.usuario_de_servico1}
     Type Text                        xpath=${Campos_agendamento.usuario_de_servico2}        ${VALOR}
     Sleep   3s
     Click                            id=${Buttons_agendamento.selecionar_usuario}
+
+adicionar observação ao comprovante de agendamento e e-mail
+    Click    xpath=${Buttons_agendamento.adicionar_observacao}
+
+informar a observação do ${VALOR}
+    Fill Text           xpath=${Campos_agendamento.observacao}          ${VALOR}
+
+clicar em ${CAMPO}
+    Click    xpath=${CAMPO}
+
+imprimir comprovante de agendamento ${CAMPO}
+    Click     xpath=${CAMPO}
+    ${previous} =    Switch Page              NEW
+    Close Page          CURRENT
+
+avisar por email ${CAMPO}
+    Click     xpath=${CAMPO}
+
+
+
 

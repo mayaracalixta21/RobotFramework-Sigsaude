@@ -81,8 +81,13 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
 
 [010] - Realizar agendamento (Completo)
     Dado          que o usuario está na tela "agendamento"
-    E             filtrar ${Filtro_agendamentos.disponiveis}
     E             informar modalidade para o filtro ${Valor_campos_agendamento.filtro_modalidade}
+    E             filtrar ${Filtro_agendamentos.disponiveis}
     E             realizar agendamento
     E             informe o usuario de serviço ${Valor_campos_agendamento.usuario_de_servico2}
-    #E              Teste
+    E             adicionar observação ao comprovante de agendamento e e-mail
+    E             informar a observação do ${Valor_campos_agendamento.observacao}
+    E             clicar em ${Buttons_agendamento.salvar}
+    Quando        imprimir comprovante de agendamento ${Buttons_agendamento.sim}
+    Então         avisar por email ${Buttons_agendamento.sim}
+    Sleep   20s

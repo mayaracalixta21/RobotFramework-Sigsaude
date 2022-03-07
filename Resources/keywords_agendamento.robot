@@ -40,6 +40,8 @@ informar o dia:"${dia}", mês:"${mês}" e o ano:"${ano}" para realizar o agendam
         END
     END
 
+   # filtrar ${Filtro_agendamentos.disponiveis}
+
         ${diadasemana}         Date Convertion         ${ano}/${mês}/${dia}
 
         IF     '${diadasemana}' == 'Segunda-feira'      
@@ -70,23 +72,9 @@ informar o usuario de serviço "${usuario}"
     Sleep            5s
     Click            id=bs-select-4      
 
-adicionar observação ao comprovante de agendamento e e-mail 
-    Click    xpath=//*[@id="adicionar_observacao"]/div/label/span[1]
 
 
-filtrar "${disponiveis}" 
-   
-   IF   '${disponiveis}' == 'disponiveis'
-        ${elementos_json}         Get JSON             elementos.json 
-        FOR    ${contador}    IN RANGE    1  5
-            Click         xpath=${filtro}span[${contador}]/i[2]
-        END
-    ELSE IF   '${disponiveis}' == 'agendados'
-        ${elementos_json}         Get JSON             elementos.json 
-        FOR    ${contador}    IN RANGE    2  6
-            Click         xpath=${filtro}span[${contador}]/i[2]
-        END
-    END
+
 
 informar o tipo de consulta "${consulta}"
     Click               xpath=//*[@id="cfg_atendimento"]/button

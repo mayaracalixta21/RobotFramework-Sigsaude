@@ -11,5 +11,7 @@
     "cadastro modalidade":"/modalidadeAtendimento/form",
     "cadastro profissional":"/profissionalSaude/form",
     "cadastro turma":"/turma/form",
-    "cadastro oferta":"/ofertaAtendimento/form"
+    "cadastro oferta":"/ofertaAtendimento/form",
+    "listar oferta":"/ofertaAtendimento"
+  
 }

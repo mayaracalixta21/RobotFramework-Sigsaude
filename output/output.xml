@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20220307 20:41:24.499" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20220307 21:44:06.376" rpa="false" schemaversion="2">
 <suite id="s1" name="Caminho feliz" source="/home/m.calixta/RobotFramework-Sigsaude/Tests/Caminho feliz.robot">
 <kw name="iniciar navegador sessão &quot;Endocrinologia&quot;" library="base" type="SETUP" sourcename="iniciar navegador sessão &quot;${login_usuario}&quot;">
 <kw name="iniciar Navegador" library="base">
@@ -10,23 +10,23 @@
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:25.684" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:25.685" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:07.679" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:07.680" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20220307 20:41:25.683" endtime="20220307 20:41:25.685"/>
+<status status="PASS" starttime="20220307 21:44:07.675" endtime="20220307 21:44:07.680"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:25.698" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:25.686" endtime="20220307 20:41:25.698"/>
+<msg timestamp="20220307 21:44:07.712" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:07.683" endtime="20220307 21:44:07.712"/>
 </kw>
-<msg timestamp="20220307 20:41:25.699" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:25.682" endtime="20220307 20:41:25.699"/>
+<msg timestamp="20220307 21:44:07.714" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:07.672" endtime="20220307 21:44:07.714"/>
 </kw>
 <kw name="New Browser" library="Browser">
 <arg>${config_json["navegador"]}</arg>
@@ -35,11 +35,11 @@
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20220307 20:41:25.704" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
-<msg timestamp="20220307 20:41:26.016" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
-<status status="PASS" starttime="20220307 20:41:25.700" endtime="20220307 20:41:26.016"/>
+<msg timestamp="20220307 21:44:07.721" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
+<msg timestamp="20220307 21:44:08.021" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
+<status status="PASS" starttime="20220307 21:44:07.716" endtime="20220307 21:44:08.022"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:25.680" endtime="20220307 20:41:26.017"/>
+<status status="PASS" starttime="20220307 21:44:07.670" endtime="20220307 21:44:08.022"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${config_json}</var>
@@ -48,23 +48,23 @@ See `Browser, Context and Page` for more information about Browser and related c
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:26.020" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:26.020" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:08.025" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:08.026" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20220307 20:41:26.019" endtime="20220307 20:41:26.020"/>
+<status status="PASS" starttime="20220307 21:44:08.024" endtime="20220307 21:44:08.026"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:26.022" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:26.021" endtime="20220307 20:41:26.022"/>
+<msg timestamp="20220307 21:44:08.027" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:08.026" endtime="20220307 21:44:08.028"/>
 </kw>
-<msg timestamp="20220307 20:41:26.022" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:26.018" endtime="20220307 20:41:26.022"/>
+<msg timestamp="20220307 21:44:08.028" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:08.023" endtime="20220307 21:44:08.028"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${config_json["base_url"]}</arg>
@@ -73,9 +73,9 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20220307 20:41:29.885" level="INFO">Successfully initialized new page object and opened url: https://homologacaosigsaude.imd.ufrn.br/sigsaude</msg>
-<msg timestamp="20220307 20:41:29.885" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220307 20:41:26.023" endtime="20220307 20:41:29.886"/>
+<msg timestamp="20220307 21:44:13.805" level="INFO">Successfully initialized new page object and opened url: https://homologacaosigsaude.imd.ufrn.br/sigsaude</msg>
+<msg timestamp="20220307 21:44:13.805" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220307 21:44:08.029" endtime="20220307 21:44:13.805"/>
 </kw>
 <kw name="Direcionamento da tela &quot;login&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
 <kw name="Get JSON" library="base">
@@ -85,25 +85,25 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:29.893" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:29.893" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:13.810" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:13.811" level="INFO">${file} = {
     "login":"/login",
     "novo usuario de serviço":"/paciente/cadastro",
     "listar usuarios de serviço":"/paciente",
     "cadastro de colaborador":"/colaborador/form",
     "agendamento":"/agendam...</msg>
-<status status="PASS" starttime="20220307 20:41:29.892" endtime="20220307 20:41:29.894"/>
+<status status="PASS" starttime="20220307 21:44:13.809" endtime="20220307 21:44:13.811"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:29.896" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20220307 20:41:29.895" endtime="20220307 20:41:29.896"/>
+<msg timestamp="20220307 21:44:13.812" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220307 21:44:13.811" endtime="20220307 21:44:13.812"/>
 </kw>
-<msg timestamp="20220307 20:41:29.897" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20220307 20:41:29.890" endtime="20220307 20:41:29.897"/>
+<msg timestamp="20220307 21:44:13.813" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220307 21:44:13.808" endtime="20220307 21:44:13.813"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${config_json}</var>
@@ -112,33 +112,33 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:29.900" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:29.900" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:13.816" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:13.817" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20220307 20:41:29.899" endtime="20220307 20:41:29.900"/>
+<status status="PASS" starttime="20220307 21:44:13.815" endtime="20220307 21:44:13.817"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:29.902" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:29.901" endtime="20220307 20:41:29.902"/>
+<msg timestamp="20220307 21:44:13.819" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:13.818" endtime="20220307 21:44:13.819"/>
 </kw>
-<msg timestamp="20220307 20:41:29.903" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:29.898" endtime="20220307 20:41:29.903"/>
+<msg timestamp="20220307 21:44:13.820" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:13.814" endtime="20220307 21:44:13.820"/>
 </kw>
 <kw name="Go To" library="Browser">
 <arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20220307 20:41:31.107" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/login</msg>
-<status status="PASS" starttime="20220307 20:41:29.904" endtime="20220307 20:41:31.108"/>
+<msg timestamp="20220307 21:44:14.959" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/login</msg>
+<status status="PASS" starttime="20220307 21:44:13.821" endtime="20220307 21:44:14.959"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:29.888" endtime="20220307 20:41:31.110"/>
+<status status="PASS" starttime="20220307 21:44:13.806" endtime="20220307 21:44:14.960"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${login_json}</var>
@@ -147,8 +147,8 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:31.123" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/login.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/login.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:31.124" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:14.963" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/login.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/login.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:14.963" level="INFO">${file} = {
 
     "Psicologia":{
         "login": "drpsicologia",
@@ -160,18 +160,18 @@ Returns a stable identifier for the created page.</doc>
         "senha": 98841863323
     }
 }</msg>
-<status status="PASS" starttime="20220307 20:41:31.120" endtime="20220307 20:41:31.125"/>
+<status status="PASS" starttime="20220307 21:44:14.962" endtime="20220307 21:44:14.963"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:31.128" level="INFO">${super_var} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
-<status status="PASS" starttime="20220307 20:41:31.126" endtime="20220307 20:41:31.128"/>
+<msg timestamp="20220307 21:44:14.965" level="INFO">${super_var} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
+<status status="PASS" starttime="20220307 21:44:14.964" endtime="20220307 21:44:14.965"/>
 </kw>
-<msg timestamp="20220307 20:41:31.130" level="INFO">${login_json} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
-<status status="PASS" starttime="20220307 20:41:31.113" endtime="20220307 20:41:31.130"/>
+<msg timestamp="20220307 21:44:14.966" level="INFO">${login_json} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
+<status status="PASS" starttime="20220307 21:44:14.960" endtime="20220307 21:44:14.966"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=login-username</arg>
@@ -179,8 +179,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220307 20:41:31.136" level="INFO">Fills the text 'drendocrinologia' in the given field.</msg>
-<status status="PASS" starttime="20220307 20:41:31.131" endtime="20220307 20:41:31.171"/>
+<msg timestamp="20220307 21:44:14.971" level="INFO">Fills the text 'drendocrinologia' in the given field.</msg>
+<status status="PASS" starttime="20220307 21:44:14.967" endtime="20220307 21:44:15.003"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=login-password</arg>
@@ -188,25 +188,25 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220307 20:41:31.175" level="INFO">Fills the text '98841863323' in the given field.</msg>
-<status status="PASS" starttime="20220307 20:41:31.172" endtime="20220307 20:41:31.194"/>
+<msg timestamp="20220307 21:44:15.007" level="INFO">Fills the text '98841863323' in the given field.</msg>
+<status status="PASS" starttime="20220307 21:44:15.004" endtime="20220307 21:44:15.027"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=[value='Entrar']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:31.194" endtime="20220307 20:41:31.774"/>
+<status status="PASS" starttime="20220307 21:44:15.027" endtime="20220307 21:44:15.594"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:25.679" endtime="20220307 20:41:31.775"/>
+<status status="PASS" starttime="20220307 21:44:07.667" endtime="20220307 21:44:15.595"/>
 </kw>
-<test id="s1-t1" name="[011] - Cancelar agendamento (Completo)">
+<test id="s1-t1" name="[012] - Registrar escala (Completo)">
 <kw name="Dado" library="bdd">
-<arg>que o usuario está na tela "agendamento"</arg>
+<arg>que o usuario está na tela "listar oferta"</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="que o usuario está na tela &quot;agendamento&quot;" library="nav" sourcename="que o usuario está na tela &quot;${tela}&quot;">
+<kw name="que o usuario está na tela &quot;listar oferta&quot;" library="nav" sourcename="que o usuario está na tela &quot;${tela}&quot;">
 <kw name="Direcionamento da tela &quot;${tela}&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
 <kw name="Get JSON" library="base">
 <var>${telas_json}</var>
@@ -215,25 +215,25 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:31.803" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:31.804" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:15.619" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:15.620" level="INFO">${file} = {
     "login":"/login",
     "novo usuario de serviço":"/paciente/cadastro",
     "listar usuarios de serviço":"/paciente",
     "cadastro de colaborador":"/colaborador/form",
     "agendamento":"/agendam...</msg>
-<status status="PASS" starttime="20220307 20:41:31.801" endtime="20220307 20:41:31.804"/>
+<status status="PASS" starttime="20220307 21:44:15.617" endtime="20220307 21:44:15.620"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:31.806" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20220307 20:41:31.805" endtime="20220307 20:41:31.807"/>
+<msg timestamp="20220307 21:44:15.622" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220307 21:44:15.621" endtime="20220307 21:44:15.622"/>
 </kw>
-<msg timestamp="20220307 20:41:31.808" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
-<status status="PASS" starttime="20220307 20:41:31.799" endtime="20220307 20:41:31.808"/>
+<msg timestamp="20220307 21:44:15.623" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220307 21:44:15.615" endtime="20220307 21:44:15.624"/>
 </kw>
 <kw name="Get JSON" library="base">
 <var>${config_json}</var>
@@ -242,1282 +242,327 @@ Returns a stable identifier for the created page.</doc>
 <var>${file}</var>
 <arg>${EXECDIR}/Files/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20220307 20:41:31.812" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
-<msg timestamp="20220307 20:41:31.812" level="INFO">${file} = {
+<msg timestamp="20220307 21:44:15.627" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220307 21:44:15.628" level="INFO">${file} = {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
     "navegador":"chromium"
 }</msg>
-<status status="PASS" starttime="20220307 20:41:31.811" endtime="20220307 20:41:31.812"/>
+<status status="PASS" starttime="20220307 21:44:15.626" endtime="20220307 21:44:15.628"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${super_var}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220307 20:41:31.815" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:31.813" endtime="20220307 20:41:31.815"/>
+<msg timestamp="20220307 21:44:15.630" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:15.629" endtime="20220307 21:44:15.631"/>
 </kw>
-<msg timestamp="20220307 20:41:31.816" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
-<status status="PASS" starttime="20220307 20:41:31.809" endtime="20220307 20:41:31.816"/>
+<msg timestamp="20220307 21:44:15.631" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'chromium'}</msg>
+<status status="PASS" starttime="20220307 21:44:15.624" endtime="20220307 21:44:15.632"/>
 </kw>
 <kw name="Go To" library="Browser">
 <arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20220307 20:41:34.898" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/agendamento</msg>
-<status status="PASS" starttime="20220307 20:41:31.817" endtime="20220307 20:41:34.899"/>
+<msg timestamp="20220307 21:44:22.196" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/ofertaAtendimento</msg>
+<status status="PASS" starttime="20220307 21:44:15.633" endtime="20220307 21:44:22.197"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:31.797" endtime="20220307 20:41:34.900"/>
+<status status="PASS" starttime="20220307 21:44:15.613" endtime="20220307 21:44:22.197"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:31.796" endtime="20220307 20:41:34.900"/>
+<status status="PASS" starttime="20220307 21:44:15.612" endtime="20220307 21:44:22.197"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:31.794" endtime="20220307 20:41:34.901"/>
+<status status="PASS" starttime="20220307 21:44:15.610" endtime="20220307 21:44:22.198"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:31.792" endtime="20220307 20:41:34.901"/>
+<status status="PASS" starttime="20220307 21:44:15.608" endtime="20220307 21:44:22.198"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>filtrar ${Filtro_agendamentos.agendados}</arg>
+<arg>preencher o ${Campos_oferta.denominacao} com ${Valor_campos_oferta.denominacao}</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="filtrar AGENDADOS" library="Page_agendamento" sourcename="filtrar ${VALOR}">
-<if>
-<branch type="IF" condition="&quot;${VALOR}&quot; == &quot;${Filtro_agendamentos.disponiveis}&quot;">
-<for flavor="IN RANGE">
-<var>${contador}</var>
-<value>2</value>
-<value>6</value>
-<iter>
-<var name="${contador}">${contador}</var>
-<kw name="Click" library="Browser">
-<arg>xpath=${Filtro_agendamentos.identificador}span[${contador}]</arg>
+<kw name="preencher o inputDenominacao com Oferta nutriçãoo" library="Page_profissão_cadastro" sourcename="preencher o ${CAMPO} com ${VALOR}">
+<kw name="Type Text" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>${VALOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:34.917" endtime="20220307 20:41:34.917"/>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220307 21:44:22.213" level="INFO">Types the text 'Oferta nutriçãoo' in the given field.</msg>
+<status status="PASS" starttime="20220307 21:44:22.211" endtime="20220307 21:44:22.325"/>
 </kw>
-<status status="NOT RUN" starttime="20220307 20:41:34.916" endtime="20220307 20:41:34.918"/>
-</iter>
-<status status="NOT RUN" starttime="20220307 20:41:34.915" endtime="20220307 20:41:34.918"/>
-</for>
-<status status="NOT RUN" starttime="20220307 20:41:34.915" endtime="20220307 20:41:34.918"/>
-</branch>
-<branch type="ELSE IF" condition="&quot;${VALOR}&quot; == &quot;${Filtro_agendamentos.agendados}&quot;">
-<for flavor="IN RANGE">
-<var>${contador}</var>
-<value>3</value>
-<value>7</value>
-<iter>
-<var name="${contador}">3</var>
-<kw name="Click" library="Browser">
-<arg>xpath=${Filtro_agendamentos.identificador}span[${contador}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:34.924" endtime="20220307 20:41:36.787"/>
+<status status="PASS" starttime="20220307 21:44:22.209" endtime="20220307 21:44:22.325"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:34.923" endtime="20220307 20:41:36.788"/>
-</iter>
-<iter>
-<var name="${contador}">4</var>
-<kw name="Click" library="Browser">
-<arg>xpath=${Filtro_agendamentos.identificador}span[${contador}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:36.789" endtime="20220307 20:41:36.975"/>
+<status status="PASS" starttime="20220307 21:44:22.208" endtime="20220307 21:44:22.326"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:36.788" endtime="20220307 20:41:36.976"/>
-</iter>
-<iter>
-<var name="${contador}">5</var>
-<kw name="Click" library="Browser">
-<arg>xpath=${Filtro_agendamentos.identificador}span[${contador}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:36.977" endtime="20220307 20:41:37.174"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:36.976" endtime="20220307 20:41:37.174"/>
-</iter>
-<iter>
-<var name="${contador}">6</var>
-<kw name="Click" library="Browser">
-<arg>xpath=${Filtro_agendamentos.identificador}span[${contador}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:37.176" endtime="20220307 20:41:37.357"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:37.175" endtime="20220307 20:41:37.357"/>
-</iter>
-<status status="PASS" starttime="20220307 20:41:34.922" endtime="20220307 20:41:37.357"/>
-</for>
-<status status="PASS" starttime="20220307 20:41:34.922" endtime="20220307 20:41:37.357"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:34.911" endtime="20220307 20:41:37.358"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:34.910" endtime="20220307 20:41:37.358"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:34.908" endtime="20220307 20:41:37.358"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:34.903" endtime="20220307 20:41:37.358"/>
+<status status="PASS" starttime="20220307 21:44:22.199" endtime="20220307 21:44:22.326"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>realizar o cancelamento</arg>
+<arg>clicar no ${Buttons_escala.pesquisar}</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="realizar o cancelamento" library="Page_agendamento">
-<for flavor="IN RANGE">
-<var>${i}</var>
-<value>9999999</value>
-<iter>
-<var name="${i}">0</var>
-<kw name="Get Text" library="Browser">
-<var>${mes_cancelamento}</var>
-<arg>id=${Agendamento.mes_do_cancelamento}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:37.593" level="INFO">${mes_cancelamento} = Março de 2022</msg>
-<status status="PASS" starttime="20220307 20:41:37.558" endtime="20220307 20:41:37.593"/>
-</kw>
-<kw name="Split String" library="String">
-<var>@{lista_mes_cancelamento}</var>
-<arg>${mes_cancelamento}</arg>
-<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20220307 20:41:37.595" level="INFO">@{lista_mes_cancelamento} = [ Março | de | 2022 ]</msg>
-<status status="PASS" starttime="20220307 20:41:37.594" endtime="20220307 20:41:37.595"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_auxc}</var>
-<arg>${Valor_campos_agendamento.mes_c}</arg>
-<msg timestamp="20220307 20:41:37.599" level="INFO">${mes_auxc} = 5</msg>
-<status status="PASS" starttime="20220307 20:41:37.596" endtime="20220307 20:41:37.599"/>
-</kw>
-<kw name="Mês Convertion" library="Page_agendamento_functions">
-<var>${mes_auxc2}</var>
-<arg>${mes_auxc}</arg>
-<if>
-<branch type="IF" condition="'${mes}' == '1'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Janeiro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.602" endtime="20220307 20:41:37.603"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.602" endtime="20220307 20:41:37.603"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '2'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Fevereiro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.604" endtime="20220307 20:41:37.604"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.603" endtime="20220307 20:41:37.604"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '3'">
-<kw name="mes Variable">
-<var>${mes}</var>
-<arg>Março</arg>
-<status status="NOT RUN" starttime="20220307 20:41:37.700" endtime="20220307 20:41:37.700"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.604" endtime="20220307 20:41:37.700"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '4'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Abril</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.701" endtime="20220307 20:41:37.702"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.701" endtime="20220307 20:41:37.702"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '5'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Maio</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:37.703" level="INFO">${mes} = Maio</msg>
-<status status="PASS" starttime="20220307 20:41:37.703" endtime="20220307 20:41:37.703"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:37.702" endtime="20220307 20:41:37.703"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '6'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Junho</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.704" endtime="20220307 20:41:37.704"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.704" endtime="20220307 20:41:37.704"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '7'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Julho</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.705" endtime="20220307 20:41:37.705"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.705" endtime="20220307 20:41:37.705"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}'== '8'">
-<kw name="mes Variable">
-<var>${mes}</var>
-<arg>Agosto</arg>
-<status status="NOT RUN" starttime="20220307 20:41:37.732" endtime="20220307 20:41:37.732"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.706" endtime="20220307 20:41:37.732"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '9'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Setembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.733" endtime="20220307 20:41:37.733"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.732" endtime="20220307 20:41:37.733"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '10'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Outubro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.734" endtime="20220307 20:41:37.734"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.733" endtime="20220307 20:41:37.734"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '11'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Novembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.735" endtime="20220307 20:41:37.735"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.734" endtime="20220307 20:41:37.735"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '12'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Dezembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.736" endtime="20220307 20:41:37.736"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.735" endtime="20220307 20:41:37.736"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:37.601" endtime="20220307 20:41:37.736"/>
-</if>
-<msg timestamp="20220307 20:41:37.737" level="INFO">${mes_auxc2} = Maio</msg>
-<status status="PASS" starttime="20220307 20:41:37.600" endtime="20220307 20:41:37.737"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>'${lista_mes_cancelamento[0]}' == '${mes_auxc2}' and '${lista_mes_cancelamento[2]}' == '${Valor_campos_agendamento.ano_c}'</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220307 20:41:37.737" endtime="20220307 20:41:37.747"/>
-</kw>
-<kw name="Get Current Date" library="DateTime">
-<var>${mes_verc}</var>
-<arg>result_format=%m</arg>
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20220307 20:41:37.749" level="INFO">${mes_verc} = 03</msg>
-<status status="PASS" starttime="20220307 20:41:37.748" endtime="20220307 20:41:37.749"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_verc}</var>
-<arg>${mes_verc}</arg>
-<msg timestamp="20220307 20:41:37.751" level="INFO">${mes_verc} = 3</msg>
-<status status="PASS" starttime="20220307 20:41:37.750" endtime="20220307 20:41:37.751"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_ver2c}</var>
-<arg>${Valor_campos_agendamento.mes_c}</arg>
-<msg timestamp="20220307 20:41:37.754" level="INFO">${mes_ver2c} = 5</msg>
-<status status="PASS" starttime="20220307 20:41:37.751" endtime="20220307 20:41:37.754"/>
-</kw>
-<if>
-<branch type="IF" condition="${mes_ver2c} &gt; ${mes_verc}">
+<kw name="clicar no pesquisarOfertaDeAtendimento" library="Page_profissão_cadastro" sourcename="clicar no ${Button}">
 <kw name="Click" library="Browser">
-<arg>id=${Agendamento.avancar}</arg>
+<arg>id=${Button}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:37.755" endtime="20220307 20:41:37.919"/>
+<status status="PASS" starttime="20220307 21:44:22.336" endtime="20220307 21:44:22.589"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:37.755" endtime="20220307 20:41:37.919"/>
-</branch>
-<branch type="ELSE IF" condition="${mes_ver2c} &lt; ${mes_verc}">
-<kw name="Click" library="Browser">
-<arg>id=${Agendamento.voltar}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.920" endtime="20220307 20:41:37.920"/>
+<status status="PASS" starttime="20220307 21:44:22.335" endtime="20220307 21:44:22.590"/>
 </kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.919" endtime="20220307 20:41:37.920"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:37.754" endtime="20220307 20:41:37.920"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:37.557" endtime="20220307 20:41:37.921"/>
-</iter>
-<iter>
-<var name="${i}">1</var>
-<kw name="Get Text" library="Browser">
-<var>${mes_cancelamento}</var>
-<arg>id=${Agendamento.mes_do_cancelamento}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:37.959" level="INFO">${mes_cancelamento} = Abril de 2022</msg>
-<status status="PASS" starttime="20220307 20:41:37.922" endtime="20220307 20:41:37.959"/>
+<status status="PASS" starttime="20220307 21:44:22.333" endtime="20220307 21:44:22.590"/>
 </kw>
-<kw name="Split String" library="String">
-<var>@{lista_mes_cancelamento}</var>
-<arg>${mes_cancelamento}</arg>
-<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20220307 20:41:37.961" level="INFO">@{lista_mes_cancelamento} = [ Abril | de | 2022 ]</msg>
-<status status="PASS" starttime="20220307 20:41:37.960" endtime="20220307 20:41:37.961"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_auxc}</var>
-<arg>${Valor_campos_agendamento.mes_c}</arg>
-<msg timestamp="20220307 20:41:37.965" level="INFO">${mes_auxc} = 5</msg>
-<status status="PASS" starttime="20220307 20:41:37.962" endtime="20220307 20:41:37.965"/>
-</kw>
-<kw name="Mês Convertion" library="Page_agendamento_functions">
-<var>${mes_auxc2}</var>
-<arg>${mes_auxc}</arg>
-<if>
-<branch type="IF" condition="'${mes}' == '1'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Janeiro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.969" endtime="20220307 20:41:37.969"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.968" endtime="20220307 20:41:37.969"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '2'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Fevereiro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:37.970" endtime="20220307 20:41:37.971"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.970" endtime="20220307 20:41:37.971"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '3'">
-<kw name="mes Variable">
-<var>${mes}</var>
-<arg>Março</arg>
-<status status="NOT RUN" starttime="20220307 20:41:38.066" endtime="20220307 20:41:38.066"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:37.971" endtime="20220307 20:41:38.067"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '4'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Abril</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.068" endtime="20220307 20:41:38.068"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.067" endtime="20220307 20:41:38.068"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '5'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Maio</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:38.070" level="INFO">${mes} = Maio</msg>
-<status status="PASS" starttime="20220307 20:41:38.069" endtime="20220307 20:41:38.070"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:38.069" endtime="20220307 20:41:38.070"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '6'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Junho</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.071" endtime="20220307 20:41:38.071"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.070" endtime="20220307 20:41:38.071"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '7'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Julho</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.072" endtime="20220307 20:41:38.072"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.072" endtime="20220307 20:41:38.072"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}'== '8'">
-<kw name="mes Variable">
-<var>${mes}</var>
-<arg>Agosto</arg>
-<status status="NOT RUN" starttime="20220307 20:41:38.099" endtime="20220307 20:41:38.100"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.073" endtime="20220307 20:41:38.100"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '9'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Setembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.101" endtime="20220307 20:41:38.101"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.100" endtime="20220307 20:41:38.101"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '10'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Outubro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.102" endtime="20220307 20:41:38.102"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.101" endtime="20220307 20:41:38.103"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '11'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Novembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.103" endtime="20220307 20:41:38.104"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.103" endtime="20220307 20:41:38.104"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '12'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Dezembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.104" endtime="20220307 20:41:38.105"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.104" endtime="20220307 20:41:38.105"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:37.967" endtime="20220307 20:41:38.105"/>
-</if>
-<msg timestamp="20220307 20:41:38.105" level="INFO">${mes_auxc2} = Maio</msg>
-<status status="PASS" starttime="20220307 20:41:37.966" endtime="20220307 20:41:38.106"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>'${lista_mes_cancelamento[0]}' == '${mes_auxc2}' and '${lista_mes_cancelamento[2]}' == '${Valor_campos_agendamento.ano_c}'</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220307 20:41:38.106" endtime="20220307 20:41:38.117"/>
-</kw>
-<kw name="Get Current Date" library="DateTime">
-<var>${mes_verc}</var>
-<arg>result_format=%m</arg>
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20220307 20:41:38.118" level="INFO">${mes_verc} = 03</msg>
-<status status="PASS" starttime="20220307 20:41:38.118" endtime="20220307 20:41:38.119"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_verc}</var>
-<arg>${mes_verc}</arg>
-<msg timestamp="20220307 20:41:38.120" level="INFO">${mes_verc} = 3</msg>
-<status status="PASS" starttime="20220307 20:41:38.119" endtime="20220307 20:41:38.120"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_ver2c}</var>
-<arg>${Valor_campos_agendamento.mes_c}</arg>
-<msg timestamp="20220307 20:41:38.124" level="INFO">${mes_ver2c} = 5</msg>
-<status status="PASS" starttime="20220307 20:41:38.121" endtime="20220307 20:41:38.124"/>
-</kw>
-<if>
-<branch type="IF" condition="${mes_ver2c} &gt; ${mes_verc}">
-<kw name="Click" library="Browser">
-<arg>id=${Agendamento.avancar}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:38.125" endtime="20220307 20:41:38.635"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:38.125" endtime="20220307 20:41:38.635"/>
-</branch>
-<branch type="ELSE IF" condition="${mes_ver2c} &lt; ${mes_verc}">
-<kw name="Click" library="Browser">
-<arg>id=${Agendamento.voltar}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.636" endtime="20220307 20:41:38.637"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.635" endtime="20220307 20:41:38.637"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:38.124" endtime="20220307 20:41:38.637"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:37.921" endtime="20220307 20:41:38.637"/>
-</iter>
-<iter>
-<var name="${i}">2</var>
-<kw name="Get Text" library="Browser">
-<var>${mes_cancelamento}</var>
-<arg>id=${Agendamento.mes_do_cancelamento}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:38.796" level="INFO">${mes_cancelamento} = Maio de 2022</msg>
-<status status="PASS" starttime="20220307 20:41:38.638" endtime="20220307 20:41:38.796"/>
-</kw>
-<kw name="Split String" library="String">
-<var>@{lista_mes_cancelamento}</var>
-<arg>${mes_cancelamento}</arg>
-<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20220307 20:41:38.798" level="INFO">@{lista_mes_cancelamento} = [ Maio | de | 2022 ]</msg>
-<status status="PASS" starttime="20220307 20:41:38.797" endtime="20220307 20:41:38.798"/>
-</kw>
-<kw name="Retirar Zero Esquerda" library="verificacoes">
-<var>${mes_auxc}</var>
-<arg>${Valor_campos_agendamento.mes_c}</arg>
-<msg timestamp="20220307 20:41:38.802" level="INFO">${mes_auxc} = 5</msg>
-<status status="PASS" starttime="20220307 20:41:38.798" endtime="20220307 20:41:38.802"/>
-</kw>
-<kw name="Mês Convertion" library="Page_agendamento_functions">
-<var>${mes_auxc2}</var>
-<arg>${mes_auxc}</arg>
-<if>
-<branch type="IF" condition="'${mes}' == '1'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Janeiro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.805" endtime="20220307 20:41:38.805"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.804" endtime="20220307 20:41:38.805"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '2'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Fevereiro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.806" endtime="20220307 20:41:38.806"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.805" endtime="20220307 20:41:38.806"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '3'">
-<kw name="mes Variable">
-<var>${mes}</var>
-<arg>Março</arg>
-<status status="NOT RUN" starttime="20220307 20:41:38.835" endtime="20220307 20:41:38.835"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.807" endtime="20220307 20:41:38.835"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '4'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Abril</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.837" endtime="20220307 20:41:38.837"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.836" endtime="20220307 20:41:38.837"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '5'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Maio</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:38.838" level="INFO">${mes} = Maio</msg>
-<status status="PASS" starttime="20220307 20:41:38.838" endtime="20220307 20:41:38.839"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:38.837" endtime="20220307 20:41:38.839"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '6'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Junho</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.839" endtime="20220307 20:41:38.840"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.839" endtime="20220307 20:41:38.840"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '7'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Julho</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.840" endtime="20220307 20:41:38.840"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.840" endtime="20220307 20:41:38.841"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}'== '8'">
-<kw name="mes Variable">
-<var>${mes}</var>
-<arg>Agosto</arg>
-<status status="NOT RUN" starttime="20220307 20:41:38.868" endtime="20220307 20:41:38.868"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.841" endtime="20220307 20:41:38.868"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '9'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Setembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.869" endtime="20220307 20:41:38.869"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.868" endtime="20220307 20:41:38.870"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '10'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Outubro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.870" endtime="20220307 20:41:38.871"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.870" endtime="20220307 20:41:38.871"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '11'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Novembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.871" endtime="20220307 20:41:38.872"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.871" endtime="20220307 20:41:38.872"/>
-</branch>
-<branch type="ELSE IF" condition="'${mes}' == '12'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${mes}</var>
-<arg>Dezembro</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.872" endtime="20220307 20:41:38.872"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.872" endtime="20220307 20:41:38.873"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:38.804" endtime="20220307 20:41:38.873"/>
-</if>
-<msg timestamp="20220307 20:41:38.873" level="INFO">${mes_auxc2} = Maio</msg>
-<status status="PASS" starttime="20220307 20:41:38.803" endtime="20220307 20:41:38.873"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>'${lista_mes_cancelamento[0]}' == '${mes_auxc2}' and '${lista_mes_cancelamento[2]}' == '${Valor_campos_agendamento.ano_c}'</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<msg timestamp="20220307 20:41:38.884" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20220307 20:41:38.874" endtime="20220307 20:41:38.885"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:38.637" endtime="20220307 20:41:38.885"/>
-</iter>
-<status status="PASS" starttime="20220307 20:41:37.365" endtime="20220307 20:41:38.967"/>
-</for>
-<kw name="Date Convertion" library="Page_agendamento_functions">
-<var>${diadasemana}</var>
-<arg>${Valor_campos_agendamento.ano_c}/${Valor_campos_agendamento.mes_c}/${Valor_campos_agendamento.dia_c}</arg>
-<kw name="Convert Date" library="DateTime">
-<var>${day}</var>
-<arg>${Date}</arg>
-<arg>result_format=%a</arg>
-<doc>Converts between supported `date formats`.</doc>
-<msg timestamp="20220307 20:41:38.981" level="INFO">${day} = Tue</msg>
-<status status="PASS" starttime="20220307 20:41:38.976" endtime="20220307 20:41:38.981"/>
-</kw>
-<if>
-<branch type="IF" condition="'${day}' == 'Mon'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Segunda-feira</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.983" endtime="20220307 20:41:38.983"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.982" endtime="20220307 20:41:38.983"/>
-</branch>
-<branch type="ELSE IF" condition="'${day}' == 'Tue'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Terça-feira</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:38.985" level="INFO">${day} = Terça-feira</msg>
-<status status="PASS" starttime="20220307 20:41:38.985" endtime="20220307 20:41:38.985"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:38.984" endtime="20220307 20:41:38.985"/>
-</branch>
-<branch type="ELSE IF" condition="'${day}' == 'Wed'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Quarta-feira</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.986" endtime="20220307 20:41:38.986"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.985" endtime="20220307 20:41:38.986"/>
-</branch>
-<branch type="ELSE IF" condition="'${day}' == 'Thu'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Quinta-feira</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.987" endtime="20220307 20:41:38.987"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.986" endtime="20220307 20:41:38.987"/>
-</branch>
-<branch type="ELSE IF" condition="'${day}' == 'Fri'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Sexta-feira</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.988" endtime="20220307 20:41:38.988"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.988" endtime="20220307 20:41:38.988"/>
-</branch>
-<branch type="ELSE IF" condition="'${day}' == 'Sat'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Sábado</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.989" endtime="20220307 20:41:38.989"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.988" endtime="20220307 20:41:38.989"/>
-</branch>
-<branch type="ELSE IF" condition="'${day}' == 'Sun'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${day}</var>
-<arg>Domingo</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.990" endtime="20220307 20:41:38.990"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.989" endtime="20220307 20:41:38.990"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:38.981" endtime="20220307 20:41:38.990"/>
-</if>
-<msg timestamp="20220307 20:41:38.991" level="INFO">${diadasemana} = Terça-feira</msg>
-<status status="PASS" starttime="20220307 20:41:38.967" endtime="20220307 20:41:38.991"/>
-</kw>
-<if>
-<branch type="IF" condition="'${diadasemana}' == 'Segunda-feira'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux}</var>
-<arg>1</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.992" endtime="20220307 20:41:38.992"/>
-</kw>
-<kw name="Procura dia" library="Page_agendamento_functions">
-<var>${cont}</var>
-<arg>${Valor_campos_agendamento.dia}</arg>
-<arg>${aux}</arg>
-<status status="NOT RUN" starttime="20220307 20:41:38.993" endtime="20220307 20:41:38.993"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${table}div[${cont}]/div[2]/table/tbody/tr[1]/td[1]${fim}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:38.994" endtime="20220307 20:41:38.994"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:38.992" endtime="20220307 20:41:38.994"/>
-</branch>
-<branch type="ELSE IF" condition="'${diadasemana}' == 'Terça-feira'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux}</var>
-<arg>2</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:38.996" level="INFO">${aux} = 2</msg>
-<status status="PASS" starttime="20220307 20:41:38.995" endtime="20220307 20:41:38.996"/>
-</kw>
-<kw name="Procura dia" library="Page_agendamento_functions">
-<var>${cont}</var>
-<arg>${Valor_campos_agendamento.dia}</arg>
-<arg>${aux}</arg>
-<for flavor="IN RANGE">
-<var>${contador3}</var>
-<value>1</value>
-<value>7</value>
-<iter>
-<var name="${contador3}">1</var>
-<kw name="Get Text" library="Browser">
-<var>${aux_2}</var>
-<arg>xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:39.075" level="INFO">${aux_2} = 3</msg>
-<status status="PASS" starttime="20220307 20:41:39.002" endtime="20220307 20:41:39.075"/>
-</kw>
-<if>
-<branch type="IF" condition="${aux_2} &lt; 10">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux_2}</var>
-<arg>0${aux_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:39.077" level="INFO">${aux_2} = 03</msg>
-<status status="PASS" starttime="20220307 20:41:39.076" endtime="20220307 20:41:39.077"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:39.075" endtime="20220307 20:41:39.077"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.075" endtime="20220307 20:41:39.077"/>
-</if>
-<if>
-<branch type="IF" condition="'${dia}' == '${aux_2}'">
-<kw name="Exit For Loop" library="BuiltIn">
-<doc>Stops executing the enclosing for loop.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.078" endtime="20220307 20:41:39.078"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.077" endtime="20220307 20:41:39.078"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.077" endtime="20220307 20:41:39.078"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.001" endtime="20220307 20:41:39.079"/>
-</iter>
-<iter>
-<var name="${contador3}">2</var>
-<kw name="Get Text" library="Browser">
-<var>${aux_2}</var>
-<arg>xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:39.096" level="INFO">${aux_2} = 10</msg>
-<status status="PASS" starttime="20220307 20:41:39.079" endtime="20220307 20:41:39.096"/>
-</kw>
-<if>
-<branch type="IF" condition="${aux_2} &lt; 10">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux_2}</var>
-<arg>0${aux_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.097" endtime="20220307 20:41:39.097"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.096" endtime="20220307 20:41:39.097"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.096" endtime="20220307 20:41:39.097"/>
-</if>
-<if>
-<branch type="IF" condition="'${dia}' == '${aux_2}'">
-<kw name="Exit For Loop" library="BuiltIn">
-<doc>Stops executing the enclosing for loop.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.099" endtime="20220307 20:41:39.099"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.098" endtime="20220307 20:41:39.099"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.097" endtime="20220307 20:41:39.099"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.079" endtime="20220307 20:41:39.099"/>
-</iter>
-<iter>
-<var name="${contador3}">3</var>
-<kw name="Get Text" library="Browser">
-<var>${aux_2}</var>
-<arg>xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:39.343" level="INFO">${aux_2} = 17</msg>
-<status status="PASS" starttime="20220307 20:41:39.100" endtime="20220307 20:41:39.343"/>
-</kw>
-<if>
-<branch type="IF" condition="${aux_2} &lt; 10">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux_2}</var>
-<arg>0${aux_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.348" endtime="20220307 20:41:39.349"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.345" endtime="20220307 20:41:39.349"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.344" endtime="20220307 20:41:39.349"/>
-</if>
-<if>
-<branch type="IF" condition="'${dia}' == '${aux_2}'">
-<kw name="Exit For Loop" library="BuiltIn">
-<doc>Stops executing the enclosing for loop.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.358" endtime="20220307 20:41:39.358"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.354" endtime="20220307 20:41:39.359"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.350" endtime="20220307 20:41:39.359"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.099" endtime="20220307 20:41:39.359"/>
-</iter>
-<iter>
-<var name="${contador3}">4</var>
-<kw name="Get Text" library="Browser">
-<var>${aux_2}</var>
-<arg>xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:39.387" level="INFO">${aux_2} = 24</msg>
-<status status="PASS" starttime="20220307 20:41:39.362" endtime="20220307 20:41:39.387"/>
-</kw>
-<if>
-<branch type="IF" condition="${aux_2} &lt; 10">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux_2}</var>
-<arg>0${aux_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.388" endtime="20220307 20:41:39.388"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.387" endtime="20220307 20:41:39.388"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.387" endtime="20220307 20:41:39.388"/>
-</if>
-<if>
-<branch type="IF" condition="'${dia}' == '${aux_2}'">
-<kw name="Exit For Loop" library="BuiltIn">
-<doc>Stops executing the enclosing for loop.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.390" endtime="20220307 20:41:39.390"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.389" endtime="20220307 20:41:39.390"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.389" endtime="20220307 20:41:39.390"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.360" endtime="20220307 20:41:39.390"/>
-</iter>
-<iter>
-<var name="${contador3}">5</var>
-<kw name="Get Text" library="Browser">
-<var>${aux_2}</var>
-<arg>xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:39.407" level="INFO">${aux_2} = 31</msg>
-<status status="PASS" starttime="20220307 20:41:39.391" endtime="20220307 20:41:39.407"/>
-</kw>
-<if>
-<branch type="IF" condition="${aux_2} &lt; 10">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux_2}</var>
-<arg>0${aux_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.408" endtime="20220307 20:41:39.408"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.407" endtime="20220307 20:41:39.408"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.407" endtime="20220307 20:41:39.408"/>
-</if>
-<if>
-<branch type="IF" condition="'${dia}' == '${aux_2}'">
-<kw name="Exit For Loop" library="BuiltIn">
-<doc>Stops executing the enclosing for loop.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.410" endtime="20220307 20:41:39.410"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.409" endtime="20220307 20:41:39.410"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.409" endtime="20220307 20:41:39.410"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.390" endtime="20220307 20:41:39.410"/>
-</iter>
-<iter>
-<var name="${contador3}">6</var>
-<kw name="Get Text" library="Browser">
-<var>${aux_2}</var>
-<arg>xpath=//*[@id="calendar"]/div/div/table/tbody/tr/td/div/div/div[${contador3}]/div[2]/table/thead/tr/td[${aux}]/a</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.
-See the `Finding elements` section for details about the selectors.</doc>
-<msg timestamp="20220307 20:41:39.425" level="INFO">${aux_2} = 7</msg>
-<status status="PASS" starttime="20220307 20:41:39.411" endtime="20220307 20:41:39.425"/>
-</kw>
-<if>
-<branch type="IF" condition="${aux_2} &lt; 10">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux_2}</var>
-<arg>0${aux_2}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:39.427" level="INFO">${aux_2} = 07</msg>
-<status status="PASS" starttime="20220307 20:41:39.426" endtime="20220307 20:41:39.427"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:39.425" endtime="20220307 20:41:39.427"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.425" endtime="20220307 20:41:39.427"/>
-</if>
-<if>
-<branch type="IF" condition="'${dia}' == '${aux_2}'">
-<kw name="Exit For Loop" library="BuiltIn">
-<doc>Stops executing the enclosing for loop.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.428" endtime="20220307 20:41:39.428"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.428" endtime="20220307 20:41:39.428"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:39.427" endtime="20220307 20:41:39.428"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.410" endtime="20220307 20:41:39.429"/>
-</iter>
-<status status="PASS" starttime="20220307 20:41:39.000" endtime="20220307 20:41:39.429"/>
-</for>
-<msg timestamp="20220307 20:41:39.429" level="INFO">${cont} = 6</msg>
-<status status="PASS" starttime="20220307 20:41:38.996" endtime="20220307 20:41:39.429"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${table}div[${cont}]/div[2]/table/tbody/tr[1]/td[2]${fim}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:39.430" endtime="20220307 20:41:39.715"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:38.994" endtime="20220307 20:41:39.715"/>
-</branch>
-<branch type="ELSE IF" condition="'${diadasemana}' == 'Quarta-feira'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux}</var>
-<arg>3</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.716" endtime="20220307 20:41:39.717"/>
-</kw>
-<kw name="Procura dia" library="Page_agendamento_functions">
-<var>${cont}</var>
-<arg>${Valor_campos_agendamento.dia}</arg>
-<arg>${aux}</arg>
-<status status="NOT RUN" starttime="20220307 20:41:39.717" endtime="20220307 20:41:39.718"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${table}div[${cont}]/div[2]/table/tbody/tr[1]/td[3]${fim}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.718" endtime="20220307 20:41:39.719"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.716" endtime="20220307 20:41:39.719"/>
-</branch>
-<branch type="ELSE IF" condition="'${diadasemana}' == 'Quinta-feira'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux}</var>
-<arg>4</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.719" endtime="20220307 20:41:39.720"/>
-</kw>
-<kw name="Procura dia" library="Page_agendamento_functions">
-<var>${cont}</var>
-<arg>${Valor_campos_agendamento.dia}</arg>
-<arg>${aux}</arg>
-<status status="NOT RUN" starttime="20220307 20:41:39.720" endtime="20220307 20:41:39.720"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${table}div[${cont}]/div[2]/table/tbody/tr[1]/td[4]${fim}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.721" endtime="20220307 20:41:39.721"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.719" endtime="20220307 20:41:39.722"/>
-</branch>
-<branch type="ELSE IF" condition="'${diadasemana}' == 'Sexta-feira'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${aux}</var>
-<arg>5</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.722" endtime="20220307 20:41:39.722"/>
-</kw>
-<kw name="Procura dia" library="Page_agendamento_functions">
-<var>${cont}</var>
-<arg>${Valor_campos_agendamento.dia}</arg>
-<arg>${aux}</arg>
-<status status="NOT RUN" starttime="20220307 20:41:39.723" endtime="20220307 20:41:39.723"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${table}div[${cont}]/div[2]/table/tbody/tr[1]/td[5]${fim}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:39.724" endtime="20220307 20:41:39.724"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:39.722" endtime="20220307 20:41:39.724"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:38.991" endtime="20220307 20:41:39.724"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:37.364" endtime="20220307 20:41:39.725"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:37.361" endtime="20220307 20:41:39.725"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:37.359" endtime="20220307 20:41:39.725"/>
+<status status="PASS" starttime="20220307 21:44:22.327" endtime="20220307 21:44:22.591"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>informar os status do agendamento ${Valor_campos_agendamento.status_cancelado}</arg>
+<arg>clicar em ${Buttons_escala.registrar_escala}</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="informar os status do agendamento cancelado" library="Page_agendamento" sourcename="informar os status do agendamento ${VALOR}">
+<kw name="clicar em //*[@id=&quot;dataTable&quot;]/tbody/tr/td[4]/div/a[1]" library="Page_agendamento" sourcename="clicar em ${CAMPO}">
 <kw name="Click" library="Browser">
-<arg>id=${Buttons_agendamento.status}</arg>
+<arg>xpath=${CAMPO}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:39.733" endtime="20220307 20:41:40.060"/>
+<status status="PASS" starttime="20220307 21:44:22.603" endtime="20220307 21:44:23.732"/>
 </kw>
+<status status="PASS" starttime="20220307 21:44:22.600" endtime="20220307 21:44:23.732"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:22.599" endtime="20220307 21:44:23.733"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:22.592" endtime="20220307 21:44:23.733"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>selecionar o ${Valor_campos_escala.denominacao} no ${Campos_escala.denominacao}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="selecionar o Escala1 no escala" library="Page_profissão_cadastro" sourcename="selecionar o ${VALOR} no ${CAMPO}">
 <kw name="Convert To Upper Case" library="String">
-<var>${VALOR}</var>
+<var>${VALOR2}</var>
 <arg>${VALOR}</arg>
 <doc>Converts string to upper case.</doc>
-<msg timestamp="20220307 20:41:40.062" level="INFO">${VALOR} = CANCELADO</msg>
-<status status="PASS" starttime="20220307 20:41:40.061" endtime="20220307 20:41:40.062"/>
+<msg timestamp="20220307 21:44:23.749" level="INFO">${VALOR2} = ESCALA1</msg>
+<status status="PASS" starttime="20220307 21:44:23.747" endtime="20220307 21:44:23.749"/>
 </kw>
-<if>
-<branch type="IF" condition="'${VALOR}'=='AGENDADO'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${idstatus}</var>
-<arg>1</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.063" endtime="20220307 20:41:40.063"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${Campos_agendamento.identificador_status}/a[${idstatus}]</arg>
+<kw name="Select Options By" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>Text</arg>
+<arg>${VALOR2}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.064" endtime="20220307 20:41:40.065"/>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:23.750" endtime="20220307 21:44:25.682"/>
 </kw>
-<status status="NOT RUN" starttime="20220307 20:41:40.062" endtime="20220307 20:41:40.065"/>
-</branch>
-<branch type="ELSE IF" condition="'${VALOR}'=='ATENDIDO'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${idstatus}</var>
-<arg>2</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.066" endtime="20220307 20:41:40.066"/>
+<status status="PASS" starttime="20220307 21:44:23.745" endtime="20220307 21:44:25.683"/>
 </kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${Campos_agendamento.identificador_status}/a[${idstatus}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.067" endtime="20220307 20:41:40.067"/>
+<status status="PASS" starttime="20220307 21:44:23.743" endtime="20220307 21:44:25.683"/>
 </kw>
-<status status="NOT RUN" starttime="20220307 20:41:40.065" endtime="20220307 20:41:40.068"/>
-</branch>
-<branch type="ELSE IF" condition="'${VALOR}'=='CANCELADO'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${idstatus}</var>
-<arg>3</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220307 20:41:40.070" level="INFO">${idstatus} = 3</msg>
-<status status="PASS" starttime="20220307 20:41:40.069" endtime="20220307 20:41:40.070"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${Campos_agendamento.identificador_status}/a[${idstatus}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:40.071" endtime="20220307 20:41:40.271"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:40.068" endtime="20220307 20:41:40.271"/>
-</branch>
-<branch type="ELSE IF" condition="'${VALOR}'=='COMPARECEU'">
-<kw name="Set Variable" library="BuiltIn">
-<var>${idstatus}</var>
-<arg>4</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.272" endtime="20220307 20:41:40.272"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${Campos_agendamento.identificador_status}/a[${idstatus}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.273" endtime="20220307 20:41:40.273"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:40.271" endtime="20220307 20:41:40.273"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" library="BuiltIn">
-<var>${idstatus}</var>
-<arg>5</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.274" endtime="20220307 20:41:40.274"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>xpath=${Campos_agendamento.identificador_status}/a[${idstatus}]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220307 20:41:40.275" endtime="20220307 20:41:40.275"/>
-</kw>
-<status status="NOT RUN" starttime="20220307 20:41:40.273" endtime="20220307 20:41:40.275"/>
-</branch>
-<status status="PASS" starttime="20220307 20:41:40.062" endtime="20220307 20:41:40.275"/>
-</if>
-<status status="PASS" starttime="20220307 20:41:39.731" endtime="20220307 20:41:40.276"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:39.730" endtime="20220307 20:41:40.276"/>
-</kw>
-<status status="PASS" starttime="20220307 20:41:39.726" endtime="20220307 20:41:40.276"/>
+<status status="PASS" starttime="20220307 21:44:23.734" endtime="20220307 21:44:25.683"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>informar a justificativa do cancelamento ${Valor_campos_agendamento.justificativa}</arg>
+<arg>selecionar o ${Valor_campos_escala.tipo_atendimento} no ${Campos_escala.tipo_atendimento}</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="informar a justificativa do cancelamento Teste automatizado" library="Page_agendamento" sourcename="informar a justificativa do cancelamento ${VALOR}">
+<kw name="selecionar o Profissional de saúde no tipoAtendimento" library="Page_profissão_cadastro" sourcename="selecionar o ${VALOR} no ${CAMPO}">
+<kw name="Convert To Upper Case" library="String">
+<var>${VALOR2}</var>
+<arg>${VALOR}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20220307 21:44:25.699" level="INFO">${VALOR2} = PROFISSIONAL DE SAÚDE</msg>
+<status status="PASS" starttime="20220307 21:44:25.698" endtime="20220307 21:44:25.700"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>Text</arg>
+<arg>${VALOR2}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:25.701" endtime="20220307 21:44:25.799"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:25.695" endtime="20220307 21:44:25.799"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:25.693" endtime="20220307 21:44:25.800"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:25.684" endtime="20220307 21:44:25.800"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>informar profissional ${Valor_campos_escala.profissional2}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="informar profissional DRPSICOLOGIA" library="Page_oferta_listar" sourcename="informar profissional ${VALOR}">
+<kw name="Click" library="Browser">
+<arg>xpath=${Campos_escala.profissional1}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:25.809" endtime="20220307 21:44:26.099"/>
+</kw>
 <kw name="Fill Text" library="Browser">
-<arg>xpath=${Campos_agendamento.justificativa}</arg>
+<arg>xpath=${Campos_escala.profissional2}</arg>
 <arg>${VALOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220307 20:41:40.290" level="INFO">Fills the text 'Teste automatizado' in the given field.</msg>
-<status status="PASS" starttime="20220307 20:41:40.285" endtime="20220307 20:41:40.308"/>
+<msg timestamp="20220307 21:44:26.103" level="INFO">Fills the text 'DRPSICOLOGIA' in the given field.</msg>
+<status status="PASS" starttime="20220307 21:44:26.100" endtime="20220307 21:44:26.123"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.282" endtime="20220307 20:41:40.308"/>
+<kw name="Click" library="Browser">
+<arg>id=${Campos_escala.selecionar_profissional}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:26.124" endtime="20220307 21:44:26.246"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.281" endtime="20220307 20:41:40.308"/>
+<status status="PASS" starttime="20220307 21:44:25.807" endtime="20220307 21:44:26.246"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.277" endtime="20220307 20:41:40.309"/>
+<status status="PASS" starttime="20220307 21:44:25.805" endtime="20220307 21:44:26.246"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:25.801" endtime="20220307 21:44:26.247"/>
 </kw>
 <kw name="E" library="bdd">
-<arg>clicar em ${Buttons_agendamento.salvar}</arg>
+<arg>clicar no ${Buttons_escala.consultar}</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="clicar em //*[@id=&quot;botoesModal&quot;]/button[1]" library="Page_agendamento" sourcename="clicar em ${CAMPO}">
+<kw name="clicar no buttonConsulta" library="Page_profissão_cadastro" sourcename="clicar no ${Button}">
 <kw name="Click" library="Browser">
-<arg>xpath=${CAMPO}</arg>
+<arg>id=${Button}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:40.318" endtime="20220307 20:41:40.385"/>
+<status status="PASS" starttime="20220307 21:44:26.257" endtime="20220307 21:44:26.704"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.316" endtime="20220307 20:41:40.386"/>
+<status status="PASS" starttime="20220307 21:44:26.255" endtime="20220307 21:44:26.704"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.315" endtime="20220307 20:41:40.386"/>
+<status status="PASS" starttime="20220307 21:44:26.253" endtime="20220307 21:44:26.705"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.310" endtime="20220307 20:41:40.386"/>
+<status status="PASS" starttime="20220307 21:44:26.248" endtime="20220307 21:44:26.705"/>
 </kw>
-<kw name="Então" library="bdd">
-<arg>avisar por email ${Buttons_agendamento.sim}</arg>
+<kw name="E" library="bdd">
+<arg>adicionar horario</arg>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>@{Keywords}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<kw name="avisar por email /html/body/div[5]/div/div[4]/div[2]/button" library="Page_agendamento" sourcename="avisar por email ${CAMPO}">
+<kw name="adicionar horario" library="Page_oferta_listar">
+<for flavor="IN RANGE">
+<var>${cont}</var>
+<value>3</value>
+<value>8</value>
+<iter>
+<var name="${cont}">3</var>
 <kw name="Click" library="Browser">
-<arg>xpath=${CAMPO}</arg>
+<arg>xpath=//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div[3]/table/tbody/tr/td[${cont}]/div/div[2]/a[1]/div/div</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220307 20:41:40.394" endtime="20220307 20:41:46.394"/>
+<status status="PASS" starttime="20220307 21:44:26.713" endtime="20220307 21:44:26.924"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.393" endtime="20220307 20:41:46.394"/>
+<kw name="Click" library="Browser">
+<arg>xpath=${Buttons_escala.sim}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:26.925" endtime="20220307 21:44:27.279"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.391" endtime="20220307 20:41:46.394"/>
+<status status="PASS" starttime="20220307 21:44:26.712" endtime="20220307 21:44:27.279"/>
+</iter>
+<iter>
+<var name="${cont}">4</var>
+<kw name="Click" library="Browser">
+<arg>xpath=//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div[3]/table/tbody/tr/td[${cont}]/div/div[2]/a[1]/div/div</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:27.280" endtime="20220307 21:44:27.789"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:40.387" endtime="20220307 20:41:46.395"/>
+<kw name="Click" library="Browser">
+<arg>xpath=${Buttons_escala.sim}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:27.790" endtime="20220307 21:44:28.141"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:27.280" endtime="20220307 21:44:28.142"/>
+</iter>
+<iter>
+<var name="${cont}">5</var>
+<kw name="Click" library="Browser">
+<arg>xpath=//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div[3]/table/tbody/tr/td[${cont}]/div/div[2]/a[1]/div/div</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:28.143" endtime="20220307 21:44:28.542"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=${Buttons_escala.sim}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:28.543" endtime="20220307 21:44:28.879"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:28.142" endtime="20220307 21:44:28.879"/>
+</iter>
+<iter>
+<var name="${cont}">6</var>
+<kw name="Click" library="Browser">
+<arg>xpath=//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div[3]/table/tbody/tr/td[${cont}]/div/div[2]/a[1]/div/div</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:28.880" endtime="20220307 21:44:29.357"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=${Buttons_escala.sim}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:29.358" endtime="20220307 21:44:29.696"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:28.879" endtime="20220307 21:44:29.696"/>
+</iter>
+<iter>
+<var name="${cont}">7</var>
+<kw name="Click" library="Browser">
+<arg>xpath=//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div[3]/table/tbody/tr/td[${cont}]/div/div[2]/a[1]/div/div</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:29.697" endtime="20220307 21:44:30.242"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=${Buttons_escala.sim}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220307 21:44:30.243" endtime="20220307 21:44:30.619"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:29.696" endtime="20220307 21:44:30.619"/>
+</iter>
+<status status="PASS" starttime="20220307 21:44:26.711" endtime="20220307 21:44:30.619"/>
+</for>
+<status status="PASS" starttime="20220307 21:44:26.710" endtime="20220307 21:44:30.620"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:26.709" endtime="20220307 21:44:30.620"/>
+</kw>
+<status status="PASS" starttime="20220307 21:44:26.706" endtime="20220307 21:44:30.620"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220307 20:41:56.397" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220307 20:41:46.395" endtime="20220307 20:41:56.398"/>
+<msg timestamp="20220307 21:44:40.623" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220307 21:44:30.621" endtime="20220307 21:44:40.623"/>
 </kw>
-<status status="PASS" starttime="20220307 20:41:31.776" endtime="20220307 20:41:56.404"/>
+<status status="PASS" starttime="20220307 21:44:15.596" endtime="20220307 21:44:40.624"/>
 </test>
 <doc>Cadastro profissão</doc>
-<status status="PASS" starttime="20220307 20:41:24.512" endtime="20220307 20:41:56.431"/>
+<status status="PASS" starttime="20220307 21:44:06.390" endtime="20220307 21:44:40.635"/>
 </suite>
 <statistics>
 <total>

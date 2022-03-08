@@ -9,6 +9,7 @@ Resource        ${EXECDIR}/Resources/Page_modalidade_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_profissional_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_oferta_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_agendamento.robot
+Resource        ${EXECDIR}/Resources/Page_oferta_listar.robot
 
 
 Suite Setup     iniciar navegador sessão "Endocrinologia"
@@ -94,13 +95,25 @@ Suite Setup     iniciar navegador sessão "Endocrinologia"
 #    Então         avisar por email ${Buttons_agendamento.sim}
 
 
-[011] - Cancelar agendamento (Completo)
-    Dado        que o usuario está na tela "agendamento"
-    E           filtrar ${Filtro_agendamentos.agendados}
-    E           realizar o cancelamento
-    E           informar os status do agendamento ${Valor_campos_agendamento.status_cancelado}
-    E           informar a justificativa do cancelamento ${Valor_campos_agendamento.justificativa}
-    E           clicar em ${Buttons_agendamento.salvar}
-    Então       avisar por email ${Buttons_agendamento.sim}
-    Sleep       10s
+#[011] - Cancelar agendamento (Completo)
+#    Dado        que o usuario está na tela "agendamento"
+#    E           filtrar ${Filtro_agendamentos.agendados}
+#    E           realizar o cancelamento
+#    E           informar os status do agendamento ${Valor_campos_agendamento.status_cancelado}
+#    E           informar a justificativa do cancelamento ${Valor_campos_agendamento.justificativa}
+#    E           clicar em ${Buttons_agendamento.salvar}
+#    Então       avisar por email ${Buttons_agendamento.sim}
 
+
+
+[012] - Registrar escala (Completo)
+    Dado        que o usuario está na tela "listar oferta"
+    E           preencher o ${Campos_oferta.denominacao} com ${Valor_campos_oferta.denominacao}
+    E           clicar no ${Buttons_escala.pesquisar}
+    E           clicar em ${Buttons_escala.registrar_escala}
+    E           selecionar o ${Valor_campos_escala.denominacao} no ${Campos_escala.denominacao}
+    E           selecionar o ${Valor_campos_escala.tipo_atendimento} no ${Campos_escala.tipo_atendimento}
+    E           informar profissional ${Valor_campos_escala.profissional2}
+    E           clicar no ${Buttons_escala.consultar}
+    E           adicionar horario
+    Sleep       10s

@@ -1,4 +1,6 @@
 {
     "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
-    "navegador":"chromium"
+    "navegador":"chromium",
+    "lelog":"https://lelog.netlify.app/"
+
 }

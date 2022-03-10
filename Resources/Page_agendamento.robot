@@ -2,6 +2,8 @@
 Documentation       Agendamento
 
 Resource            ${EXECDIR}/Resources/Page_agendamento_functions.robot
+Resource            ${EXECDIR}/Resources/Page_modalidade_cadastro.robot
+
 
 Library             ${EXECDIR}/Librarys/verificacoes.py
 
@@ -37,11 +39,11 @@ ${idconsultas}
 
 
 &{Valor_campos_agendamento}
-...  filtro_modalidade=Nutrição
+...  filtro_modalidade=${Valor_campos_modalidade.denominacao}
 ...  dia=05
 ...  mes=05
 ...  ano=2022
-...  dia_c=17
+...  dia_c=05
 ...  mes_c=05
 ...  ano_c=2022
 ...  usuario_de_servico2=Mayara
@@ -57,7 +59,7 @@ ${idconsultas}
 
 &{Buttons_agendamento}
 ...  deselecionar_todas=//*[@id="filtro-modal"]/div/div/div[2]/form/div[2]/div/div/div[2]/div/button[2]
-...  selecionar_modalidade=bs-select-5-11
+...  selecionar_modalidade=//*[@id="bs-select-5-0"]/span[2]
 ...  aplicar_filtro=//*[@id="filtro-modal"]/div/div/div[3]/button[1]
 ...  filtro_busca=//*[@id="calendario"]/section/div/div/div/div/div[1]/div/span[9]
 ...  filtro_modalidade=//*[@id="filtro-modal"]/div/div/div[2]/form/div[2]/div/button/div/div/div
@@ -86,7 +88,9 @@ informar modalidade para o filtro ${VALOR}
     Click           xpath=${Buttons_agendamento.filtro_modalidade}
     Click           xpath=${Buttons_agendamento.deselecionar_todas}
     Type Text       xpath=${Campos_agendamento.filtro_modalidade_inseir}        ${VALOR}
-    Click           id=${Buttons_agendamento.selecionar_modalidade}
+     Click          xpath=//*[@id="bs-select-5"]
+    #Click           xpath=${Buttons_agendamento.selecionar_modalidade}
+    #Click           xpath=//*[@id="filtro-modal"]/div/div/div[1]/h4
     Click           xpath=${Buttons_agendamento.aplicar_filtro}
 
 realizar agendamento

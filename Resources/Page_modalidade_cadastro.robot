@@ -6,14 +6,14 @@ Documentation       Cadastro especialidade
 &{Campos_modalidade}
 ...  denominacao=inputDenominacao
 ...  profissao=selectProfissao
-...  espelicalidade=selectEspecialidade
+...  especialidade=selectEspecialidade
 ...  procedimento1=//*[@id="selectProcedimentoBorder"]/div/button/div/div/div
 ...  procedimento2=bs-select-1-0
 
 &{Valor_campos_modalidade}
-...  denominacao=ACOMPANHAMENTO PSICOSSOCIAL DO ESTUDANTE UFRN
+...  denominacao=TESTE MODALIDADE PSI
 ...  profissao=${Valor_campos_profissao.nome_da_profissao}
-...  espelicalidade=${Valor_campos_especialidade.denominacao}
+...  especialidade=${Valor_campos_especialidade.denominacao}
 
 &{Buttons}
 ...  avançar=nextBtn
@@ -25,3 +25,6 @@ Documentation       Cadastro especialidade
 inserir o ${CAMPO}
     Click           xpath=${CAMPO}
     Click           id=${Campos_modalidade.procedimento2}
+
+selecionar a especialidade {VALOR}
+    Select Options By      ${Campos_modalidade.denominacao}     text       ${VALOR}

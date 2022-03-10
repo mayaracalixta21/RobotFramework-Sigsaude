@@ -19,7 +19,7 @@ Documentation       Cadastro oferta de atendimento
 
 
 &{Valor_campos_oferta}
-...  denominacao=Oferta nutriçãoo
+...  denominacao=Oferta teste PSI
 ...  data_inicio=10032022
 ...  data_fim=10082022
 ...  inicio_do_expediente=1000
@@ -36,7 +36,7 @@ Documentation       Cadastro oferta de atendimento
 ...  selecionar=//*[@id="formConvenioApp"]/div[2]/div[3]/div/div[1]/div/div/div[1]/div/div[3]/ul/li[1]
 ...  adicionar=//*[@id="formConvenioApp"]/div[2]/div[3]/div/div[1]/div/div/div[2]/button
 ...  adicionar_escala=//*[@id="formConvenioApp"]/div[2]/div[3]/div/div[2]/div/ul/li/div/button[1]
-...  concluir_escala=salvarE
+...  concluir=salvarE
 ...  tempo_medio_escala=tempoMedio
 ...  salvar=nextBtn
 

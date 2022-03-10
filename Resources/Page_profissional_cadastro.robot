@@ -19,15 +19,15 @@ Documentation       Cadastro colaborador
 
 
 &{Valor_campos_profissional}
-...  nome=DRPSICOLOGIA
-...  CPF=26238612002
+...  nome=DRTESTEPSICO
+...  CPF=851.890.700-42
 ...  perfil=ADM GERAL
-...  email=teste690@email.com
-...  login=bruguuuess
+...  email=teste125@email.com
+...  login=DRTESTEPSICO
 ...  profissao=${Valor_campos_profissao.sigla} - ${Valor_campos_profissao.nome_da_profissao}
 ...  vinculo=EXTERNO
 ...  UF=RN
-...  registro_profissional=11235
+...  registro_profissional=18835
 
 
 &{Buttons}
@@ -41,7 +41,13 @@ Documentation       Cadastro colaborador
 informar a especialidade ${CAMPO}
     Click           xpath=${CAMPO}
     Click           id=${Campos_profissional.especialidade2}
+    Click           xpath=//*[@id="multistepForm"]/div[1]/h3
 
 informar a modalidade ${CAMPO}
     Click           xpath=${CAMPO}
     Click           id=${Campos_profissional.modalidade2}
+    Click           xpath=//*[@id="multistepForm"]/div[1]/h3
+
+preencher o campo CPF ${VALOR}
+    Fill Text       id=${Campos_profissional.CPF}                     ${VALOR}
+

@@ -16,7 +16,7 @@
                     "headless:true",
                     "-v",
                     "navegador:chromium",
-                    "/home/m.calixta/RobotFramework-Sigsaude/Tests/Caminho feliz.robot",
+                    "Tests/Caminho feliz.robot",
                 ],
                 "console": "integratedTerminal"
             },

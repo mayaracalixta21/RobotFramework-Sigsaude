@@ -1,18 +1,15 @@
+
 ***Settings***
 Documentation       Keywords base
-
 Resource        ${EXECDIR}/Resources/Keywords.robot
  
 ***Keywords***
-
 Get JSON
     [Arguments]         ${file_name}
     
     ${file}             Get file             ${EXECDIR}/Files/${file_name}  
     ${super_var}        Evaluate              json.loads($file)                                         json
-
     [Return]            ${super_var}  
-
 
 #Iniciar navegador sessão "${login_usuario}"
   #  Iniciar sessão no browser ${login_usuario} 
@@ -30,5 +27,3 @@ iniciar navegador sessão "${login_usuario}"
 iniciar Navegador
     ${config_json}         Get JSON                             config.json 
     New Browser            ${config_json["navegador"]}          False
-
-

@@ -1,92 +1,988 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20220312 13:56:29.513" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20220314 23:01:46.705" rpa="false" schemaversion="2">
 <suite id="s1" name="Caminho feliz" source="/home/m.calixta/RobotFramework-Sigsaude/Tests/Caminho feliz.robot">
-<kw name="Init Sheets" library="RPA.Cloud.Google" type="SETUP">
+<kw name="configurações informações iniciais" library="Page_config_iniciais" type="SETUP">
+<kw name="Init Sheets" library="RPA.Cloud.Google">
 <arg>Resources/Arquivos/chave.json</arg>
 <tag>init</tag>
 <tag>sheets</tag>
 <doc>Initialize Google Sheets client</doc>
-<msg timestamp="20220312 13:56:31.732" level="INFO">Authenticating with service account file</msg>
-<status status="PASS" starttime="20220312 13:56:31.730" endtime="20220312 13:56:31.742"/>
+<msg timestamp="20220314 23:01:49.391" level="INFO">Authenticating with service account file</msg>
+<status status="PASS" starttime="20220314 23:01:49.389" endtime="20220314 23:01:49.407"/>
 </kw>
-<test id="s1-t1" name="[001] -Cadastro de profissão (Completo)">
-<kw name="E" library="bdd">
-<arg>Atualizar dash colaborador</arg>
-<kw name="Run Keyword" library="BuiltIn">
-<arg>@{Keywords}</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<kw name="Atualizar dash colaborador" library="testes2">
+<kw name="iniciar navegador sessão &quot;Endocrinologia&quot;" library="base" sourcename="iniciar navegador sessão &quot;${login_usuario}&quot;">
+<kw name="iniciar Navegador" library="base">
+<kw name="Get JSON" library="base">
+<var>${config_json}</var>
+<arg>config.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:49.414" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:49.414" level="INFO">${file} = {
+    "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
+    "navegador":"firefox",
+    "lelog":"https://lelog.netlify.app/"
+
+}</msg>
+<status status="PASS" starttime="20220314 23:01:49.413" endtime="20220314 23:01:49.415"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:49.435" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:49.416" endtime="20220314 23:01:49.435"/>
+</kw>
+<msg timestamp="20220314 23:01:49.436" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:49.411" endtime="20220314 23:01:49.436"/>
+</kw>
+<kw name="New Browser" library="Browser">
+<arg>${config_json["navegador"]}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20220314 23:01:49.440" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
+<msg timestamp="20220314 23:01:50.714" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
+<status status="PASS" starttime="20220314 23:01:49.437" endtime="20220314 23:01:50.714"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:49.410" endtime="20220314 23:01:50.715"/>
+</kw>
+<kw name="Get JSON" library="base">
+<var>${config_json}</var>
+<arg>config.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:50.718" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:50.718" level="INFO">${file} = {
+    "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
+    "navegador":"firefox",
+    "lelog":"https://lelog.netlify.app/"
+
+}</msg>
+<status status="PASS" starttime="20220314 23:01:50.717" endtime="20220314 23:01:50.718"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:50.721" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:50.719" endtime="20220314 23:01:50.721"/>
+</kw>
+<msg timestamp="20220314 23:01:50.722" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:50.715" endtime="20220314 23:01:50.722"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${config_json["base_url"]}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20220314 23:01:54.095" level="INFO">Successfully initialized new page object and opened url: https://homologacaosigsaude.imd.ufrn.br/sigsaude</msg>
+<msg timestamp="20220314 23:01:54.095" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220314 23:01:50.723" endtime="20220314 23:01:54.096"/>
+</kw>
+<kw name="Direcionamento da tela &quot;login&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
+<kw name="Get JSON" library="base">
+<var>${telas_json}</var>
+<arg>telas.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:54.100" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:54.101" level="INFO">${file} = {
+    "login":"/login",
+    "novo usuario de serviço":"/paciente/cadastro",
+    "listar usuarios de serviço":"/paciente",
+    "cadastro de colaborador":"/colaborador/form",
+    "agendamento":"/agendam...</msg>
+<status status="PASS" starttime="20220314 23:01:54.099" endtime="20220314 23:01:54.101"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:54.103" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220314 23:01:54.102" endtime="20220314 23:01:54.103"/>
+</kw>
+<msg timestamp="20220314 23:01:54.104" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220314 23:01:54.098" endtime="20220314 23:01:54.104"/>
+</kw>
+<kw name="Get JSON" library="base">
+<var>${config_json}</var>
+<arg>config.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:54.108" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:54.109" level="INFO">${file} = {
+    "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
+    "navegador":"firefox",
+    "lelog":"https://lelog.netlify.app/"
+
+}</msg>
+<status status="PASS" starttime="20220314 23:01:54.107" endtime="20220314 23:01:54.109"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:54.112" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:54.110" endtime="20220314 23:01:54.112"/>
+</kw>
+<msg timestamp="20220314 23:01:54.113" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:54.105" endtime="20220314 23:01:54.113"/>
+</kw>
+<kw name="Go To" library="Browser">
+<arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20220314 23:01:55.303" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/login</msg>
+<status status="PASS" starttime="20220314 23:01:54.114" endtime="20220314 23:01:55.304"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:54.097" endtime="20220314 23:01:55.307"/>
+</kw>
+<kw name="Get JSON" library="base">
+<var>${login_json}</var>
+<arg>login.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:55.323" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/login.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/login.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:55.325" level="INFO">${file} = {
+
+    "Psicologia":{
+        "login": "drpsicologia",
+        "senha": 85278120029
+    },
+
+    "Endocrinologia":{
+        "login": "drendocrinologia",
+        "senha": 98841863323
+    }
+}</msg>
+<status status="PASS" starttime="20220314 23:01:55.318" endtime="20220314 23:01:55.325"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:55.334" level="INFO">${super_var} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
+<status status="PASS" starttime="20220314 23:01:55.329" endtime="20220314 23:01:55.334"/>
+</kw>
+<msg timestamp="20220314 23:01:55.337" level="INFO">${login_json} = {'Psicologia': {'login': 'drpsicologia', 'senha': 85278120029}, 'Endocrinologia': {'login': 'drendocrinologia', 'senha': 98841863323}}</msg>
+<status status="PASS" starttime="20220314 23:01:55.311" endtime="20220314 23:01:55.338"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=login-username</arg>
+<arg>${login_json["${login_usuario}"]["login"]}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:01:55.356" level="INFO">Fills the text 'drendocrinologia' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:01:55.342" endtime="20220314 23:01:55.416"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=login-password</arg>
+<arg>${login_json["${login_usuario}"]["senha"]}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:01:55.420" level="INFO">Fills the text '98841863323' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:01:55.417" endtime="20220314 23:01:55.439"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=[value='Entrar']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220314 23:01:55.440" endtime="20220314 23:01:56.198"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:49.408" endtime="20220314 23:01:56.200"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:49.386" endtime="20220314 23:01:56.202"/>
+</kw>
+<test id="s1-t1" name="[002] -Cadastro de profissão (Completo)">
+<kw name="Atualizar dash falha 2" library="Page_datastudio" sourcename="Atualizar dash falha ${contador3}">
 <kw name="Evaluate" library="BuiltIn">
 <var>${values}</var>
-<arg>[['Sucesso']]</arg>
+<arg>[['Falhou']]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220312 13:56:31.757" level="INFO">${values} = [['Sucesso']]</msg>
-<status status="PASS" starttime="20220312 13:56:31.755" endtime="20220312 13:56:31.757"/>
+<msg timestamp="20220314 23:01:56.292" level="INFO">${values} = [['Falhou']]</msg>
+<status status="PASS" starttime="20220314 23:01:56.291" endtime="20220314 23:01:56.292"/>
 </kw>
 <kw name="Clear Sheet Values" library="RPA.Cloud.Google">
 <arg>${SHEET_ID}</arg>
-<arg>B2</arg>
+<arg>B${contador3}</arg>
 <tag>sheets</tag>
 <doc>Clear cell values for range of cells within a sheet</doc>
-<status status="PASS" starttime="20220312 13:56:31.758" endtime="20220312 13:56:33.212"/>
+<status status="PASS" starttime="20220314 23:01:56.293" endtime="20220314 23:01:57.958"/>
 </kw>
 <kw name="Insert Sheet Values" library="RPA.Cloud.Google">
 <arg>${SHEET_ID}</arg>
-<arg>B2</arg>
+<arg>B${contador3}</arg>
 <arg>${values}</arg>
 <tag>sheets</tag>
 <doc>Insert values into sheet cells</doc>
-<status status="PASS" starttime="20220312 13:56:33.214" endtime="20220312 13:56:33.949"/>
+<status status="PASS" starttime="20220314 23:01:57.959" endtime="20220314 23:01:58.417"/>
 </kw>
 <kw name="Get Current Date" library="DateTime">
 <var>${DATA}</var>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20220312 13:56:33.951" level="INFO">${DATA} = 2022-03-12 13:56:33.951</msg>
-<status status="PASS" starttime="20220312 13:56:33.950" endtime="20220312 13:56:33.952"/>
+<msg timestamp="20220314 23:01:58.419" level="INFO">${DATA} = 2022-03-14 23:01:58.419</msg>
+<status status="PASS" starttime="20220314 23:01:58.418" endtime="20220314 23:01:58.419"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${DATA}</var>
 <arg>[['${DATA}']]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220312 13:56:33.955" level="INFO">${DATA} = [['2022-03-12 13:56:33.951']]</msg>
-<status status="PASS" starttime="20220312 13:56:33.953" endtime="20220312 13:56:33.955"/>
+<msg timestamp="20220314 23:01:58.421" level="INFO">${DATA} = [['2022-03-14 23:01:58.419']]</msg>
+<status status="PASS" starttime="20220314 23:01:58.420" endtime="20220314 23:01:58.421"/>
 </kw>
 <kw name="Clear Sheet Values" library="RPA.Cloud.Google">
 <arg>${SHEET_ID}</arg>
-<arg>C2</arg>
+<arg>C${contador3}</arg>
 <tag>sheets</tag>
 <doc>Clear cell values for range of cells within a sheet</doc>
-<status status="PASS" starttime="20220312 13:56:33.957" endtime="20220312 13:56:34.442"/>
+<status status="PASS" starttime="20220314 23:01:58.422" endtime="20220314 23:01:59.098"/>
 </kw>
 <kw name="Insert Sheet Values" library="RPA.Cloud.Google">
 <arg>${SHEET_ID}</arg>
-<arg>C2</arg>
+<arg>C${contador3}</arg>
 <arg>${DATA}</arg>
 <tag>sheets</tag>
 <doc>Insert values into sheet cells</doc>
-<status status="PASS" starttime="20220312 13:56:34.446" endtime="20220312 13:56:34.951"/>
+<status status="PASS" starttime="20220314 23:01:59.102" endtime="20220314 23:01:59.610"/>
 </kw>
-<status status="PASS" starttime="20220312 13:56:31.753" endtime="20220312 13:56:34.952"/>
+<status status="PASS" starttime="20220314 23:01:56.289" endtime="20220314 23:01:59.612"/>
 </kw>
-<status status="PASS" starttime="20220312 13:56:31.751" endtime="20220312 13:56:34.952"/>
+<kw name="Dado" library="bdd">
+<arg>que o usuario está na tela "cadastro de profissão"</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que o usuario está na tela &quot;cadastro de profissão&quot;" library="nav" sourcename="que o usuario está na tela &quot;${tela}&quot;">
+<kw name="Direcionamento da tela &quot;${tela}&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
+<kw name="Get JSON" library="base">
+<var>${telas_json}</var>
+<arg>telas.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:59.643" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:59.644" level="INFO">${file} = {
+    "login":"/login",
+    "novo usuario de serviço":"/paciente/cadastro",
+    "listar usuarios de serviço":"/paciente",
+    "cadastro de colaborador":"/colaborador/form",
+    "agendamento":"/agendam...</msg>
+<status status="PASS" starttime="20220314 23:01:59.642" endtime="20220314 23:01:59.644"/>
 </kw>
-<status status="PASS" starttime="20220312 13:56:31.749" endtime="20220312 13:56:34.952"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:59.648" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220314 23:01:59.646" endtime="20220314 23:01:59.648"/>
 </kw>
-<status status="PASS" starttime="20220312 13:56:31.743" endtime="20220312 13:56:34.953"/>
+<msg timestamp="20220314 23:01:59.650" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220314 23:01:59.638" endtime="20220314 23:01:59.650"/>
+</kw>
+<kw name="Get JSON" library="base">
+<var>${config_json}</var>
+<arg>config.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:01:59.655" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:01:59.655" level="INFO">${file} = {
+    "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
+    "navegador":"firefox",
+    "lelog":"https://lelog.netlify.app/"
+
+}</msg>
+<status status="PASS" starttime="20220314 23:01:59.653" endtime="20220314 23:01:59.655"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:01:59.658" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:59.657" endtime="20220314 23:01:59.658"/>
+</kw>
+<msg timestamp="20220314 23:01:59.659" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:01:59.651" endtime="20220314 23:01:59.659"/>
+</kw>
+<kw name="Go To" library="Browser">
+<arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20220314 23:02:01.047" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/profissao/form</msg>
+<status status="PASS" starttime="20220314 23:01:59.660" endtime="20220314 23:02:01.047"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:59.633" endtime="20220314 23:02:01.048"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:59.628" endtime="20220314 23:02:01.048"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:59.623" endtime="20220314 23:02:01.049"/>
+</kw>
+<status status="PASS" starttime="20220314 23:01:59.616" endtime="20220314 23:02:01.049"/>
+</kw>
+<kw name="Então" library="bdd">
+<arg>preencher o ${Campos_profissao.nome_da_profissao} com ${Valor_campos_profissao.nome_da_profissao}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="preencher o inputNome com TESTE ANALISE" library="Page_profissão_cadastro" sourcename="preencher o ${CAMPO} com ${VALOR}">
+<kw name="Type Text" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>${VALOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:01.069" level="INFO">Types the text 'TESTE ANALISE' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:02:01.068" endtime="20220314 23:02:01.250"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.066" endtime="20220314 23:02:01.251"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.064" endtime="20220314 23:02:01.251"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.051" endtime="20220314 23:02:01.251"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>preencher o ${Campos_profissao.sigla} com ${Valor_campos_profissao.sigla}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="preencher o inputSigla com TAN" library="Page_profissão_cadastro" sourcename="preencher o ${CAMPO} com ${VALOR}">
+<kw name="Type Text" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>${VALOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:01.266" level="INFO">Types the text 'TAN' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:02:01.264" endtime="20220314 23:02:01.317"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.262" endtime="20220314 23:02:01.317"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.260" endtime="20220314 23:02:01.318"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.252" endtime="20220314 23:02:01.318"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>selecionar o ${Valor_campos_profissao.nivel_formacao} no ${Campos_profissao.nivel_formacao}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="selecionar o SUPERIOR no selectNivel" library="Page_profissão_cadastro" sourcename="selecionar o ${VALOR} no ${CAMPO}">
+<kw name="Convert To Upper Case" library="String">
+<var>${VALOR2}</var>
+<arg>${VALOR}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20220314 23:02:01.333" level="INFO">${VALOR2} = SUPERIOR</msg>
+<status status="PASS" starttime="20220314 23:02:01.332" endtime="20220314 23:02:01.333"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>Text</arg>
+<arg>${VALOR2}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220314 23:02:01.334" endtime="20220314 23:02:01.364"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.330" endtime="20220314 23:02:01.365"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.327" endtime="20220314 23:02:01.365"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.319" endtime="20220314 23:02:01.365"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>selecionar o ${Valor_campos_profissao.conselho_profissional} no ${Campos_profissao.conselho_profissional}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="selecionar o CFBM - CONSELHO FEDERAL DE BIOMEDICINA no selectConselho" library="Page_profissão_cadastro" sourcename="selecionar o ${VALOR} no ${CAMPO}">
+<kw name="Convert To Upper Case" library="String">
+<var>${VALOR2}</var>
+<arg>${VALOR}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20220314 23:02:01.381" level="INFO">${VALOR2} = CFBM - CONSELHO FEDERAL DE BIOMEDICINA</msg>
+<status status="PASS" starttime="20220314 23:02:01.379" endtime="20220314 23:02:01.381"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>Text</arg>
+<arg>${VALOR2}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220314 23:02:01.382" endtime="20220314 23:02:01.409"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.376" endtime="20220314 23:02:01.409"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.374" endtime="20220314 23:02:01.410"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:01.367" endtime="20220314 23:02:01.410"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>informar o ${Campos_profissao.ocupacao1}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="informar o //*[@id=&quot;regForm&quot;]/div/div[4]/div[1]/div[4]/div[2]/div/button/div/div/div" library="Page_profissão_cadastro" sourcename="informar o ${CAMPO}">
+<kw name="Click" library="Browser">
+<arg>xpath=${CAMPO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:11.517" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="002_-Cadastro_de_profisso_%28Completo%29_FAILURE_SCREENSHOT_4.png"&gt;&lt;img src="002_-Cadastro_de_profisso_%28Completo%29_FAILURE_SCREENSHOT_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220314 23:02:11.520" level="FAIL">TimeoutError: page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//*[@id="regForm"]/div/div[4]/div[1]/div[4]/div[2]/div/button/div/div/div"
+  selector resolved to visible &lt;div class="filter-option-inner-inner"&gt;-- SELECIONE --&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,590.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,590.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,590.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, e</msg>
+<status status="FAIL" starttime="20220314 23:02:01.424" endtime="20220314 23:02:11.520"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=${Campos_profissao.ocupacao2}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220314 23:02:11.521" endtime="20220314 23:02:11.521"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:01.421" endtime="20220314 23:02:11.522"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:01.419" endtime="20220314 23:02:11.522"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:01.412" endtime="20220314 23:02:11.523"/>
+</kw>
+<kw name="Quando" library="bdd">
+<arg>clicar no ${Buttons.avançar}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:11.524" endtime="20220314 23:02:11.524"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>clicar no ${Buttons.cadastrar}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:11.525" endtime="20220314 23:02:11.525"/>
+</kw>
+<kw name="Então" library="bdd">
+<arg>mensagem de cadastro realizado com sucesso é exibida</arg>
+<status status="NOT RUN" starttime="20220314 23:02:11.527" endtime="20220314 23:02:11.527"/>
+</kw>
+<kw name="Atualizar dash sucesso 2" library="Page_datastudio" sourcename="Atualizar dash sucesso ${contador1}">
+<status status="NOT RUN" starttime="20220314 23:02:11.528" endtime="20220314 23:02:11.528"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${a}</var>
+<arg>Log</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220314 23:02:11.529" endtime="20220314 23:02:11.529"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220314 23:02:11.530" endtime="20220314 23:02:11.530"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:01:56.204" endtime="20220314 23:02:11.532">TimeoutError: page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//*[@id="regForm"]/div/div[4]/div[1]/div[4]/div[2]/div/button/div/div/div"
+  selector resolved to visible &lt;div class="filter-option-inner-inner"&gt;-- SELECIONE --&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,590.95)
+    [ Message content over the limit has been removed. ]
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (927.45,457.95)
+  &lt;div tabindex="-1" class="swal-overlay swal-overlay--…&gt;…&lt;/div&gt; intercepts pointer events
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, e</status>
 </test>
-<doc>Cadastro profissão</doc>
-<status status="PASS" starttime="20220312 13:56:29.517" endtime="20220312 13:56:34.959"/>
+<test id="s1-t2" name="[005] -Cadastro de profissional (Completo)">
+<kw name="Atualizar dash falha 5" library="Page_datastudio" sourcename="Atualizar dash falha ${contador3}">
+<kw name="Evaluate" library="BuiltIn">
+<var>${values}</var>
+<arg>[['Falhou']]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:02:11.553" level="INFO">${values} = [['Falhou']]</msg>
+<status status="PASS" starttime="20220314 23:02:11.552" endtime="20220314 23:02:11.553"/>
+</kw>
+<kw name="Clear Sheet Values" library="RPA.Cloud.Google">
+<arg>${SHEET_ID}</arg>
+<arg>B${contador3}</arg>
+<tag>sheets</tag>
+<doc>Clear cell values for range of cells within a sheet</doc>
+<status status="PASS" starttime="20220314 23:02:11.554" endtime="20220314 23:02:12.001"/>
+</kw>
+<kw name="Insert Sheet Values" library="RPA.Cloud.Google">
+<arg>${SHEET_ID}</arg>
+<arg>B${contador3}</arg>
+<arg>${values}</arg>
+<tag>sheets</tag>
+<doc>Insert values into sheet cells</doc>
+<status status="PASS" starttime="20220314 23:02:12.005" endtime="20220314 23:02:12.488"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${DATA}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220314 23:02:12.495" level="INFO">${DATA} = 2022-03-14 23:02:12.494</msg>
+<status status="PASS" starttime="20220314 23:02:12.492" endtime="20220314 23:02:12.496"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${DATA}</var>
+<arg>[['${DATA}']]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:02:12.504" level="INFO">${DATA} = [['2022-03-14 23:02:12.494']]</msg>
+<status status="PASS" starttime="20220314 23:02:12.500" endtime="20220314 23:02:12.505"/>
+</kw>
+<kw name="Clear Sheet Values" library="RPA.Cloud.Google">
+<arg>${SHEET_ID}</arg>
+<arg>C${contador3}</arg>
+<tag>sheets</tag>
+<doc>Clear cell values for range of cells within a sheet</doc>
+<status status="PASS" starttime="20220314 23:02:12.509" endtime="20220314 23:02:13.026"/>
+</kw>
+<kw name="Insert Sheet Values" library="RPA.Cloud.Google">
+<arg>${SHEET_ID}</arg>
+<arg>C${contador3}</arg>
+<arg>${DATA}</arg>
+<tag>sheets</tag>
+<doc>Insert values into sheet cells</doc>
+<status status="PASS" starttime="20220314 23:02:13.031" endtime="20220314 23:02:13.537"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:11.550" endtime="20220314 23:02:13.539"/>
+</kw>
+<kw name="Dado" library="bdd">
+<arg>que o usuario está na tela "cadastro profissional"</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que o usuario está na tela &quot;cadastro profissional&quot;" library="nav" sourcename="que o usuario está na tela &quot;${tela}&quot;">
+<kw name="Direcionamento da tela &quot;${tela}&quot;" library="nav" sourcename="Direcionamento da tela &quot;${page}&quot;">
+<kw name="Get JSON" library="base">
+<var>${telas_json}</var>
+<arg>telas.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:02:13.563" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/telas.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/telas.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:02:13.564" level="INFO">${file} = {
+    "login":"/login",
+    "novo usuario de serviço":"/paciente/cadastro",
+    "listar usuarios de serviço":"/paciente",
+    "cadastro de colaborador":"/colaborador/form",
+    "agendamento":"/agendam...</msg>
+<status status="PASS" starttime="20220314 23:02:13.562" endtime="20220314 23:02:13.564"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:02:13.567" level="INFO">${super_var} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220314 23:02:13.565" endtime="20220314 23:02:13.567"/>
+</kw>
+<msg timestamp="20220314 23:02:13.568" level="INFO">${telas_json} = {'login': '/login', 'novo usuario de serviço': '/paciente/cadastro', 'listar usuarios de serviço': '/paciente', 'cadastro de colaborador': '/colaborador/form', 'agendamento': '/agendamento', 'listar c...</msg>
+<status status="PASS" starttime="20220314 23:02:13.560" endtime="20220314 23:02:13.568"/>
+</kw>
+<kw name="Get JSON" library="base">
+<var>${config_json}</var>
+<arg>config.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/Files/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220314 23:02:13.572" level="INFO" html="true">Getting file '&lt;a href="file:///home/m.calixta/RobotFramework-Sigsaude/Files/config.json"&gt;/home/m.calixta/RobotFramework-Sigsaude/Files/config.json&lt;/a&gt;'.</msg>
+<msg timestamp="20220314 23:02:13.573" level="INFO">${file} = {
+    "base_url":"https://homologacaosigsaude.imd.ufrn.br/sigsaude",
+    "navegador":"firefox",
+    "lelog":"https://lelog.netlify.app/"
+
+}</msg>
+<status status="PASS" starttime="20220314 23:02:13.571" endtime="20220314 23:02:13.573"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${super_var}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220314 23:02:13.575" level="INFO">${super_var} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:02:13.574" endtime="20220314 23:02:13.575"/>
+</kw>
+<msg timestamp="20220314 23:02:13.576" level="INFO">${config_json} = {'base_url': 'https://homologacaosigsaude.imd.ufrn.br/sigsaude', 'navegador': 'firefox', 'lelog': 'https://lelog.netlify.app/'}</msg>
+<status status="PASS" starttime="20220314 23:02:13.569" endtime="20220314 23:02:13.576"/>
+</kw>
+<kw name="Go To" library="Browser">
+<arg>${config_json["base_url"]}${telas_json["${page}"]}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20220314 23:02:15.605" level="INFO">Succesfully opened URL https://homologacaosigsaude.imd.ufrn.br/sigsaude/profissionalSaude/form</msg>
+<status status="PASS" starttime="20220314 23:02:13.578" endtime="20220314 23:02:15.605"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:13.556" endtime="20220314 23:02:15.605"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:13.553" endtime="20220314 23:02:15.606"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:13.549" endtime="20220314 23:02:15.606"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:13.543" endtime="20220314 23:02:15.606"/>
+</kw>
+<kw name="Então" library="bdd">
+<arg>preencher o ${Campos_profissional.nome} com ${Valor_campos_profissional.nome}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="preencher o inputNome com DRTESTEPSICO" library="Page_profissão_cadastro" sourcename="preencher o ${CAMPO} com ${VALOR}">
+<kw name="Type Text" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>${VALOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:15.620" level="INFO">Types the text 'DRTESTEPSICO' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:02:15.619" endtime="20220314 23:02:15.729"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.617" endtime="20220314 23:02:15.730"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.616" endtime="20220314 23:02:15.731"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.607" endtime="20220314 23:02:15.731"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>preencher o campo CPF ${Valor_campos_profissional.CPF}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="preencher o campo CPF 851.890.700-42" library="Page_profissional_cadastro" sourcename="preencher o campo CPF ${VALOR}">
+<kw name="Fill Text" library="Browser">
+<arg>id=${Campos_profissional.CPF}</arg>
+<arg>${VALOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:15.749" level="INFO">Fills the text '851.890.700-42' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:02:15.742" endtime="20220314 23:02:15.789"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.740" endtime="20220314 23:02:15.790"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.737" endtime="20220314 23:02:15.790"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.733" endtime="20220314 23:02:15.791"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>preencher o ${Campos_profissional.email} com ${Valor_campos_profissional.email}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="preencher o inputEmail com teste125@email.com" library="Page_profissão_cadastro" sourcename="preencher o ${CAMPO} com ${VALOR}">
+<kw name="Type Text" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>${VALOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:15.805" level="INFO">Types the text 'teste125@email.com' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:02:15.804" endtime="20220314 23:02:15.890"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.803" endtime="20220314 23:02:15.891"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.801" endtime="20220314 23:02:15.891"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.793" endtime="20220314 23:02:15.892"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>preencher o ${Campos_profissional.login} com ${Valor_campos_profissional.login}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="preencher o inputLogin com DRTESTEPSICO" library="Page_profissão_cadastro" sourcename="preencher o ${CAMPO} com ${VALOR}">
+<kw name="Type Text" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>${VALOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:15.907" level="INFO">Types the text 'DRTESTEPSICO' in the given field.</msg>
+<status status="PASS" starttime="20220314 23:02:15.906" endtime="20220314 23:02:15.965"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.904" endtime="20220314 23:02:15.966"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.902" endtime="20220314 23:02:15.966"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.894" endtime="20220314 23:02:15.966"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>selecionar o ${Valor_campos_profissional.perfil} no ${Campos_profissional.perfil}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="selecionar o ADM GERAL no selectPerfil" library="Page_profissão_cadastro" sourcename="selecionar o ${VALOR} no ${CAMPO}">
+<kw name="Convert To Upper Case" library="String">
+<var>${VALOR2}</var>
+<arg>${VALOR}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20220314 23:02:15.981" level="INFO">${VALOR2} = ADM GERAL</msg>
+<status status="PASS" starttime="20220314 23:02:15.980" endtime="20220314 23:02:15.981"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=${CAMPO}</arg>
+<arg>Text</arg>
+<arg>${VALOR2}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220314 23:02:15.983" endtime="20220314 23:02:16.004"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.977" endtime="20220314 23:02:16.005"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.974" endtime="20220314 23:02:16.005"/>
+</kw>
+<status status="PASS" starttime="20220314 23:02:15.967" endtime="20220314 23:02:16.005"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220314 23:02:26.008" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220314 23:02:16.006" endtime="20220314 23:02:26.008"/>
+</kw>
+<kw name="Quando" library="bdd">
+<arg>clicar no ${Buttons.avançar}</arg>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>@{Keywords}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="clicar no nextBtn" library="Page_profissão_cadastro" sourcename="clicar no ${Button}">
+<kw name="Click" library="Browser">
+<arg>id=${Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20220314 23:02:26.036" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: page.screenshot: Target page, context or browser has been closed</msg>
+<msg timestamp="20220314 23:02:26.037" level="FAIL">Error: page.click: Target closed
+=========================== logs ===========================
+waiting for selector "id=nextBtn"
+============================================================</msg>
+<status status="FAIL" starttime="20220314 23:02:26.020" endtime="20220314 23:02:26.038"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:26.018" endtime="20220314 23:02:26.038"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:26.016" endtime="20220314 23:02:26.039"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:26.009" endtime="20220314 23:02:26.039"/>
+</kw>
+<kw name="Então" library="bdd">
+<arg>selecionar o ${Valor_campos_profissional.profissao} no ${Campos_profissional.profissao}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.041" endtime="20220314 23:02:26.041"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>selecionar o ${Valor_campos_profissional.vinculo} no ${Campos_profissional.vinculo}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.042" endtime="20220314 23:02:26.043"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>selecionar o ${Valor_campos_profissional.UF} no ${Campos_profissional.UF}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.044" endtime="20220314 23:02:26.044"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>preencher o ${Campos_profissional.registro_profissional} com ${Valor_campos_profissional.registro_profissional}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.045" endtime="20220314 23:02:26.046"/>
+</kw>
+<kw name="Quando" library="bdd">
+<arg>clicar no ${Buttons.avançar}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.047" endtime="20220314 23:02:26.047"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>informar a especialidade ${Campos_profissional.especialidade1}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.048" endtime="20220314 23:02:26.049"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>informar a modalidade ${Campos_profissional.modalidade1}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.050" endtime="20220314 23:02:26.050"/>
+</kw>
+<kw name="Quando" library="bdd">
+<arg>clicar no ${Buttons.avançar}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.051" endtime="20220314 23:02:26.051"/>
+</kw>
+<kw name="E" library="bdd">
+<arg>clicar no ${Buttons.cadastrar}</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.053" endtime="20220314 23:02:26.053"/>
+</kw>
+<kw name="Então" library="bdd">
+<arg>mensagem de cadastro realizado com sucesso é exibida</arg>
+<status status="NOT RUN" starttime="20220314 23:02:26.054" endtime="20220314 23:02:26.054"/>
+</kw>
+<kw name="Atualizar dash sucesso 5" library="Page_datastudio" sourcename="Atualizar dash sucesso ${contador1}">
+<status status="NOT RUN" starttime="20220314 23:02:26.056" endtime="20220314 23:02:26.056"/>
+</kw>
+<status status="FAIL" starttime="20220314 23:02:11.542" endtime="20220314 23:02:26.057">Error: page.click: Target closed
+=========================== logs ===========================
+waiting for selector "id=nextBtn"
+============================================================</status>
+</test>
+<doc>Caminho feliz</doc>
+<status status="FAIL" starttime="20220314 23:01:46.710" endtime="20220314 23:02:26.064"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Caminho feliz">Caminho feliz</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="Caminho feliz">Caminho feliz</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220314 23:02:26.036" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: page.screenshot: Target page, context or browser has been closed</msg>
 </errors>
 </robot>

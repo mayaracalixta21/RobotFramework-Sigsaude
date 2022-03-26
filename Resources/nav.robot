@@ -1,5 +1,5 @@
 ***Settings***
-Documentation       Navegação
+Documentation       
 
 **Keywords**
 

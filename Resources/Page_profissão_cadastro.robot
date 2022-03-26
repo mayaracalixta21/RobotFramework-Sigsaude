@@ -30,7 +30,7 @@ preencher o ${CAMPO} com ${VALOR}
 
 selecionar o ${VALOR} no ${CAMPO}
     ${VALOR2}               Convert To Upper Case                ${VALOR}
-    Select Options By       id=${CAMPO}        Text        ${VALOR2}
+    Select Options By       id=${CAMPO}       Text           ${VALOR2}
 
 clicar no ${Button}
     Click                     id=${Button}

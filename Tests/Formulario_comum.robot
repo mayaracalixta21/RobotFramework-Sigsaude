@@ -66,8 +66,8 @@ Suite Setup     iniciar navegador sessão "Comum"
     Então       mensagem de cadastro realizado com sucesso é exibida
     Sleep    30s
 
-[004] - Dados básicos para usuarios de serviço antigos
-    [Tags]      Testes
+[004] - Dados diagnostico
+    [Tags]      Comum
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}

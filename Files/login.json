@@ -8,5 +8,10 @@
     "Endocrinologia":{
         "login": "drendocrinologia",
         "senha": 98841863323
-    }
+    },
+
+	"Comum": {
+		"login": "uirakuleszatestes",
+		"senha": "02219235432"
+	}
 }

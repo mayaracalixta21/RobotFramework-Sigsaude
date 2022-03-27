@@ -12,6 +12,7 @@
     "cadastro profissional":"/profissionalSaude/form",
     "cadastro turma":"/turma/form",
     "cadastro oferta":"/ofertaAtendimento/form",
-    "listar oferta":"/ofertaAtendimento"
+    "listar oferta":"/ofertaAtendimento",
+    "minha agenda":"/agenda/"
 
 }

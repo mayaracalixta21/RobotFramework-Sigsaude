@@ -39,3 +39,12 @@ Capturar dados
     #E           clicar no ${Buttons.cadastrar}
     #Então       mensagem de cadastro realizado com sucesso é exibida
     Sleep      20s
+
+
+
+
+  
+   
+    
+
+[000] -  DBS

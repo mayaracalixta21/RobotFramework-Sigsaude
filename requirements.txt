@@ -20,3 +20,4 @@ typing-extensions==3.10.0.0
 typing-utils==0.1.0
 wrapt==1.12.1
 rpaframework==12.0.0
+robotframework-metrics==3.3.3

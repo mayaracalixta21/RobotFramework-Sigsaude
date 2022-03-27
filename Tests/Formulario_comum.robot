@@ -72,7 +72,7 @@ Suite Setup     iniciar navegador sessão "Comum"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
     E           clicar em ${Buttons_agenda.atendimento}
-    E           iniciar atendiemto
+    E           iniciar atendimento
     Então       informar descrição
     E           clicar em ${Buttons_DIG.avançar}
     E           informar diagnóstico
@@ -81,5 +81,13 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar em ${Buttons_DIG.avançar}
     Quando      clicar em ${Buttons_DIG.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
+
+[005] - Conduta
+    [Tags]      Teste
+    [Setup]     configurações iniciais formulario comum
+
+
+    Dado        iniciar conduta terapêutica
+    Quando      informar dados da conduta terapêutica
 
 

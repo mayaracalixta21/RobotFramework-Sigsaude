@@ -17,6 +17,6 @@ Documentation     Minha agenda
 ...  sim=//*[@id="html"]/body/div[2]/div/div[4]/div[2]/button
 
 ***Keywords***
-iniciar atendiemto
+iniciar atendimento
     Click               xpath=${Buttons_agenda.sim}
 

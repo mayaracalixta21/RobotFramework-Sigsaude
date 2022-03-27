@@ -1,11 +1,11 @@
-{"level":30,"time":"2022-03-27T21:08:50.957Z","pid":13524,"hostname":"Mayara","msg":"Listening on 64509"}
-{"level":30,"time":"2022-03-27T21:08:51.684Z","pid":13524,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-03-27T21:08:51.703Z","pid":13524,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-27T21:08:52.085Z","pid":13524,"hostname":"Mayara","msg":"Video path: undefined"}
-{"level":30,"time":"2022-03-27T21:08:52.085Z","pid":13524,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-27T21:09:22.839Z","pid":13524,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-27T21:09:22.840Z","pid":13524,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-27T21:09:22.840Z","pid":13524,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-27T21:09:22.864Z","pid":13524,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-27T21:09:22.864Z","pid":13524,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-27T21:09:22.865Z","pid":13524,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-27T22:18:45.994Z","pid":14736,"hostname":"Mayara","msg":"Listening on 59024"}
+{"level":30,"time":"2022-03-27T22:18:46.840Z","pid":14736,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-03-27T22:18:46.858Z","pid":14736,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-27T22:18:47.236Z","pid":14736,"hostname":"Mayara","msg":"Video path: undefined"}
+{"level":30,"time":"2022-03-27T22:18:47.236Z","pid":14736,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-27T22:19:14.262Z","pid":14736,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-27T22:19:14.262Z","pid":14736,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-27T22:19:14.262Z","pid":14736,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-27T22:19:14.284Z","pid":14736,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-27T22:19:14.284Z","pid":14736,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-27T22:19:14.284Z","pid":14736,"hostname":"Mayara","msg":"Changed active page"}

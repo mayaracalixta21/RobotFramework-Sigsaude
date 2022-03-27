@@ -12,3 +12,4 @@ Documentation     Minha agenda
 &{Buttons_agenda}
 ...  pesquisar=//*[@id="formApp"]/div/div[3]/button
 ...  DS=//*//*[@id="dataTable"]/tbody/tr/td[5]/div/a[1]
+...  DBS=//*[@id="dataTable"]/tbody/tr/td[5]/div/a[2]

@@ -1,7 +1,7 @@
 ***Settings***
 Documentation       Cadastro dados básicos de saúde
 
-Resource        ${EXECDIR}/Resources/Page_keywords.robot
+Resource        ${EXECDIR}/Resources/Page_config_iniciais.robot
 
 *** Variables ***
 
@@ -20,11 +20,18 @@ Resource        ${EXECDIR}/Resources/Page_keywords.robot
 ...  descricao_tratamento=textareaDescricaoTratamento
 ...  utiliza_medicamentos=utilizaMedicamentos
 ...  medicamentos=inputMedicamento0
-...  informacoes_adicionai=inputMedicamentoInformacoesAdicionais0
+...  informacoes_adicionais=inputMedicamentoInformacoesAdicionais0
 ...  doenca_diagnosticada=possuDoencaDiagnosticada
 ...  doenca1=//*[@id="buscaDoencaDiv"]/div/div[1]/button/div/div/div
 ...  doenca2=//*[@id="buscaDoencaDiv"]/div/div[1]/div/div[1]/input
 ...  selecionar_doença=bs-select-2-0
+...  grau_parentesco=selectGrauParentesco0
+...  outro_parente=inputOutroParente0
+...  descricao_doenca=inputNomeDoencaHistorico0
+...  doenca_familiar1=//*[@id="historicoFamiliar0"]/div[4]/div/div[1]/button/div/div/div
+...  doenca_familiar2=//*[@id="historicoFamiliar0"]/div[4]/div/div[1]/div/div[1]/input
+...  selecionar_doenca_familiar=//*[@id="bs-select-3-1"]/span
+...  observacoes_adicionais=textareaObservacoesAdicionais
 
 &{Valor_campos_DBS}
 ...  peso=10
@@ -40,9 +47,16 @@ Resource        ${EXECDIR}/Resources/Page_keywords.robot
 ...  motivo_consulta=Teste automatizado
 ...  descricao_tratamento=Teste automatizado
 ...  utiliza_medicamentos=SIM
-...  medicamentoo=Teste automatizados
+...  medicamentos=Teste automatizados
+...  informacoes_adicionais=Teste automatizados
 ...  doenca_diagnosticada=SIM
 ...  doenca2=FEBRE AMARELA
+...  grau_parentesco=OUTRO
+...  outro_parente=Teste automatizados
+...  descricao_doenca=Teste automatizados
+...  doenca_familiar2=ALGUMAS AFECÇÕES ORIGINADAS NO PERÍODO PERINATAL
+...  observacoes_adicionais= Teste automatizado
+
 
 &{Buttons_DBS}
 ...  avançar=nextBtn
@@ -50,12 +64,13 @@ Resource        ${EXECDIR}/Resources/Page_keywords.robot
 ...  OK=/html/body/div[2]/div/div[3]/div/button
 ...  adicionar_medicamento=buttonAddMedicamento0
 ...  adicionar_diagnostico=buttonAddDiagnostico0
+...  adicionar_doenca_familiar=//*[@id="historicoFamiliar0"]/div[4]/div/div[2]/button
 
 
 
 ***Keywords***
 
-medidas e sinais vitais
+informar medidas e sinais vitais
     preencher o ${Campos_DBS.peso} com ${Valor_campos_DBS.peso}
     preencher o ${Campos_DBS.altura} com ${Valor_campos_DBS.altura}
     preencher o ${Campos_DBS.temperatura} com ${Valor_campos_DBS.temperatura}
@@ -66,22 +81,42 @@ medidas e sinais vitais
     preencher o ${Campos_DBS.saturacaoO2} com ${Valor_campos_DBS.saturacaoO2}
     preencher o ${Campos_DBS.glicemia} com ${Valor_campos_DBS.glicemia}
 
-procedência do usuário do serviço
-    selecionar o ${Valor_campos_DBS.tipo_iniciativa} no ${campos_DBS.tipo_iniciativa}
+informar procedência do usuário do serviço
+    selecionar o ${Valor_campos_DBS.tipo_iniciativa} no ${campos_DBS.tipo_procedencia}
+
+informar historia clinica
+     preencher o ${Campos_DBS.descricao_tratamento} com ${Valor_campos_DBS.descricao_tratamento}
 
 
-medicamentos
+informar medicamentos
     selecionar o ${Valor_campos_DBS.utiliza_medicamentos} no ${campos_DBS.utiliza_medicamentos}
     preencher o ${Campos_DBS.medicamentos} com ${Valor_campos_DBS.medicamentos}
-    preencher o ${Campos_DBS.informacoes_adicionai} com ${Valor_campos_DBS.informacoes_adicionai}
+    preencher o ${Campos_DBS.informacoes_adicionais} com ${Valor_campos_DBS.informacoes_adicionais}
     clicar no ${Buttons_DBS.adicionar_medicamento}
 
-história patológica pregressa
+informar historia patologica pregressa
     selecionar o ${Valor_campos_DBS.doenca_diagnosticada} no ${campos_DBS.doenca_diagnosticada}
     informar a doença
     clicar no ${Buttons_DBS.adicionar_diagnostico}
 
 informar a doença
     Click               xpath=${Campos_DBS.doenca1}
-    Fill Text           xpath=${Campos_DBS.doenca2}                      ${Valor_campos_DBS.doenca2} 
+    Type Text            xpath=${Campos_DBS.doenca2}                      ${Valor_campos_DBS.doenca2} 
+    Sleep   3s
     Click               id=${Campos_DBS.selecionar_doença}
+
+informar historico médico familiar
+    selecionar o ${Valor_campos_DBS.grau_parentesco} no ${campos_DBS.grau_parentesco}
+    preencher o ${Campos_DBS.outro_parente} com ${Valor_campos_DBS.outro_parente}
+    preencher o ${Campos_DBS.descricao_doenca} com ${Valor_campos_DBS.descricao_doenca}
+    informar a doença familiar
+    clicar em ${Buttons_DBS.adicionar_doenca_familiar}
+
+informar a doença familiar
+    Click               xpath=${Campos_DBS.doenca_familiar1}
+    Type Text           xpath=${Campos_DBS.doenca_familiar2}                      ${Valor_campos_DBS.doenca_familiar2} 
+    Sleep   3s
+    Click               xpath=${Campos_DBS.selecionar_doenca_familiar}
+
+informar observações adicionais 
+     preencher o ${Campos_DBS.observacoes_adicionais} com ${Valor_campos_DBS.observacoes_adicionais}

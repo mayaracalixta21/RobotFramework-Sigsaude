@@ -1,6 +1,8 @@
 ***Settings***
 Documentation       Cadastro socieconimocos
 
+Resource        ${EXECDIR}/Resources/Page_config_iniciais.robot
+
 *** Variables ***
 
 &{Campos_DS}
@@ -50,6 +52,31 @@ Documentation       Cadastro socieconimocos
 
 
 ***Keywords***
+informar informações adicionais
+    preencher o ${Campos_DS.informacoes_adicionais} com ${Valor_campos_DS.informacoes_adicionais}
+
+informar situação familiar e econômica
+    preencher o ${Campos_DS.quantidade_de_moradores_da_residência} com ${Valor_campos_DS.quantidade_de_moradores_da_residência}
+    preencher o ${Campos_DS.quantidade_de_pessoas_que_trabalham} com ${Valor_campos_DS.quantidade_de_pessoas_que_trabalham}
+    preencher o ${Campos_DS.renda_familiar_total} com ${Valor_campos_DS.renda_familiar_total}
+    selecionar o ${Valor_campos_DS.possui_beneficio_social} no ${Campos_DS.possui_beneficio_social}
+    preencher o beneficio ${Valor_campos_DS.beneficios_sociais2}
+
+informar escolaridade e profissão [Novo usuario]
+    selecionar o ${Valor_campos_DS.instituição_de_ensino} no ${Campos_DS.instituição_de_ensino}
+    preencher o ${Campos_DS.curso} com ${Valor_campos_DS.curso}
+    informar a profissao ${Valor_campos_DS.profissoes2}
+    preencher o ${Campos_DS.outra_profissao} com ${Valor_campos_DS.outra_profissao}
+    informar a ocupacao ${Valor_campos_DS.ocupacoes2}
+    preencher o ${Campos_DS.outra_ocupacao} com ${Valor_campos_DS.outra_ocupacao}
+
+informar escolaridade e profissão [Antigo usuario]
+    selecionar o ${Valor_campos_DS.instituição_de_ensino} no ${Campos_DS.instituição_de_ensino}
+    preencher o ${Campos_DS.curso} com ${Valor_campos_DS.curso}
+    informar a profissao ${Valor_campos_DS.profissoes2}
+    preencher o ${Campos_DS.outra_profissao} com ${Valor_campos_DS.outra_profissao}
+    informar a ocupacao ${Valor_campos_DS.ocupacoes2}
+    preencher o ${Campos_DS.outra_ocupacao} com ${Valor_campos_DS.outra_ocupacao}
 
 preencher o beneficio ${VALOR}
     Click               xpath=${Campos_DS.beneficios_sociais1}
@@ -66,3 +93,4 @@ informar a ocupacao ${VALOR}
     Fill Text           xpath=${Campos_DS.ocupacoes2}                      ${VALOR}
     Click               xpath=${Campos_DS.selecionar_ocupacoes}
     Click               xpath= //*[@id="multistepFormDS"]/div[3]/div[2]/div[2]/div[3]/label
+

@@ -16,6 +16,7 @@ Resource        ${EXECDIR}/Resources/Page_capturar_dados.robot
 Resource        ${EXECDIR}/Resources/Page_minha_agenda.robot
 Resource        ${EXECDIR}/Resources/Formulário comum/Page_DS.robot
 Resource        ${EXECDIR}/Resources/Formulário comum/Page_DBS.robot
+Resource        ${EXECDIR}/Resources/Formulário comum/Page_dignostico.robot
 
 
 *** Keywords ***

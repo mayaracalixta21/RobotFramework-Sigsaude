@@ -43,7 +43,7 @@ Suite Setup     iniciar navegador sessão "Comum"
     Então       mensagem de cadastro realizado com sucesso é exibida
 
 [003] - Dados básicos para usuarios de serviço antigos
-    [Tags]      Testes
+    [Tags]      comum
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -65,3 +65,21 @@ Suite Setup     iniciar navegador sessão "Comum"
     Quando      clicar no ${Buttons_DBS.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
     Sleep    30s
+
+[004] - Dados básicos para usuarios de serviço antigos
+    [Tags]      Testes
+    Dado        que o usuario está na tela "minha agenda"
+    Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
+    E           clicar em ${Buttons_agenda.pesquisar}
+    E           clicar em ${Buttons_agenda.atendimento}
+    E           iniciar atendiemto
+    Então       informar descrição
+    E           clicar em ${Buttons_DIG.avançar}
+    E           informar diagnóstico
+    E           clicar em ${Buttons_DIG.avançar}
+    E           informar documentos
+    E           clicar em ${Buttons_DIG.avançar}
+    Quando      clicar em ${Buttons_DIG.cadastrar}
+    Então       mensagem de cadastro realizado com sucesso é exibida
+
+

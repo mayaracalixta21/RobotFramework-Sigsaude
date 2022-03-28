@@ -1,11 +1,76 @@
-{"level":30,"time":"2022-03-27T22:18:45.994Z","pid":14736,"hostname":"Mayara","msg":"Listening on 59024"}
-{"level":30,"time":"2022-03-27T22:18:46.840Z","pid":14736,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-03-27T22:18:46.858Z","pid":14736,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-27T22:18:47.236Z","pid":14736,"hostname":"Mayara","msg":"Video path: undefined"}
-{"level":30,"time":"2022-03-27T22:18:47.236Z","pid":14736,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-27T22:19:14.262Z","pid":14736,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-27T22:19:14.262Z","pid":14736,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-27T22:19:14.262Z","pid":14736,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-27T22:19:14.284Z","pid":14736,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-27T22:19:14.284Z","pid":14736,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-27T22:19:14.284Z","pid":14736,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-28T01:24:19.913Z","pid":15640,"hostname":"Mayara","msg":"Listening on 61664"}
+{"level":30,"time":"2022-03-28T01:24:20.553Z","pid":15640,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-03-28T01:24:20.573Z","pid":15640,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-28T01:24:20.935Z","pid":15640,"hostname":"Mayara","msg":"Video path: undefined"}
+{"level":30,"time":"2022-03-28T01:24:20.936Z","pid":15640,"hostname":"Mayara","msg":"Changed active page"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=.swal-modal" to be visible
+============================================================
+    at Object.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25475:45)
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25368:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25349:53)
+    at fulfilled (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25340:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2022-03-28T01:25:10.835Z","pid":15640,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-28T01:25:10.836Z","pid":15640,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-28T01:25:10.836Z","pid":15640,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-28T01:25:10.847Z","pid":15640,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-28T01:25:10.847Z","pid":15640,"hostname":"Mayara","msg":"Changed active page"}
+================= Original suppressed error =================
+page.bringToFront: Target page, context or browser has been closed
+    at BrowserState.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26139:53)
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25708:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25689:53)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26134:16)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26372:55
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25708:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25689:53)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25679:12)
+    at _switchPage (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26360:12)
+    at Object.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26432:42)
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25708:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25689:53)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25679:12)
+    at Object.switchPage (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26406:12)
+    at PlaywrightServer.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:24157:62)
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:23886:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:23867:53)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:23861:71
+    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:23857:12) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-03-28T01:25:10.886Z","pid":15640,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-28T01:25:10.886Z","pid":15640,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-28T01:25:10.887Z","pid":15640,"hostname":"Mayara","msg":"Changed active page"}
+================= Original suppressed error =================
+page.bringToFront: Target page, context or browser has been closed
+    at BrowserState.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26139:53)
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25708:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25689:53)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26134:16)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26372:55
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25708:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25689:53)
+    at C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25679:12)
+    at _switchPage (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26360:12)
+    at Object.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:26488:42)
+    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25708:23)
+    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25689:53)
+    at fulfilled (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25680:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  name: 'Error'
+}
+=============================================================

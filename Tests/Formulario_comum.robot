@@ -85,9 +85,10 @@ Suite Setup     iniciar navegador sessão "Comum"
 [005] - Conduta
     [Tags]      Teste
     [Setup]     configurações iniciais formulario comum
-
-
     Dado        iniciar conduta terapêutica
     Quando      informar dados da conduta terapêutica
+    E           clicar em ${Buttons_CON.avançar}
+    E           clicar em ${Buttons_CON.cadastrar}
+    Então       mensagem de cadastro realizado com sucesso é exibida
 
 

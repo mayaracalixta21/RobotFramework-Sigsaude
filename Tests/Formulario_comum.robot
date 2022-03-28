@@ -83,7 +83,7 @@ Suite Setup     iniciar navegador sessão "Comum"
     Então       mensagem de cadastro realizado com sucesso é exibida
 
 [005] - Conduta
-    [Tags]      Teste
+    [Tags]      Comum
     [Setup]     configurações iniciais formulario comum
     Dado        iniciar conduta terapêutica
     Quando      informar dados da conduta terapêutica
@@ -91,4 +91,14 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar em ${Buttons_CON.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
 
+
+[005] - Evoluçao
+    [Tags]      Teste
+    [Setup]     configurações iniciais formulario comum
+    Dado        iniciar evolucao
+    Quando      informar descrição da conduta
+    E           clicar em ${Buttons_EVO.avançar}
+    E           informar os documentos da conduta
+    E           clicar em ${Buttons_EVO.cadastrar}
+    Então       mensagem de cadastro realizado com sucesso é exibida
 

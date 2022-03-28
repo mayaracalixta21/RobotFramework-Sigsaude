@@ -18,6 +18,7 @@ Resource        ${EXECDIR}/Resources/Formulário comum/Page_DS.robot
 Resource        ${EXECDIR}/Resources/Formulário comum/Page_DBS.robot
 Resource        ${EXECDIR}/Resources/Formulário comum/Page_dignostico.robot
 Resource        ${EXECDIR}/Resources/Formulário comum/Page_conduta.robot
+Resource        ${EXECDIR}/Resources/Formulário comum/Page_evolucao.robot
 
 
 *** Keywords ***

@@ -63,6 +63,8 @@ informar situação familiar e econômica
     preencher o beneficio ${Valor_campos_DS.beneficios_sociais2}
 
 informar escolaridade e profissão [Novo usuario]
+    Check Checkbox  xpath=${Buttons_DS.alfabetizado}   
+    selecionar o ${Valor_campos_DS.grau_de_escolaridade} no ${Campos_DS.grau_de_escolaridade}
     selecionar o ${Valor_campos_DS.instituição_de_ensino} no ${Campos_DS.instituição_de_ensino}
     preencher o ${Campos_DS.curso} com ${Valor_campos_DS.curso}
     informar a profissao ${Valor_campos_DS.profissoes2}

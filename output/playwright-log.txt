@@ -1,24 +1,11 @@
-{"level":30,"time":"2022-03-28T01:56:22.979Z","pid":11340,"hostname":"Mayara","msg":"Listening on 49970"}
-{"level":30,"time":"2022-03-28T01:56:23.964Z","pid":11340,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-03-28T01:56:24.004Z","pid":11340,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-28T01:56:24.257Z","pid":11340,"hostname":"Mayara","msg":"Video path: undefined"}
-{"level":30,"time":"2022-03-28T01:56:24.257Z","pid":11340,"hostname":"Mayara","msg":"Changed active page"}
-================= Original suppressed error =================
-page.click: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "xpath=/html/body/div[1]/div[2]/div/div[2]/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[3]/div/button[2]"
-============================================================
-    at Object.<anonymous> (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25475:45)
-    at step (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25368:23)
-    at Object.next (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25349:53)
-    at fulfilled (C:\Users\Mayara\AppData\Roaming\Python\Python39\site-packages\Browser\wrapper\index.js:25340:58)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
-  name: 'TimeoutError'
-}
-=============================================================
-{"level":30,"time":"2022-03-28T01:56:53.428Z","pid":11340,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-28T01:56:53.428Z","pid":11340,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-28T01:56:53.428Z","pid":11340,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-28T01:56:53.471Z","pid":11340,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-28T01:56:53.471Z","pid":11340,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-28T01:56:53.471Z","pid":11340,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-29T04:19:39.602Z","pid":12712,"hostname":"Mayara","msg":"Listening on 56018"}
+{"level":30,"time":"2022-03-29T04:19:40.168Z","pid":12712,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-03-29T04:19:40.187Z","pid":12712,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-29T04:19:40.548Z","pid":12712,"hostname":"Mayara","msg":"Video path: undefined"}
+{"level":30,"time":"2022-03-29T04:19:40.548Z","pid":12712,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-29T04:20:59.251Z","pid":12712,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-29T04:20:59.252Z","pid":12712,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-29T04:20:59.252Z","pid":12712,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-29T04:20:59.284Z","pid":12712,"hostname":"Mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-03-29T04:20:59.284Z","pid":12712,"hostname":"Mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-29T04:20:59.284Z","pid":12712,"hostname":"Mayara","msg":"Changed active page"}

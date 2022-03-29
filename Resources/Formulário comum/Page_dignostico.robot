@@ -59,4 +59,3 @@ upload de arquivo ${CAMPO}
     Click           id=${CAMPO}
     ${upload_result}=  Wait For  ${promise}
 
-  

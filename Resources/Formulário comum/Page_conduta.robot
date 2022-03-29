@@ -166,7 +166,7 @@ atestados
     Click               xpath=${Campos_CON.selecionar_doenca_CID}
     clicar em ${Buttons_CON.add_atestados}
 
-upload de arquivo ${CAMPO}
+analise upload de arquivo ${CAMPO}
     ${promise}=    Promise To Upload File          C:/Users/Mayara/Documents/TCC/RobotFramework-Sigsaude/Resources/Arquivos/b.png
     Click           id=${CAMPO}
     ${upload_result}=  Wait For  ${promise}

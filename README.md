@@ -54,4 +54,4 @@ robot -d output .
 
 robot -d ./output -t "[000] -  DS" Tests
 
-robot -d ./output -i comum Tests 
+robot -d ./output -i Comum Tests 

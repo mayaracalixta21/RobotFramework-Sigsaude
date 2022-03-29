@@ -1,6 +1,6 @@
 ***Settings***
 Documentation       Cadastro profissão
-
+Library         String
 
 *** Variables ***
 

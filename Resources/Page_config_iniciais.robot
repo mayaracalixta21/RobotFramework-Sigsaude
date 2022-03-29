@@ -32,3 +32,11 @@ configurações iniciais formulario comum
     E           clicar em ${Buttons_agenda.pesquisar}
     E           clicar em ${Buttons_agenda.atendimento}
     E           iniciar atendimento
+
+configurações iniciais fora do horario formulario comum
+    Dado        que o usuario está na tela "minha agenda"
+    Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
+    E           clicar em ${Buttons_agenda.pesquisar}
+    E           clicar em ${Buttons_agenda.atendimento}
+    E           iniciar atendimento
+    E           fora do horario

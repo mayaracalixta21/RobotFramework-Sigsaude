@@ -18,7 +18,7 @@ Resource        ${EXECDIR}/Resources/Page_config_iniciais.robot
 ...  cadastrar=/html/body/div/div[2]/div/div/section/div[2]/div[3]/div[2]/div/div/div[2]/div/div[5]/div/div/div[1]/form/div[3]/div/button[2]
 ...  add_doc_evo=docGeraisEvolucao
 ...  evolucao=e
-...  add_up_doc=//*[@id="multistepFormE"]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[3]/button
+...  add_up_doc=//*[@id="multistepFormE"]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[3]/button/i
 
 ***Keywords***
 

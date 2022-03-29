@@ -56,13 +56,13 @@ pressionar o botão "${botão}"
     ${elementos_aten_json}         Get JSON                                             elementos_aten.json
     Click                          css=${elementos_aten_json["${botão}"]}
 
-iniciar atendimento
-    ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
-    Click                          css=${elementos_aten_json["Atendimento"]}  
-    Wait For Elements State        css=${elementos_aten_json["Tela de aviso"]}                   visible            6s
-    FOR    ${contador}    IN RANGE    1   3
-        Click                          css=${elementos_aten_json["Sim"]} 
-    END
+#iniciar atendimento
+ #   ${elementos_aten_json}         Get JSON                                                        elementos_aten.json
+ #   Click                          css=${elementos_aten_json["Atendimento"]}  
+  #  Wait For Elements State        css=${elementos_aten_json["Tela de aviso"]}                   visible            6s
+ #   FOR    ${contador}    IN RANGE    1   3
+  #      Click                          css=${elementos_aten_json["Sim"]} 
+  #  END
 
 informar dados socioeconômicos
     ${elementos_aten_json}         Get JSON                                                        elementos_aten.json

@@ -7,7 +7,7 @@ Documentation     Minha agenda
 ...  data_listagem=dataListagem
 
 &{Valor_campos_agenda}
-...  data_listagem=30032022
+...  data_listagem=01042022
 
 &{Buttons_agenda}
 ...  pesquisar=//*[@id="formApp"]/div/div[3]/button

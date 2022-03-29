@@ -1,11 +1,73 @@
-{"level":30,"time":"2022-03-29T04:19:39.602Z","pid":12712,"hostname":"Mayara","msg":"Listening on 56018"}
-{"level":30,"time":"2022-03-29T04:19:40.168Z","pid":12712,"hostname":"Mayara","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-03-29T04:19:40.187Z","pid":12712,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-29T04:19:40.548Z","pid":12712,"hostname":"Mayara","msg":"Video path: undefined"}
-{"level":30,"time":"2022-03-29T04:19:40.548Z","pid":12712,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-29T04:20:59.251Z","pid":12712,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-29T04:20:59.252Z","pid":12712,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-29T04:20:59.252Z","pid":12712,"hostname":"Mayara","msg":"Changed active page"}
-{"level":30,"time":"2022-03-29T04:20:59.284Z","pid":12712,"hostname":"Mayara","msg":"Changed active context"}
-{"level":30,"time":"2022-03-29T04:20:59.284Z","pid":12712,"hostname":"Mayara","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-29T04:20:59.284Z","pid":12712,"hostname":"Mayara","msg":"Changed active page"}
+{"level":30,"time":"2022-03-29T17:54:37.668Z","pid":493613,"hostname":"VHSJP1995N","msg":"Listening on 54699"}
+{"level":30,"time":"2022-03-29T17:54:37.995Z","pid":493613,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-03-29T17:54:38.004Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-03-29T17:54:38.176Z","pid":493613,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
+{"level":30,"time":"2022-03-29T17:54:38.176Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active page"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=.swal-modal" to be visible
+============================================================
+    at Object.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2022-03-29T17:55:42.117Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-03-29T17:55:42.117Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-29T17:55:42.118Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-03-29T17:55:42.137Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-29T17:55:42.137Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active page"}
+================= Original suppressed error =================
+page.bringToFront: Target page, context or browser has been closed
+    at BrowserState.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26134:16)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26372:55
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at _switchPage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26360:12)
+    at Object.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26432:42)
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at Object.switchPage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26406:12)
+    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:24157:62)
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71 {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-03-29T17:55:42.152Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active context"}
+{"level":30,"time":"2022-03-29T17:55:42.152Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changing current active page"}
+{"level":30,"time":"2022-03-29T17:55:42.152Z","pid":493613,"hostname":"VHSJP1995N","msg":"Changed active page"}
+================= Original suppressed error =================
+page.bringToFront: Target page, context or browser has been closed
+    at BrowserState.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26134:16)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26372:55
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at _switchPage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26360:12)
+    at Object.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26488:42)
+    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at fulfilled (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25680:58) {
+  name: 'Error'
+}
+=============================================================

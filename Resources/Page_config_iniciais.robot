@@ -27,16 +27,17 @@ configurações informações iniciais
     iniciar navegador sessão "Endocrinologia"
 
 configurações iniciais formulario comum
-    Dado        que o usuario está na tela "minha agenda"
-    Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
-    E           clicar em ${Buttons_agenda.pesquisar}
-    E           clicar em ${Buttons_agenda.atendimento}
-    E           iniciar atendimento
+    que o usuario está na tela "minha agenda"
+    preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
+    clicar em ${Buttons_agenda.pesquisar}
+    clicar em ${Buttons_agenda.atendimento}
+    iniciar atendimento
 
 configurações iniciais fora do horario formulario comum
-    Dado        que o usuario está na tela "minha agenda"
-    Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
-    E           clicar em ${Buttons_agenda.pesquisar}
-    E           clicar em ${Buttons_agenda.atendimento}
-    E           iniciar atendimento
-    E           fora do horario
+    que o usuario está na tela "minha agenda"
+    preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
+    clicar em ${Buttons_agenda.pesquisar}
+    clicar em ${Buttons_agenda.atendimento}
+    Sleep  3s
+    iniciar atendimento
+    fora do horario

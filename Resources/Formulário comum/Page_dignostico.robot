@@ -37,7 +37,6 @@ iniciar dados de diagnostico
     clicar no ${Buttons_DIG.diagnostico}
 
 informar descrição
-    iniciar dados de diagnostico
     preencher o ${Campos_DIG.descricao_diagnostico} com ${Valor_campos_DIG.descricao_diagnostico}
 
 informar diagnóstico
@@ -55,7 +54,7 @@ informar documentos
     clicar em ${Buttons_DIG.add_doc}
 
 upload de arquivo ${CAMPO}
-    ${promise}=    Promise To Upload File          C:/Users/Mayara/Documents/TCC/RobotFramework-Sigsaude/Resources/Arquivos/b.png
+    ${promise}=    Promise To Upload File         /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/Resources/Arquivos/b.png
     Click           id=${CAMPO}
     ${upload_result}=  Wait For  ${promise}
 

@@ -11,8 +11,7 @@ Suite Setup     iniciar navegador sessão "Comum"
 ***Test Cases***
 
 [001] - Dados socioeconômicos para usuarios de serviço novos
-    [Tags]      Comum2
-    [Setup]     configurações iniciais formulario comum
+    [Tags]      Comum
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -28,7 +27,6 @@ Suite Setup     iniciar navegador sessão "Comum"
 
 [002] - Dados socioeconômicos para usuarios de serviço antigos
     [Tags]      Comum3
-    [Setup]     configurações iniciais formulario comum
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -44,8 +42,7 @@ Suite Setup     iniciar navegador sessão "Comum"
     Então       mensagem de cadastro realizado com sucesso é exibida
 
 [003] - Dados básicos para usuarios de serviço novos
-    [Tags]      Comum2
-    [Setup]     configurações iniciais formulario comum
+    [Tags]      Comum
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -66,16 +63,13 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar no ${Buttons_DBS.avançar}
     Quando      clicar no ${Buttons_DBS.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
-    Sleep    30s
+
 
 [004] - Dados diagnostico
-    [Tags]      Comum2
+    [Tags]      Comum
     [Setup]    configurações iniciais fora do horario formulario comum
-    Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
-    E           clicar em ${Buttons_agenda.pesquisar}
-    E           clicar em ${Buttons_agenda.atendimento}
-    E           iniciar atendimento
-    Então       informar descrição
+    Dado        iniciar dados de diagnostico
+    Quando      informar descrição
     E           clicar em ${Buttons_DIG.avançar}
     E           informar diagnóstico
     E           clicar em ${Buttons_DIG.avançar}
@@ -85,8 +79,8 @@ Suite Setup     iniciar navegador sessão "Comum"
     Então       mensagem de cadastro realizado com sucesso é exibida
 
 [005] - Conduta
-    [Tags]      Comum
-    [Setup]    configurações iniciais fora do horario formulario comum
+    [Tags]      Teste
+    [Setup]     configurações iniciais fora do horario formulario comum
     Dado        iniciar conduta terapêutica
     Quando      informar dados da conduta terapêutica
     E           clicar em ${Buttons_CON.avançar}
@@ -95,14 +89,13 @@ Suite Setup     iniciar navegador sessão "Comum"
 
 
 [005] - Evoluçao
-    [Tags]      Teste
-    [Setup]    configurações iniciais fora do horario formulario comum
+    [Tags]      Comum
+    [Setup]     configurações iniciais fora do horario formulario comum
     Dado        iniciar evolucao
     Quando      informar descrição da conduta
     E           clicar em ${Buttons_EVO.avançar}
     E           informar os documentos da conduta
+    E           clicar em ${Buttons_EVO.avançar}
     E           clicar em ${Buttons_EVO.cadastrar}
-
-    Sleep   60s
-    #Então       mensagem de cadastro realizado com sucesso é exibida
+    Então       mensagem de cadastro realizado com sucesso é exibida
 

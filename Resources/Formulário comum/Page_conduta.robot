@@ -153,6 +153,8 @@ exames prescritos
     END
     clicar no ${Buttons_CON.salvar_exame}
     imprimir
+    Sleep  3s
+    Wait For Elements State   xpath=/html/body/div[2]/div   visible
     clicar em ${Buttons_CON.nao}
 
 
@@ -167,7 +169,7 @@ atestados
     clicar em ${Buttons_CON.add_atestados}
 
 analise upload de arquivo ${CAMPO}
-    ${promise}=    Promise To Upload File          C:/Users/Mayara/Documents/TCC/RobotFramework-Sigsaude/Resources/Arquivos/b.png
+    ${promise}=    Promise To Upload File         /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/Resources/Arquivos/b.png
     Click           id=${CAMPO}
     ${upload_result}=  Wait For  ${promise}
 

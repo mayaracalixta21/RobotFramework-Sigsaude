@@ -7,15 +7,25 @@ Library           RPA.Cloud.Google
 ${SHEET_ID}          1GceBbjnkBCTczBW52Fki5sT6k2hCMp6qy8UJEuvHkzE
 
 ***Keywords***
-Atualizar dash falha ${contador3} 
 
+
+Atualizar dash falha "${contador3}" "${teste_nome}" "${status}" "${responsavel}"
+        ${teste_nome}   Evaluate   [['${teste_nome}']]
+        Clear Sheet Values     ${SHEET_ID}  A${contador3}
+        Insert Sheet Values    ${SHEET_ID}  A${contador3}    ${teste_nome}
         ${values}   Evaluate   [['Falhou']]
         Clear Sheet Values     ${SHEET_ID}  B${contador3}
-        Insert Sheet Values    ${SHEET_ID}  B${contador3}  ${values}
+        Insert Sheet Values    ${SHEET_ID}  B${contador3}      ${values}
         ${DATA}         Get Current Date
         ${DATA}         Evaluate   [['${DATA}']]
         Clear Sheet Values     ${SHEET_ID}  C${contador3}
-        Insert Sheet Values   ${SHEET_ID}   C${contador3}  ${DATA}
+        Insert Sheet Values   ${SHEET_ID}   C${contador3}   ${DATA}
+        ${status}   Evaluate   [['${status}']]
+        Clear Sheet Values     ${SHEET_ID}  D${contador3}
+        Insert Sheet Values    ${SHEET_ID}  D${contador3}    ${status}
+        ${responsavel}   Evaluate   [['${responsavel}']]
+        Clear Sheet Values     ${SHEET_ID}  E${contador3}
+        Insert Sheet Values    ${SHEET_ID}  E${contador3}    ${responsavel}
 
 
 Atualizar dash sucesso ${contador1}

@@ -141,7 +141,7 @@ adicionar campo encaminhamento
     FOR     ${contador}      IN RANGE    1    6
         clicar no ${Buttons_CON.add_campo_rec}
     END
-
+   
 exames prescritos
     Click               xpath=${Campos_CON.procedimento1}
     Type Text           xpath=${Campos_CON.procedimento2}                      ${Valor_campos_CON.procedimento2}

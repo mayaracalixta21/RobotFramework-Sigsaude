@@ -22,9 +22,9 @@ Resource        ${EXECDIR}/Resources/Formulário comum/Page_evolucao.robot
 
 
 *** Keywords ***
-configurações informações iniciais
+configurações informações iniciais "${formulario}"
     Init Sheets      Resources/Arquivos/chave.json
-    iniciar navegador sessão "Endocrinologia"
+    iniciar navegador sessão "${formulario}"
 
 configurações iniciais formulario comum
     que o usuario está na tela "minha agenda"

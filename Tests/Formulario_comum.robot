@@ -6,12 +6,13 @@ Resource        ${EXECDIR}/Resources/nav.robot
 Resource        ${EXECDIR}/Resources/Page_config_iniciais.robot
 
 
-Suite Setup     iniciar navegador sessão "Comum"
+Suite Setup     configurações informações iniciais "Comum"
 
 ***Test Cases***
 
 [001] - Dados socioeconômicos para usuarios de serviço novos
     [Tags]      Comum
+    Atualizar dash falha "10" "Formulario Comum - DS" "Em progresso" "Mayara"
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -24,6 +25,7 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar no ${Buttons_DS.avançar}
     Quando      clicar no ${Buttons_oferta.salvar}
     Então       mensagem de cadastro realizado com sucesso é exibida
+    Atualizar dash sucesso 10
 
 [002] - Dados socioeconômicos para usuarios de serviço antigos
     [Tags]      Comum3
@@ -41,8 +43,10 @@ Suite Setup     iniciar navegador sessão "Comum"
     Quando      clicar no ${Buttons_oferta.salvar}
     Então       mensagem de cadastro realizado com sucesso é exibida
 
+
 [003] - Dados básicos para usuarios de serviço novos
     [Tags]      Comum
+    Atualizar dash falha "11" "Formulario Comum - DBS" "Em progresso" "Mayara"
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -63,10 +67,11 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar no ${Buttons_DBS.avançar}
     Quando      clicar no ${Buttons_DBS.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
-
+    Atualizar dash sucesso 11
 
 [004] - Dados diagnostico
     [Tags]      Comum
+    Atualizar dash falha "12" "Formulario Comum - Dignostico" "Em progresso" "Mayara"
     [Setup]    configurações iniciais fora do horario formulario comum
     Dado        iniciar dados de diagnostico
     Quando      informar descrição
@@ -77,19 +82,23 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar em ${Buttons_DIG.avançar}
     Quando      clicar em ${Buttons_DIG.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
+    Atualizar dash sucesso 12
 
 [005] - Conduta
-    [Tags]      Teste
+    [Tags]      Comum
+    Atualizar dash falha "13" "Formulario Comum - Conduta" "Em progresso" "Mayara"
     [Setup]     configurações iniciais fora do horario formulario comum
     Dado        iniciar conduta terapêutica
     Quando      informar dados da conduta terapêutica
     E           clicar em ${Buttons_CON.avançar}
     E           clicar em ${Buttons_CON.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
+    Atualizar dash sucesso 13
 
 
 [005] - Evoluçao
     [Tags]      Comum
+    Atualizar dash falha "14" "Formulario Comum - Evolução" "Em progresso" "Mayara"
     [Setup]     configurações iniciais fora do horario formulario comum
     Dado        iniciar evolucao
     Quando      informar descrição da conduta
@@ -98,4 +107,5 @@ Suite Setup     iniciar navegador sessão "Comum"
     E           clicar em ${Buttons_EVO.avançar}
     E           clicar em ${Buttons_EVO.cadastrar}
     Então       mensagem de cadastro realizado com sucesso é exibida
+    Atualizar dash sucesso 14
 

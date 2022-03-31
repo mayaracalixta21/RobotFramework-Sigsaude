@@ -8,10 +8,11 @@
     "UF de nascimento":"inputUFNascimento",
     "Município de nascimento":"inputMunicipioNascimento",
     "Vínculo instituição":"selectVinvulo", 
-    "Avançar paciente":"salvarPaciente",
+    "Salvar e Avançar":"button[name='salvarPaciente']",
+    "Avançar":"button[name='salvarEndereco']",
     "Avançar endereço":"salvarEndereco",
     "Avançar contato":"salvarContatoPaciente",
-    "Avançar responsavel":"salvarResponsavel",
+    "Avançar responsavel":"button[name='salvarResponsavel']",
     "Finalizar cadastrao":"btnFinalizar",
     "Buscar":"btnBusca",
     "Avançar colaborador":"nextBtn",
@@ -60,7 +61,7 @@
     "Ocupa_depois":"/html/body/div/div[2]/div/div/section/div/div/div/form/div/div[4]/div[1]/div[4]/div[2]/div/div/div[1]/input",
 
     "Profissão":"selectProfissao",
-    "Avançar":"nextBtn",
+    "Avançardsadsad":"nextBtn",
     "Finalizar":"nextBtn",
     "Cadastrar":"nextBtn",
  

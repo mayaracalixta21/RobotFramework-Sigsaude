@@ -9,7 +9,7 @@ Documentation       Cadastro especialidade
 ...  descricao=inputDescricao
 
 &{Valor_campos_especialidade}
-...  denominacao=TESTE ESPECIALIDADE PSI
+...  denominacao=HOMOLOG
 ...  profissao=${Valor_campos_profissao.nome_da_profissao}
 ...  descricao=Teste automatizado
 

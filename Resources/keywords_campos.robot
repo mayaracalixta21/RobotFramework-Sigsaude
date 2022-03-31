@@ -16,7 +16,7 @@ preenchido o "${campo}" com o "${valor}"
 preenchido o campo "${campo}" com o "${valor}"
     ${elementos_json}         Get JSON                                          elementos.json
     Type Text                 css=[name='${elementos_json["${campo}"]}']        ${valor}    
- 
+
 preencher o campo "${campo}" com o "${valor}"
     ${elementos_json}         Get JSON                                          elementos.json
     Type Text                  xpath=${elementos_json["${campo}"]}              ${valor}    
@@ -24,7 +24,7 @@ preencher o campo "${campo}" com o "${valor}"
 selecione "${valor}" no campo "${campo}"
     ${elementos_json}         Get JSON                                   elementos.json
     Select Options By         id=${elementos_json["${campo}"]}           Text                   ${valor}
-   
+
 clicar em "${botão}" 
     ${elementos_json}         Get JSON                                   elementos.json
     Click                     css=${elementos_json["${botão}"]}

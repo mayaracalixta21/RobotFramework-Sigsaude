@@ -3,7 +3,6 @@ Documentation      Configurações inicias
 
 Resource        ${EXECDIR}/Resources/login.robot
 Resource        ${EXECDIR}/Resources/nav.robot
-
 Resource        ${EXECDIR}/Resources/Page_profissão_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_especialidade_cadastro.robot
 Resource        ${EXECDIR}/Resources/Page_modalidade_cadastro.robot

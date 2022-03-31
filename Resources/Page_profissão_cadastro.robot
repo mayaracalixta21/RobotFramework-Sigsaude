@@ -13,8 +13,8 @@ Library         String
 ...  ocupacao2=bs-select-1-0
 
 &{Valor_campos_profissao}
-...  nome_da_profissao=TESTE ANALISE
-...  sigla=TAN
+...  nome_da_profissao=HOMOLOG
+...  sigla=TAF
 ...  nivel_formacao=SUPERIOR
 ...  conselho_profissional=CFBM - CONSELHO FEDERAL DE BIOMEDICINA
 

@@ -2,6 +2,8 @@
 Documentation     Atualização da dashboard
 
 Library           RPA.Cloud.Google
+Library           DateTime
+
 
 *** Variables ***
 ${SHEET_ID}          1GceBbjnkBCTczBW52Fki5sT6k2hCMp6qy8UJEuvHkzE

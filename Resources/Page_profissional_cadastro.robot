@@ -19,15 +19,15 @@ Documentation       Cadastro colaborador
 
 
 &{Valor_campos_profissional}
-...  nome=DRTESTEPSICO
-...  CPF=851.890.700-42
+...  nome=HOMOTESTEPSICO
+...  CPF=172.121.450-09
 ...  perfil=ADM GERAL
-...  email=teste125@email.com
-...  login=DRTESTEPSICO
+...  email=homolog1@email.com
+...  login=DRHOMOLOG
 ...  profissao=${Valor_campos_profissao.sigla} - ${Valor_campos_profissao.nome_da_profissao}
 ...  vinculo=EXTERNO
 ...  UF=RN
-...  registro_profissional=18835
+...  registro_profissional=45612
 
 
 &{Buttons}

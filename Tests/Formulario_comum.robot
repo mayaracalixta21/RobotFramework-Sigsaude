@@ -11,8 +11,8 @@ Suite Setup     configurações informações iniciais "Comum"
 ***Test Cases***
 
 [001] - Dados socioeconômicos para usuarios de serviço novos
-    [Tags]      Comum
-    Atualizar dash falha "10" "Formulario Comum - DS" "Em progresso" "Mayara"
+    [Tags]      Comum   Teste
+    Atualizar dash falha "10" "Formulario Comum - DS" "Concluido" "Mayara"
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -28,7 +28,7 @@ Suite Setup     configurações informações iniciais "Comum"
     Atualizar dash sucesso 10
 
 [002] - Dados socioeconômicos para usuarios de serviço antigos
-    [Tags]      Comum3
+    [Tags]      Comum3  
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -45,8 +45,8 @@ Suite Setup     configurações informações iniciais "Comum"
 
 
 [003] - Dados básicos para usuarios de serviço novos
-    [Tags]      Comum
-    Atualizar dash falha "11" "Formulario Comum - DBS" "Em progresso" "Mayara"
+    [Tags]      Comum  Teste
+    Atualizar dash falha "11" "Formulario Comum - DBS" "Concluido" "Mayara"
     Dado        que o usuario está na tela "minha agenda"
     Quando      preencher o ${Campos_agenda.data_listagem} com ${Valor_campos_agenda.data_listagem}
     E           clicar em ${Buttons_agenda.pesquisar}
@@ -70,8 +70,8 @@ Suite Setup     configurações informações iniciais "Comum"
     Atualizar dash sucesso 11
 
 [004] - Dados diagnostico
-    [Tags]      Comum
-    Atualizar dash falha "12" "Formulario Comum - Dignostico" "Em progresso" "Mayara"
+    [Tags]      Comum  Teste
+    Atualizar dash falha "12" "Formulario Comum - Dignostico" "Concluido" "Mayara"
     [Setup]    configurações iniciais fora do horario formulario comum
     Dado        iniciar dados de diagnostico
     Quando      informar descrição
@@ -85,8 +85,8 @@ Suite Setup     configurações informações iniciais "Comum"
     Atualizar dash sucesso 12
 
 [005] - Conduta
-    [Tags]      Comum
-    Atualizar dash falha "13" "Formulario Comum - Conduta" "Em progresso" "Mayara"
+    [Tags]      Comum  Teste
+    Atualizar dash falha "13" "Formulario Comum - Conduta" "Concluido" "Mayara"
     [Setup]     configurações iniciais fora do horario formulario comum
     Dado        iniciar conduta terapêutica
     Quando      informar dados da conduta terapêutica
@@ -97,7 +97,7 @@ Suite Setup     configurações informações iniciais "Comum"
 
 
 [005] - Evoluçao
-    [Tags]      Comum
+    [Tags]      Comum  
     Atualizar dash falha "14" "Formulario Comum - Evolução" "Em progresso" "Mayara"
     [Setup]     configurações iniciais fora do horario formulario comum
     Dado        iniciar evolucao

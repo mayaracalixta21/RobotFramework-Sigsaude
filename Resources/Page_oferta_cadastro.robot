@@ -19,13 +19,13 @@ Documentation       Cadastro oferta de atendimento
 
 
 &{Valor_campos_oferta}
-...  denominacao=Oferta teste PSI
-...  data_inicio=10032022
+...  denominacao=Oferta teste homolog
+...  data_inicio=30032022
 ...  data_fim=10082022
 ...  inicio_do_expediente=1000
 ...  fim_do_expediente=2200
 ...  descricao_escala=Escala1
-...  data_inicio_escala=11/03/2022
+...  data_inicio_escala=30/03/2022
 ...  data_fim_escala=09092022
 
 

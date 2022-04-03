@@ -14,12 +14,13 @@ sudo apt install nodejs
 https://www.python.org/downloads/
 
 ````
-sudo apt install python3
+sudo apt install python
 
 sudo apt install python-is-python3
 
 ````
 
+### Ambientes virtuais (Opcional)
 
 venv — Criação de ambientes virtuais
 Acessando a pasta do projeto de automação, execute os comandos abaixo:
@@ -30,14 +31,15 @@ python -m venv .venv
 source .venv/bin/activate
 ````
 
-Instalar dependencias do projeto 
+### Instalar dependencias do projeto 
 
 ````
 pip install -r requirements.txt
+
 ````
 
 
-Configurar biblioteca do Browser
+### Configurar biblioteca do Browser
 
 ````
 rfbrowser init
@@ -46,12 +48,9 @@ python -m Browser.entry init
 ````
 
 
-Executar o projeto 
+### Executar o projeto 
 
 ````
 robot -d output .
+```
 
-
-robot -d ./output -t "[000] -  DS" Tests
-
-robot -d ./output -i Teste Tests 

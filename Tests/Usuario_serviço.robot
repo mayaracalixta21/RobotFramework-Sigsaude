@@ -8,8 +8,8 @@ Suite Setup     configurações informações iniciais "Comum"
 ***Test Cases***
 
 [001] - Cadastro de um usuario de serviço-completo(Reponsavel)
-    [Tags]   Usuario
-    Atualizar dash falha "15" "Cadastro de um usuario de serviço-completo(Reponsavel)" "Concluido" "Mayara"
+    [Tags]   Usuario1
+   # Atualizar dash falha "15" "Cadastro de um usuario de serviço-completo(Reponsavel)" "Concluido" "Mayara"
     Dado         que o usuario está na tela "novo usuario de serviço"
     E            informar os dados do "usuario de serviço"
     E            selecione "Feminino" no campo "Sexo"
@@ -28,7 +28,7 @@ Suite Setup     configurações informações iniciais "Comum"
     E            clicar em "Avançar responsavel"
     E            clicar no "Finalizar cadastrao"
     Então        mensagem de cadastro realizado com sucesso
-    Atualizar dash sucesso 15
+   # Atualizar dash sucesso 15
 
 
 [002] - Listar usuario de serviço por nome

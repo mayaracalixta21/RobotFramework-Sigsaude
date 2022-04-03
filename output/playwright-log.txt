@@ -1,254 +1,59 @@
-{"level":30,"time":"2022-03-31T04:01:42.466Z","pid":183796,"hostname":"VHSJP1995N","msg":"Listening on 46753"}
-{"level":30,"time":"2022-03-31T04:01:42.865Z","pid":183796,"hostname":"VHSJP1995N","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-03-31T04:01:42.876Z","pid":183796,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-03-31T04:01:43.000Z","pid":183796,"hostname":"VHSJP1995N","msg":"Video path: undefined"}
-{"level":30,"time":"2022-03-31T04:01:43.001Z","pid":183796,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-04-03T21:06:35.934Z","pid":15338,"hostname":"mayara","msg":"Listening on 48485"}
+{"level":30,"time":"2022-04-03T21:06:37.170Z","pid":15338,"hostname":"mayara","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-04-03T21:06:37.185Z","pid":15338,"hostname":"mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-04-03T21:06:37.576Z","pid":15338,"hostname":"mayara","msg":"Video path: undefined"}
+{"level":30,"time":"2022-04-03T21:06:37.577Z","pid":15338,"hostname":"mayara","msg":"Changed active page"}
 ================= Original suppressed error =================
 page.fill: Target closed
 =========================== logs ===========================
 waiting for selector "id=inputCEP"
 ============================================================
-    at Object.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
-    at fulfilled (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) {
+    at Object.<anonymous> (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25475:45)
+    at step (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25368:23)
+    at Object.next (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25349:53)
+    at fulfilled (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25340:58) {
   name: 'Error'
 }
 =============================================================
 ================= Original suppressed error =================
 page.screenshot: Target page, context or browser has been closed
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
+    at /home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
+    at step (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
+    at Object.next (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
+    at /home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
+    at takeScreenshot (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
+    at PlaywrightServer.<anonymous> (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
+    at step (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
+    at Object.next (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
+    at /home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
+    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
+    at PlaywrightServer.takeScreenshot (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
+    at handleUnary (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
   name: 'Error'
 }
 =============================================================
-================= Original suppressed error =================
-page.goto: Navigation failed because page was closed!
-=========================== logs ===========================
-navigating to "https://homologacaosigsaude.imd.ufrn.br/sigsaude/paciente", waiting until "load"
-============================================================
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22788:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22781:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23978:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23969:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.goto: Navigation failed because page was closed!
-=========================== logs ===========================
-navigating to "https://homologacaosigsaude.imd.ufrn.br/sigsaude/paciente", waiting until "load"
-============================================================
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22788:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22781:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23978:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23969:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.goto: Navigation failed because page was closed!
-=========================== logs ===========================
-navigating to "https://homologacaosigsaude.imd.ufrn.br/sigsaude/paciente", waiting until "load"
-============================================================
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22788:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22781:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23978:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23969:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.goto: Navigation failed because page was closed!
-=========================== logs ===========================
-navigating to "https://homologacaosigsaude.imd.ufrn.br/sigsaude/paciente", waiting until "load"
-============================================================
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22788:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22781:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23978:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23969:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.goto: Navigation failed because page was closed!
-=========================== logs ===========================
-navigating to "https://homologacaosigsaude.imd.ufrn.br/sigsaude/paciente", waiting until "load"
-============================================================
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22788:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22781:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23978:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.goTo (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23969:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-================= Original suppressed error =================
-page.screenshot: Target page, context or browser has been closed
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22826:47
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22771:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22752:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22746:71
-    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22742:12)
-    at takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:22798:12)
-    at PlaywrightServer.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23933:50)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23886:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23867:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23861:71
-    at __webpack_modules__../node/playwright-wrapper/grpc-service.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23857:12)
-    at PlaywrightServer.takeScreenshot (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:23924:55)
-    at handleUnary (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:17847:13) {
-  name: 'Error'
-}
-=============================================================
-{"level":30,"time":"2022-03-31T04:02:20.976Z","pid":183796,"hostname":"VHSJP1995N","msg":"Changed active context"}
-{"level":30,"time":"2022-03-31T04:02:20.976Z","pid":183796,"hostname":"VHSJP1995N","msg":"Changing current active page"}
-{"level":30,"time":"2022-03-31T04:02:20.977Z","pid":183796,"hostname":"VHSJP1995N","msg":"Changed active page"}
+{"level":30,"time":"2022-04-03T21:06:53.058Z","pid":15338,"hostname":"mayara","msg":"Changed active context"}
+{"level":30,"time":"2022-04-03T21:06:53.059Z","pid":15338,"hostname":"mayara","msg":"Changing current active page"}
+{"level":30,"time":"2022-04-03T21:06:53.059Z","pid":15338,"hostname":"mayara","msg":"Changed active page"}
 ================= Original suppressed error =================
 page.bringToFront: Target page, context or browser has been closed
-    at BrowserState.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
-    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
-    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26134:16)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26372:55
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
-    at /home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
-    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
-    at _switchPage (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26360:12)
-    at Object.<anonymous> (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:26488:42)
-    at step (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
-    at Object.next (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
-    at fulfilled (/home/m.calixta/Sigsaude/RobotFramework-Sigsaude/.venv/lib/python3.8/site-packages/Browser/wrapper/index.js:25680:58) {
+    at BrowserState.<anonymous> (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:26139:53)
+    at step (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at BrowserState.__webpack_modules__../node/playwright-wrapper/playwright-state.ts.BrowserState.activatePage (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:26134:16)
+    at /home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:26372:55
+    at step (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at /home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25683:71
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25679:12)
+    at _switchPage (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:26360:12)
+    at Object.<anonymous> (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:26488:42)
+    at step (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25708:23)
+    at Object.next (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25689:53)
+    at fulfilled (/home/mayara/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25680:58) {
   name: 'Error'
 }
 =============================================================
